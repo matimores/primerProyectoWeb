@@ -1,0 +1,1895 @@
+body {
+
+  background-image: url(../img/escritorio-computadora-portatil-taza-cafe-calendario.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
+
+/*  header  */
+
+
+
+.anuncio {
+
+  background-color: #4c6bf8;
+  width: 100vw;
+  height: 8vh;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 8px;
+  margin-bottom: 10vh;
+}
+
+.anuncio h1 {
+  font-size: 1.5em;
+}
+
+
+/*  nav  */
+
+
+
+.navbar-toggler {
+
+  background-color: #999693b2;
+
+  border: black 1px solid;
+
+}
+
+.navbar-brand img {
+  background-color: white;
+  width: 10vw;
+  border-radius: 15px;
+  border: black 2px solid;
+  margin-left: 2vw;
+
+}
+
+#navbarSupportedContent a {
+  margin-right: 10px;
+}
+
+
+#navbarSupportedContent li a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.1em;
+
+}
+
+#navbarSupportedContent li {
+  margin-right: 18px;
+}
+
+
+.navbar-nav a:hover {
+  background-color: #4c6bf8;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+/*  main  */
+
+
+
+main .contenedor {
+  width: 98%;
+  height: 61vh;
+  margin-top: 25vh;
+  margin-left: 8px;
+  justify-content: center;
+  background-color: rgb(10, 10, 10);
+}
+
+.card-text {
+  color: white;
+  font-size: 18px;
+  width: 45vw;
+  margin-top: 40px;
+}
+
+.col-md-6 img {
+  margin-left: 1px;
+  height: 61vh;
+  width: 93vw;
+  padding: 5px;
+
+}
+
+.row {
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/*  footer  */
+
+
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  column-gap: 4em;
+  margin-top: 10em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+
+}
+
+.gridFooter .nav .logoFooter {
+  width: 10vw;
+  height: 18vh;
+  background-color: white;
+  margin-top: 12vh;
+  border: black 2px solid;
+  border-radius: 20px;
+
+}
+
+
+.nav {
+  justify-content: center;
+  height: 40vh;
+
+
+}
+
+.atencion {
+
+  text-align: center;
+
+}
+
+.contacto {
+  font-size: 12px;
+  text-align: center;
+}
+
+.gridFooter h1 {
+  color: white;
+  text-align: start;
+  margin-top: 4em;
+  font-size: 18px;
+
+}
+
+.mapa {
+  margin-top: 0.5em;
+  width: 13em;
+  height: 13em;
+}
+
+.gridFooter .nav {
+
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*  camaras  */
+
+
+
+
+.gridcamara {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  column-gap: 45px;
+  justify-content: center;
+  margin-top: 25vh;
+
+
+}
+
+.gridcamara figure {
+  width: 20vw;
+  height: 67vh;
+  border: black 3px solid;
+  border-radius: 10px;
+  background-color: rgb(255, 254, 254);
+  text-align: center;
+}
+
+.gridcamara img {
+  width: 14vw;
+  height: 23vh;
+  padding: 15px;
+}
+
+.gridcamara figcaption {
+  margin-top: 40px;
+  height: 7em;
+  padding: 5px;
+}
+
+.gridcamara p {
+  height: 3em;
+}
+
+/*  sistemasolar  */
+
+
+
+
+.gridsolar {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 10vw;
+  row-gap: 5vh;
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+.gridsolar figure {
+  height: 71vh;
+  border: black 3px solid;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.gridsolar figcaption {
+  margin-top: 30px;
+  height: 5em;
+  padding: 5px;
+}
+
+.gridsolar p {
+  height: 3em;
+}
+
+.gridsolar img {
+  width: 17vw;
+  height: 35vh;
+  padding: 15px;
+}
+
+
+/*  kits  */
+
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 99%;
+  margin-left: 5px;
+  margin-top: 20vh;
+
+
+}
+
+.flex .kit {
+  width: 20%;
+  height: 70vh;
+
+}
+
+.flex img {
+  width: 80%;
+  height: 40%;
+  margin-bottom: 5%;
+  padding: 5%;
+}
+
+.flex figure {
+  background-color: white;
+  height: 100vh;
+  height: 70vh;
+  border: black 3px solid;
+  text-align: center;
+}
+
+.flex figcaption {
+
+  height: 30%;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+.flex a {
+  margin-left: 4%;
+
+}
+
+
+
+
+
+/*  nosotros  */
+
+
+
+
+.texto {
+  width: 90vw;
+  margin-left: 4vw;
+  margin-top: 25vh;
+}
+
+.texto img {
+  border: white 2px solid;
+}
+
+.card-img-overlay {
+  margin-left: 14vw;
+  margin-top: 15vh;
+}
+
+.nosotrost {
+  font-size: 100%;
+  font-family: sans-serif;
+  width: 85%;
+  height: 60%;
+  padding: 30px;
+  background-color: rgb(148, 119, 87);
+  border-radius: 20px;
+  color: white;
+  border: black 2px solid;
+  text-align: center;
+}
+
+/*  contacto  */
+
+
+
+
+.contact_form {
+  background-color: #a89382;
+  width: 25vw;
+  height: auto;
+  margin-left: 40%;
+  margin-top: 20vh;
+  border-radius: 20px;
+}
+
+.formulario {
+  padding: 25px;
+
+}
+
+.formulario h1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.formulario h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.formulario button {
+  width: 100%;
+}
+
+.formulario input {
+  width: 100%;
+}
+
+.texto_mensaje {
+  width: 100%;
+  height: 15vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*   responsive  */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  /* header  */
+
+  .anuncio {
+
+    background-color: #4c6bf8;
+    width: 100vw;
+    height: 6vh;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 8px;
+    margin-bottom: 10vh;
+
+  }
+
+  .anuncio h1 {
+    font-size: 0.7em;
+  }
+
+  /*  nav  */
+
+
+
+
+  .navbar-toggler {
+    margin-right: 2em;
+    border: black 1px solid;
+
+  }
+
+
+
+  #navbarSupportedContent li a {
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+  }
+
+  #navbarSupportedContent li {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    background-color: white;
+    width: 9vw;
+    border-radius: 10px;
+    margin-left: 2vw;
+  }
+
+  .navbar .carrito {
+    margin-right: 15px;
+  }
+
+
+  /* main */
+
+
+
+
+  main .contenedor {
+    width: 99%;
+    height: 55vh;
+    margin-top: 25vh;
+    margin-left: 5px;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+  }
+
+  .col-md-6 img {
+    margin-left: 1px;
+    height: 55vh;
+    width: 94vw;
+    padding: 5px;
+
+  }
+
+  .card-text {
+
+    color: white;
+    font-size: 15px;
+    width: 45vw;
+    margin-top: 40px;
+  }
+
+  /* footer */
+
+
+  .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    column-gap: 2.5em;
+    margin-top: 10em;
+    margin-left: 2em;
+    margin-right: 1em;
+
+
+  }
+
+  .gridFooter .nav .logoFooter {
+    width: 10vw;
+    height: 15vh;
+    background-color: white;
+    margin-top: 10vh;
+
+    border: black 2px solid;
+    border-radius: 20px;
+  }
+
+  .gridFooter h1 {
+    color: white;
+    text-align: start;
+    margin-top: 4em;
+    font-size: 14px;
+
+  }
+
+  .mapa {
+    margin-top: 3em;
+    width: 17vw;
+    height: 25vh;
+  }
+
+
+  .gridFooter .nav {
+    text-align: center;
+  }
+
+
+
+  /* camaras  */
+
+
+
+
+  .gridcamara figure {
+    width: 20vw;
+    height: 70vh;
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .gridcamara img {
+    width: 16vw;
+    height: 22vh;
+    padding: 15px;
+  }
+
+  .gridcamara figcaption {
+    margin-top: 20px;
+    margin-bottom: 12vh;
+    height: 3.5em;
+    font-size: 15px;
+
+  }
+
+  .gridcamara p {
+    font-size: 13px;
+    text-align: center;
+    height: 1em;
+    margin-top: 14vh;
+    margin-bottom: 10vh;
+  }
+
+  .gridcamara a {
+    font-size: 14px;
+    width: 15vw;
+    height: 6vh;
+  }
+
+
+  /*  sistemasolar  */
+
+
+
+
+  .gridsolar figure {
+    width: 25vw;
+    height: 75vh;
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .gridsolar figcaption {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 5em;
+
+
+  }
+
+  .gridsolar img {
+    width: 17vw;
+    height: 30vh;
+    padding: 15px;
+  }
+
+
+  /*  kits  */
+
+
+
+
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+
+    margin-top: 20vh;
+
+
+  }
+
+  .flex .kit {
+    width: 20%;
+    height: 70vh;
+
+  }
+
+  .flex img {
+    width: 80%;
+    height: 30%;
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+
+  .flex figure {
+    background-color: white;
+    height: 100vh;
+    height: 70vh;
+    border: black 3px solid;
+    text-align: center;
+  }
+
+  .flex figcaption {
+    font-size: 70%;
+    height: 35%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  .flex p {
+    height: 10%;
+    margin-bottom: 5vh;
+  }
+
+  .flex a {
+    font-size: 10px;
+    width: 80%;
+    height: 8%;
+
+
+
+  }
+
+
+  /*  nosotros  */
+
+
+
+
+
+  .card-img-overlay {
+    margin-left: 21%;
+    margin-top: 7%;
+  }
+
+  .texto img {
+    border: white 2px solid;
+  }
+
+  .nosotrost {
+    font-size: 70%;
+    font-family: sans-serif;
+    width: 75%;
+    height: 60%;
+    padding: 20px;
+    background-color: rgb(148, 119, 87);
+    border-radius: 20px;
+    color: white;
+    border: black 2px solid;
+    text-align: center;
+  }
+
+  /*  contacto  */
+
+
+
+
+
+
+  .contact_form {
+    background-color: #a89382;
+    width: 37vw;
+    height: 100vh;
+    margin-left: 35%;
+    margin-top: 15vh;
+    border-radius: 20px;
+  }
+
+
+  .formulario {
+    padding: 15px;
+
+  }
+
+  .formulario h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+
+  .formulario h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
+
+  .formulario input {
+    width: 100%;
+  }
+
+  .texto_mensaje {
+    width: 100%;
+    height: 10vh;
+
+  }
+
+}
+
+@media (min-width: 1023px) {
+  .nosotrost {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /*  kit  */
+
+
+
+  .flex img {
+    width: 85%;
+    height: 45%;
+    margin-bottom: 5%;
+    padding: 5%;
+  }
+
+  .flex figure {
+    background-color: white;
+    height: 100vh;
+    height: 80vh;
+    border: black 3px solid;
+    text-align: center;
+  }
+
+  .flex figcaption {
+
+    height: 22%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  .flex a {
+    margin-left: 4%;
+  }
+
+  /*  nosotros  */
+
+
+
+
+  .nosotrost {
+    font-size: 100%;
+  }
+
+}
+
+@media (min-width: 1026px) and (max-width: 1250px) {
+
+  .nosotrost {
+    font-size: 100%;
+  }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+  /* header  */
+
+  .anuncio {
+
+    background-color: #4c6bf8;
+    width: 100vw;
+    height: 7vh;
+    text-align: center;
+
+    font-family: sans-serif;
+    padding: 9px;
+
+
+  }
+
+  .anuncio h1 {
+    font-size: 16px;
+  }
+
+
+  /*  nav  */
+
+
+
+
+
+  .navbar-toggler {
+    margin-right: 1em;
+    border: black 1px solid;
+
+  }
+
+
+
+  #navbarSupportedContent li a {
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+  }
+
+  #navbarSupportedContent li {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    background-color: white;
+    width: 15vw;
+    border-radius: 10px;
+    margin-left: 2vw;
+  }
+
+  .navbar-nav a:hover {
+    display: none;
+
+  }
+
+
+
+
+
+
+  /* main */
+
+
+
+
+  main .contenedor {
+    display: block;
+    width: 98%;
+    height: 90vh;
+    margin-top: 25vh;
+    margin-left: 6px;
+
+
+  }
+
+  .col-md-6 img {
+
+    height: 47vh;
+    width: 98vw;
+
+
+
+  }
+
+  .card-text {
+
+    color: white;
+    font-size: 15px;
+    width: 93vw;
+    height: 30vh;
+
+
+
+  }
+
+  /* footer */
+
+
+
+
+
+  .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    column-gap: 2.5em;
+    margin-right: 35px;
+
+
+  }
+
+  .gridFooter .nav .logoFooter {
+    width: 12vw;
+    height: 12vh;
+    background-color: white;
+    margin-top: 10vh;
+
+    border: black 2px solid;
+    border-radius: 20px;
+  }
+
+  .gridFooter h1 {
+    color: white;
+    text-align: start;
+    margin-top: 4em;
+    font-size: 14px;
+
+  }
+
+  .mapa {
+    display: none;
+  }
+
+
+  .gridFooter .nav {
+    text-align: center;
+  }
+
+
+
+  /* camaras  */
+
+
+
+
+  .gridcamara {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    column-gap: 25px;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+  .gridcamara figure {
+    width: 40vw;
+    height: 65vh;
+  }
+
+
+  .gridcamara img {
+    width: 23vw;
+    height: 22vh;
+    padding: 15px;
+  }
+
+  .gridcamara figcaption {
+    margin-top: 20px;
+
+    height: 3.5em;
+    font-size: 15px;
+
+  }
+
+  .gridcamara p {
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    height: 1em;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+  }
+
+  .gridcamara a {
+    font-size: 10px;
+    width: 10vw;
+    height: 6vh;
+  }
+
+
+  /*  sistemasolar  */
+
+
+
+
+  .gridsolar {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+
+    column-gap: 10vw;
+    row-gap: 5vh;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+
+  .gridsolar figure {
+    width: 35vw;
+    height: 75vh;
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .gridsolar figcaption {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 5em;
+
+
+  }
+
+
+  .gridsolar img {
+    width: 19vw;
+    height: 30vh;
+    padding: 15px;
+  }
+
+  /*  kits  */
+
+
+
+
+  .flex {
+    display: flex;
+    width: 99%;
+    margin-top: 20vh;
+    padding: 10px;
+  }
+
+  .flex .kit {
+    width: 30%;
+    height: 70vh;
+    margin-bottom: 10vh;
+  }
+
+  .flex img {
+    width: 85%;
+    height: 40%;
+
+  }
+
+  .flex figure {
+
+    background-color: white;
+    height: 100vh;
+    height: 72vh;
+    border: black 3px solid;
+    text-align: center;
+
+  }
+
+  .flex figcaption {
+    font-size: 70%;
+    height: 27%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+
+
+
+  .flex p {
+    height: 8%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5vh;
+    font-size: 80%;
+  }
+
+  .flex a {
+    font-size: 10px;
+    width: 80%;
+    height: 8%;
+
+
+
+  }
+
+
+  /*  nosotros  */
+
+
+
+
+
+  .card-img-overlay {
+    margin-left: 15vw;
+    margin-top: 3vh;
+  }
+
+  .nosotrost {
+    font-size: 70%;
+    font-family: sans-serif;
+    width: 60vw;
+    padding: 15px;
+    background-color: rgb(148, 119, 87);
+    border-radius: 20px;
+    color: white;
+    border: black 2px solid;
+    text-align: center;
+  }
+
+  /*  contacto  */
+
+
+
+
+  .contact_form {
+    background-color: #a89382;
+    width: 45%;
+    height: 100%;
+    margin-left: 28%;
+    margin-top: 15vh;
+    border-radius: 20px;
+
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+
+  /* header  */
+
+  .anuncio {
+    width: 100vw;
+    height: 6vh;
+  }
+
+  .anuncio h1 {
+    font-size: 80%;
+  }
+
+  /*  nav  */
+
+
+
+
+  .navbar-toggler {
+    margin-right: 1em;
+    border: black 1px solid;
+
+  }
+
+
+
+  #navbarSupportedContent li a {
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+  }
+
+  #navbarSupportedContent li {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+    background-color: white;
+    width: 15vw;
+    border-radius: 10px;
+    margin-left: 2vw;
+  }
+
+  .navbar-nav a:hover {
+    display: none;
+
+  }
+
+
+
+
+
+  /* main */
+
+
+
+
+  main .contenedor {
+    display: block;
+    width: 95%;
+    height: 89vh;
+    margin-top: 25vh;
+    margin-left: 12px;
+  }
+
+  .col-md-6 img {
+
+    height: 47vh;
+    width: 98vw;
+
+
+
+  }
+
+  .card-text {
+    padding: 10px;
+    color: white;
+    font-size: 85%;
+    width: 85vw;
+    height: 35vh;
+
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+
+
+
+  /* footer */
+
+
+
+
+  .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    column-gap: 2.5em;
+    margin-right: 35px;
+
+
+  }
+
+  .gridFooter .nav .logoFooter {
+    width: 70%;
+    height: 35%;
+    background-color: white;
+    margin-top: 8vh;
+    border: black 2px solid;
+    border-radius: 20px;
+  }
+
+
+  .gridFooter h1 {
+    color: white;
+    text-align: start;
+    margin-top: 4em;
+    font-size: 12px;
+
+  }
+
+  .mapa {
+    display: none;
+  }
+
+
+  .gridFooter .nav {
+    text-align: center;
+  }
+
+
+
+  /* camaras  */
+
+
+
+
+  .gridcamara {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    column-gap: 25px;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+  .gridcamara figure {
+    width: 40vw;
+    height: 65vh;
+    padding: 5px;
+  }
+
+
+  .gridcamara img {
+    width: 23vw;
+    height: 22vh;
+    padding: 15px;
+  }
+
+  .gridcamara figcaption {
+    margin-top: 20px;
+    margin-bottom: vh;
+    height: 3.5em;
+    font-size: 15px;
+
+  }
+
+  .gridcamara p {
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    height: 1em;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+  }
+
+  .gridcamara a {
+    font-size: 10px;
+    width: 70%;
+    height: 10%;
+  }
+
+
+  /*  sistemasolar  */
+
+
+
+
+  .gridsolar {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+
+    column-gap: 10vw;
+    row-gap: 5vh;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+
+  .gridsolar figure {
+    width: 35vw;
+    height: 70vh;
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .gridsolar figcaption {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height: 5em;
+    padding: 10px;
+
+
+  }
+
+
+  .gridsolar img {
+    width: 25vw;
+    height: 30vh;
+    padding: 15px;
+  }
+
+  .gridsolar a {
+    font-size: 10px;
+    width: 30vw;
+    height: 5vh;
+  }
+
+  /*  kits  */
+
+
+
+
+
+  .flex {
+    display: flex;
+    width: 99%;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    padding: 10px;
+  }
+
+  .flex .kit {
+    width: 40%;
+    height: 70vh;
+    margin-bottom: 10vh;
+  }
+
+  .flex img {
+    width: 85%;
+    height: 45%;
+  }
+
+  .flex figcaption {
+    font-size: 70%;
+    height: 27%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+
+  }
+
+  .flex p {
+    font-size: 70%;
+  }
+
+  .flex a {
+    font-size: 10px;
+  }
+
+
+
+
+
+
+  /*  nosotros  */
+
+
+
+
+
+  .texto img {
+    width: 90%;
+    height: 75vh;
+  }
+
+  .card-nosotros {
+    display: none;
+
+  }
+
+  .card-img-overlay {
+
+    margin-left: 12vw;
+    margin-top: 8vh;
+  }
+
+
+  .nosotrost {
+    font-size: 75%;
+    font-family: sans-serif;
+    width: 55vw;
+    height: 50vh;
+    padding: 16px;
+    background-color: rgb(148, 119, 87);
+    border-radius: 20px;
+    color: white;
+    border: black 2px solid;
+    text-align: center;
+  }
+
+  /*  contacto  */
+
+
+
+
+
+  .contact_form {
+    background-color: #a89382;
+    width: 45vw;
+    height: 75vh;
+    margin-left: 28vw;
+    margin-top: 15vh;
+    border-radius: 20px;
+  }
+
+
+  .formulario {
+    padding: 15px;
+
+
+  }
+
+  .formulario h1 {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .formulario h3 {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .formulario button {
+    font-size: 10px;
+    width: 100%;
+    height: 4vh;
+  }
+
+  .formulario input {
+    width: 100%;
+    height: 4vh;
+  }
+
+  .texto_mensaje {
+    width: 100%;
+    height: 7vh;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+  /* header  */
+
+
+
+  .anuncio {
+    width: 100vw;
+    height: 6vh;
+  }
+
+  .anuncio h1 {
+    font-size: 80%;
+  }
+
+
+
+  /*  nav  */
+
+
+
+
+  #navbarSupportedContent li a {
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+  }
+
+  #navbarSupportedContent li {
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand img {
+
+
+    width: 25vw;
+    border-radius: 10px;
+    margin-left: 5vw;
+    margin-top: 1vh;
+  }
+
+  .navbar-nav a:hover {
+    display: none;
+
+  }
+
+
+  /* main */
+
+
+
+  main .contenedor {
+    display: block;
+    width: 95vw;
+    height: 75%;
+    margin-top: 10vh;
+
+
+  }
+
+  .col-md-6 img {
+
+    height: 35vh;
+    width: 95vw;
+
+
+
+  }
+
+  .card-text {
+    margin-top: 5px;
+
+    text-align: start;
+    color: white;
+    font-size: 80%;
+    width: 85vw;
+    height: 36vh;
+    text-align: center;
+
+  }
+
+  /* footer */
+
+
+
+  .gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    column-gap: 1em;
+    margin-left: 6vw;
+
+    width: 90%;
+    height: 40vh;
+
+
+  }
+
+  .gridFooter .nav .logoFooter {
+    width: 20vw;
+    height: 12vh;
+    background-color: white;
+    margin-top: 7vh;
+
+    border: black 2px solid;
+    border-radius: 20px;
+  }
+
+
+  .gridFooter h1 {
+    color: white;
+    text-align: start;
+    margin-top: 4em;
+    font-size: 10px;
+
+    width: 20vw;
+  }
+
+  .mapa {
+    display: none;
+  }
+
+
+  .gridFooter .nav {
+    text-align: center;
+  }
+
+
+
+  /* camaras  */
+
+
+
+
+  .gridcamara {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    column-gap: 25px;
+    justify-content: center;
+    margin-top: 25vh;
+  }
+
+  .gridcamara figure {
+    width: 40vw;
+    height: 50vh;
+    padding: 5px;
+  }
+
+
+  .gridcamara img {
+    width: 24vw;
+    height: 15vh;
+    padding: 15px;
+  }
+
+  .gridcamara figcaption {
+    margin-top: 20px;
+    margin-bottom: vh;
+    height: 3.5em;
+    font-size: 10px;
+
+  }
+
+  .gridcamara p {
+    font-size: 8px;
+    padding: 4px;
+    text-align: center;
+    height: 1em;
+    margin-top: 8vh;
+    margin-bottom: 7vh;
+  }
+
+  .gridcamara a {
+    font-size: 6px;
+    width: 30vw;
+    height: 4vh;
+  }
+
+
+  /*  sistemasolar  */
+
+
+
+
+  .gridsolar {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+
+    column-gap: 15vw;
+    row-gap: 4vh;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-right: 2em;
+  }
+
+
+  .gridsolar figure {
+    width: 40vw;
+    height: 45vh;
+
+    border: black 3px solid;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .gridsolar figcaption {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 10px;
+    height: 5em;
+    padding: 10px;
+
+
+  }
+
+  .gridsolar p {
+    font-size: 8px;
+    padding: 10px;
+  }
+
+
+  .gridsolar img {
+    width: 24vw;
+    height: 15vh;
+    padding: 15px;
+  }
+
+  .gridsolar a {
+    font-size: 7px;
+    width: 30vw;
+    height: 4vh;
+  }
+
+  /*  kits  */
+
+
+
+
+  .flex {
+    display: flex;
+    width: 99%;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+    padding: 10px;
+  }
+
+  .flex .kit {
+    width: 40%;
+    height: 70vh;
+    margin-bottom: 10vh;
+  }
+
+  .flex img {
+    width: 85%;
+    height: 30%;
+  }
+
+  .flex figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flex figcaption {
+    font-size: 70%;
+    height: 45%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+
+  }
+
+  .flex p {
+    font-size: 70%;
+    height: 5%;
+  }
+
+  .flex a {
+    font-size: 10px;
+  }
+
+
+
+  /*  nosotros  */
+
+
+
+
+
+  .texto img {
+
+    height: 55vh;
+  }
+
+  .card-nosotros {
+    display: none;
+
+  }
+
+  .card-img-overlay {
+
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+
+
+  .nosotrost {
+    font-size: 55%;
+    font-family: sans-serif;
+    width: 55vw;
+    height: 40vh;
+    padding: 6%;
+    background-color: rgb(148, 119, 87);
+    border-radius: 20px;
+    color: white;
+    border: black 2px solid;
+    text-align: center;
+  }
+
+
+
+
+  /*  contacto  */
+
+
+
+
+  .contact_form {
+    background-color: #a89382;
+    width: 50vw;
+    height: 75vh;
+    margin-left: 26vw;
+    margin-top: 10vh;
+    border-radius: 20px;
+  }
+
+
+  .formulario {
+    padding: 10px;
+
+
+  }
+
+  .formulario h1 {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .formulario h3 {
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .formulario button {
+    font-size: 10px;
+    width: 100%;
+    height: 4vh;
+  }
+
+  .formulario input {
+
+    width: 100%;
+    height: 3vh;
+  }
+
+  .texto_mensaje {
+    width: 100%;
+    height: 5vh;
+  }
+
+}
