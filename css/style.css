@@ -4,9 +4,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
-
 }
+
 
 /*  header  */
 
@@ -15,7 +14,7 @@ body {
 .anuncio {
 
   background-color: #4c6bf8;
-  width: 100vw;
+  width: 100%;
   height: 8vh;
   text-align: center;
   font-family: sans-serif;
@@ -35,7 +34,6 @@ body {
 .navbar-toggler {
 
   background-color: #999693b2;
-
   border: black 1px solid;
 
 }
@@ -67,8 +65,9 @@ body {
 
 
 .navbar-nav a:hover {
-  background-color: #4c6bf8;
-  border-radius: 15px;
+  background-color: #3d5ce4;
+  border-radius: 10px;
+  
 }
 
 
@@ -110,79 +109,50 @@ main .contenedor {
 }
 
 
-
-
-
-
-
-
-
 /*  footer  */
 
 
+.footer {
+  margin-top: 20%;
 
-.gridFooter {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  column-gap: 4em;
-  margin-top: 10em;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 1em;
-
-}
-
-.gridFooter .nav .logoFooter {
-  width: 10vw;
-  height: 18vh;
-  background-color: white;
-  margin-top: 12vh;
-  border: black 2px solid;
-  border-radius: 20px;
-
-}
-
-
-.nav {
-  justify-content: center;
-  height: 40vh;
-
-
-}
-
-.atencion {
-
+  width: 98%;
+  height: 10vh;
+  display: flex;
+  position: absolute;
   text-align: center;
-
+  justify-content: space-around;
 }
 
-.contacto {
-  font-size: 12px;
-  text-align: center;
-}
+.footer .p {
 
-.gridFooter h1 {
-  color: white;
+  margin-right: px;
+  width: 20vw;
   text-align: start;
-  margin-top: 4em;
-  font-size: 18px;
+}
 
+.footer img {
+  background-color: white;
+  width: 20vh;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+
+.footer h1 {
+  color: white;
+  width: 50%;
+  font-size: 25px;
+}
+
+.footer h2 {
+  color: white;
+  width: 45%;
+  font-size: 20px;
 }
 
 .mapa {
-  margin-top: 0.5em;
-  width: 13em;
-  height: 13em;
+  height: 30vh;
+  margin-bottom: 20px;
 }
-
-.gridFooter .nav {
-
-
-  text-align: center;
-}
-
-
 
 
 
@@ -199,7 +169,6 @@ main .contenedor {
   column-gap: 45px;
   justify-content: center;
   margin-top: 25vh;
-
 
 }
 
@@ -227,6 +196,8 @@ main .contenedor {
 .gridcamara p {
   height: 3em;
 }
+
+
 
 /*  sistemasolar  */
 
@@ -280,13 +251,11 @@ main .contenedor {
   margin-left: 5px;
   margin-top: 20vh;
 
-
 }
 
 .flex .kit {
   width: 20%;
   height: 70vh;
-
 }
 
 .flex img {
@@ -316,8 +285,6 @@ main .contenedor {
   margin-left: 4%;
 
 }
-
-
 
 
 
@@ -353,6 +320,7 @@ main .contenedor {
   border: black 2px solid;
   text-align: center;
 }
+
 
 /*  contacto  */
 
@@ -406,9 +374,6 @@ main .contenedor {
 
 
 
-
-
-
 /*   responsive  */
 
 
@@ -434,9 +399,8 @@ main .contenedor {
     font-size: 0.7em;
   }
 
+
   /*  nav  */
-
-
 
 
   .navbar-toggler {
@@ -503,46 +467,54 @@ main .contenedor {
   /* footer */
 
 
-  .gridFooter {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    column-gap: 2.5em;
-    margin-top: 10em;
-    margin-left: 2em;
-    margin-right: 1em;
-
+  .footer {
+    margin-top: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 97%;
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
 
   }
 
-  .gridFooter .nav .logoFooter {
-    width: 10vw;
-    height: 15vh;
-    background-color: white;
-    margin-top: 10vh;
+  .footer .p {
+    margin-right: 5%;
 
-    border: black 2px solid;
-    border-radius: 20px;
-  }
 
-  .gridFooter h1 {
-    color: white;
+    width: 25%;
     text-align: start;
-    margin-top: 4em;
-    font-size: 14px;
+  }
 
+  .footer img {
+    background-color: white;
+    width: 12vw;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+
+  .footer h1 {
+    color: white;
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .footer h2 {
+    color: white;
+    width: 45%;
+    font-size: 15px;
   }
 
   .mapa {
-    margin-top: 3em;
-    width: 17vw;
-    height: 25vh;
+    width: 25vw;
+    height: 30vh;
+
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
 
-
-  .gridFooter .nav {
-    text-align: center;
-  }
 
 
 
@@ -627,10 +599,7 @@ main .contenedor {
     display: flex;
     justify-content: space-evenly;
     width: 99%;
-
     margin-top: 20vh;
-
-
   }
 
   .flex .kit {
@@ -671,15 +640,11 @@ main .contenedor {
     font-size: 10px;
     width: 80%;
     height: 8%;
-
-
-
   }
 
 
+
   /*  nosotros  */
-
-
 
 
 
@@ -705,9 +670,9 @@ main .contenedor {
     text-align: center;
   }
 
+
+
   /*  contacto  */
-
-
 
 
 
@@ -757,11 +722,15 @@ main .contenedor {
 
 }
 
+
+
 @media (min-width: 1023px) {
   .nosotrost {
     font-size: 100%;
   }
 }
+
+
 
 @media (min-width: 1024px) {
 
@@ -795,6 +764,8 @@ main .contenedor {
   .flex a {
     margin-left: 4%;
   }
+
+
 
   /*  nosotros  */
 
@@ -870,10 +841,7 @@ main .contenedor {
     margin-left: 2vw;
   }
 
-  .navbar-nav a:hover {
-    display: none;
-
-  }
+  
 
 
 
@@ -891,16 +859,12 @@ main .contenedor {
     height: 90vh;
     margin-top: 25vh;
     margin-left: 6px;
-
-
   }
 
   .col-md-6 img {
 
     height: 47vh;
     width: 98vw;
-
-
 
   }
 
@@ -911,8 +875,6 @@ main .contenedor {
     width: 93vw;
     height: 30vh;
 
-
-
   }
 
   /* footer */
@@ -920,47 +882,53 @@ main .contenedor {
 
 
 
+  .footer {
+    margin-top: 20%;
 
-  .gridFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: end;
-    column-gap: 2.5em;
-    margin-right: 35px;
-
+    padding: 15px;
+    width: 97%;
+    height: 30vh;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
 
   }
 
-  .gridFooter .nav .logoFooter {
-    width: 12vw;
-    height: 12vh;
-    background-color: white;
-    margin-top: 10vh;
-
-    border: black 2px solid;
-    border-radius: 20px;
-  }
-
-  .gridFooter h1 {
-    color: white;
+  .footer .p {
+    margin-right: 5%;
+    width: 25%;
     text-align: start;
-    margin-top: 4em;
-    font-size: 14px;
+  }
 
+
+  .footer img {
+    background-color: white;
+    width: 12vw;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+   
+  .footer h1 {
+    color: white;
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .footer h2 {
+    color: white;
+    width: 45%;
+    font-size: 10px;
   }
 
   .mapa {
-    display: none;
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 20px;
   }
 
 
-  .gridFooter .nav {
-    text-align: center;
-  }
-
-
-
-  /* camaras  */
+/* camaras  */
 
 
 
@@ -1017,7 +985,6 @@ main .contenedor {
   .gridsolar {
     display: grid;
     grid-template-columns: repeat(2, 30vw);
-
     column-gap: 10vw;
     row-gap: 5vh;
     justify-content: center;
@@ -1048,6 +1015,7 @@ main .contenedor {
     height: 30vh;
     padding: 15px;
   }
+
 
   /*  kits  */
 
@@ -1134,6 +1102,7 @@ main .contenedor {
     text-align: center;
   }
 
+
   /*  contacto  */
 
 
@@ -1195,10 +1164,7 @@ main .contenedor {
     margin-left: 2vw;
   }
 
-  .navbar-nav a:hover {
-    display: none;
-
-  }
+  
 
 
 
@@ -1232,7 +1198,6 @@ main .contenedor {
     font-size: 85%;
     width: 85vw;
     height: 35vh;
-
     margin-left: 10px;
     margin-top: 5px;
   }
@@ -1244,43 +1209,54 @@ main .contenedor {
 
 
 
-
-  .gridFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: end;
-    column-gap: 2.5em;
-    margin-right: 35px;
-
+  .footer {
+    margin-top: 20%;
+    padding: 15px;
+    width: 97%;
+    height: 20vh;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
 
   }
 
-  .gridFooter .nav .logoFooter {
-    width: 70%;
-    height: 35%;
-    background-color: white;
-    margin-top: 8vh;
-    border: black 2px solid;
-    border-radius: 20px;
-  }
+  .footer .p {
+    margin-right: 5%;
 
 
-  .gridFooter h1 {
-    color: white;
+    width: 25%;
     text-align: start;
-    margin-top: 4em;
-    font-size: 12px;
+  }
 
+
+  .footer img {
+    background-color: white;
+    width: 10vw;
+
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+
+
+
+  .footer h1 {
+    color: white;
+    width: 50%;
+    font-size: 10px;
+  }
+
+  .footer h2 {
+    color: white;
+    width: 45%;
+    font-size: 8px;
   }
 
   .mapa {
-    display: none;
+    width: 18vw;
+    height: 15vh;
   }
 
-
-  .gridFooter .nav {
-    text-align: center;
-  }
 
 
 
@@ -1312,13 +1288,13 @@ main .contenedor {
 
   .gridcamara figcaption {
     margin-top: 20px;
-    margin-bottom: vh;
+    margin-bottom: 1vh;
     height: 3.5em;
     font-size: 15px;
 
   }
 
-  .gridcamara p {
+  .gridcamara p{
     font-size: 13px;
     padding: 5px;
     text-align: center;
@@ -1327,7 +1303,7 @@ main .contenedor {
     margin-bottom: 10vh;
   }
 
-  .gridcamara a {
+  .gridcamara a{
     font-size: 10px;
     width: 70%;
     height: 10%;
@@ -1519,12 +1495,19 @@ main .contenedor {
 
 @media (min-width: 320px) and (max-width: 479px) {
 
+
+  body {
+    background-image: url(../img/3.png);
+    background-repeat: no-repeat;
+
+  }
+
   /* header  */
 
 
 
   .anuncio {
-    width: 100vw;
+    width: 100%;
     height: 6vh;
   }
 
@@ -1540,29 +1523,22 @@ main .contenedor {
 
 
   #navbarSupportedContent li a {
-    color: white;
-    font-size: 0.8em;
+    color: black;
+    font-size: 0.7em;
     font-family: sans-serif;
   }
 
-  #navbarSupportedContent li {
-    margin-top: 5px;
-    margin-right: 10px;
-  }
+ 
 
   .navbar-brand img {
 
 
     width: 25vw;
     border-radius: 10px;
-    margin-left: 5vw;
     margin-top: 1vh;
   }
 
-  .navbar-nav a:hover {
-    display: none;
-
-  }
+  
 
 
   /* main */
@@ -1578,6 +1554,7 @@ main .contenedor {
 
   }
 
+
   .col-md-6 img {
 
     height: 35vh;
@@ -1589,7 +1566,6 @@ main .contenedor {
 
   .card-text {
     margin-top: 5px;
-
     text-align: start;
     color: white;
     font-size: 80%;
@@ -1602,48 +1578,42 @@ main .contenedor {
   /* footer */
 
 
-
-  .gridFooter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-
-    column-gap: 1em;
-    margin-left: 6vw;
-
-    width: 90%;
-    height: 40vh;
-
-
+  .footer {
+    background-color: #4c6bf8;
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    position: absolute;
   }
 
-  .gridFooter .nav .logoFooter {
-    width: 20vw;
-    height: 12vh;
+  .footer img {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 3em;
     background-color: white;
-    margin-top: 7vh;
-
-    border: black 2px solid;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: black 1px solid;
   }
 
+  .footer h1 {
+    margin-top: 20px;
+    color: black;
+    width: 100%;
+    font-size: 60%;
+  }
 
-  .gridFooter h1 {
-    color: white;
-    text-align: start;
-    margin-top: 4em;
-    font-size: 10px;
-
-    width: 20vw;
+  .footer h2 {
+    margin-top: 20px;
+    margin-right: 40px;
+    color: black;
+    width: 55%;
+    font-size: 60%;
   }
 
   .mapa {
     display: none;
-  }
-
-
-  .gridFooter .nav {
-    text-align: center;
+    width: 20%;
+    height: 20%;
   }
 
 
@@ -1676,7 +1646,7 @@ main .contenedor {
 
   .gridcamara figcaption {
     margin-top: 20px;
-    margin-bottom: vh;
+    margin-bottom: 1vh;
     height: 3.5em;
     font-size: 10px;
 
