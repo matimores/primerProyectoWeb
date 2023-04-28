@@ -1,0 +1,16 @@
+{
+  "name": "moressecurity",
+  "version": "1.0.0",
+  "description": "<h1>Hola, soy matias! 🖐️</h1>\r <h3>Esta es mi primera pagina!</h3>\r <img src=\"https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green\">\r <h1 align=\"center\">MORES SECURITY</h1>\r <img src=\"https://user-images.githubusercontent.com/89812636/232617434-6d56ab60-8166-43b2-9f19-8b2ec4026dc0.png\" width=\"180\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}

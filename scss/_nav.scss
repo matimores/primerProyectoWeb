@@ -1,0 +1,31 @@
+// nav 
+.navbar{
+   margin-top: 5%;
+    .navbar-brand{
+
+     img{
+        background-color: $backcolor;
+        width: 10vw;
+        border-radius: 15px;
+        border: $bordersecondary 2px solid;
+        margin-left: 2vw;
+     }
+    }
+    .navbar-toggler {
+  
+    background-color: #999693b2;
+    border: $bordersecondary 1px solid;
+  
+    }
+    #navbarSupportedContent{
+
+    li{
+        a{
+            color: $secondarycolor;
+            font-family: $mainfonts;
+            font-size: $textSm;  
+            margin-right: 2vw;
+        }
+    }
+    }
+}

@@ -1,0 +1,29 @@
+// Nosotros
+
+.texto {
+    margin-top: 25vh;
+    img {
+        border: $border 2px solid;
+        height: 90vh;
+        
+    }
+
+    .card-img-overlay {
+        margin-left: 14vw;
+        margin-top: 20vh;
+
+        .nosotrost {
+            font-size: 80%;
+            font-family: sans-serif;
+            width: 85%;
+            height: 70%;
+            padding: 10px;
+            background-color: rgb(148, 119, 87);
+            border-radius: 20px;
+            color: $secondarycolor;
+            border: $bordersecondary 2px solid;
+            text-align: center;
+        }
+    }
+}
+

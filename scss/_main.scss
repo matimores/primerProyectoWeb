@@ -1,0 +1,45 @@
+// main 
+
+
+.contenedor{
+        background-color: black;
+        width: 98%;
+        height: 61%;
+        margin-top: 25vh;
+        margin-left: 8px;
+        justify-content: center;
+        
+
+        .row {
+            justify-content: center;
+
+            .col-md-6 img {
+
+                margin-left: 1px;
+                height: 61vh;
+                width: 93vw;
+                padding: 5px;
+            }
+
+            .card-text {
+                color: $secondarycolor;
+                font-size: 25px;
+                width: 45vw;
+                margin-top: 40px;
+            }
+
+            .card-text3 {
+                color: $secondarycolor;
+                font-size: 20px;
+                width: 45vw;
+                margin-top: 40px;
+            }
+
+
+
+
+
+
+        }
+    }
+

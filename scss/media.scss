@@ -1,0 +1,1795 @@
+// Responsive
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    // header
+
+
+
+    .anuncio {
+        background-color: #3d5ce4;
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 8px;
+        margin-bottom: 10vh;
+
+        h1 {
+            font-size: $textSm;
+        }
+
+
+    }
+
+
+    // nav
+    .navbar {
+
+
+        .navbar-brand {
+            img {
+                background-color: white;
+                width: 13vw;
+                border-radius: 10px;
+                margin-left: 2vw;
+            }
+
+        }
+
+        .navbar-toggler {
+            margin-right: 2em;
+            border: black 1px solid;
+
+        }
+
+        #navbarSupportedContent {
+            li {
+                margin-top: 10px;
+
+            }
+
+            a {
+
+                color: white;
+                font-size: 1em;
+                font-family: sans-serif;
+            }
+
+        }
+
+        .carrito {
+            margin-right: 15px;
+        }
+    }
+
+
+    // main 
+
+
+
+
+    .contenedor {
+        margin-top: 10vh;
+        justify-content: center;
+        background-color: rgb(12, 12, 12);
+
+        .row {
+            .col-md-6 {
+                .img-fluid {
+                    margin-left: 1px;
+                    height: 40vh;
+                    width: 98vw;
+                    padding: 5px;
+
+                }
+
+
+
+                .card-text {
+
+                    color: rgb(250, 249, 249);
+                    font-size: 16px;
+                    width: 45vw;
+                    margin-top: 40px;
+                }
+
+                .card-text3 {
+                    font-size: 14px;
+
+                }
+
+
+            }
+
+        }
+    }
+
+
+    // footer
+
+
+
+    .footer {
+        margin-top: 10%;
+        width: 95%;
+        height: 30vh;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        justify-content: space-around;
+
+        .p {
+            margin-right: 5%;
+            width: 25%;
+            text-align: center;
+
+
+            img {
+                background-color: white;
+                width: 6em;
+                border: black 2px solid;
+                border-radius: 10px;
+                margin-top: 80px;
+            }
+
+
+            h1 {
+                color: white;
+                width: 50%;
+                font-size: 15px;
+                margin-top: 80px;
+            }
+
+            h2 {
+                color: white;
+                width: 45%;
+                font-size: 15px;
+                margin-top: 80px;
+            }
+
+        }
+
+        .mapa {
+            width: 65%;
+            height: 65%;
+            margin-top: 50px;
+
+
+        }
+
+    }
+
+    // camaras
+    .gridcamara {
+        grid-template-columns: repeat(3, 30%);
+        column-gap: 20px;
+
+
+        .figure {
+            width: 25vw;
+            height: 55vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+
+            img {
+
+                width: 16vw;
+                height: 14vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-top: 20px;
+                margin-bottom: 12vh;
+                height: 3em;
+                font-size: 15px;
+
+            }
+
+            p {
+                font-size: 13px;
+                text-align: center;
+                margin-top: 14vh;
+
+
+            }
+
+            a {
+                font-size: 14px;
+                width: 15vw;
+                height: 6vh;
+
+            }
+        }
+    }
+}
+
+// sistemasolar
+.gridsolar {
+    
+
+    figure {
+        
+
+        .figure {
+            @extend .figure;
+        }
+
+        img {
+            width: 17vw;
+            height: 22vh;
+            padding: 15px;
+        }
+
+        figcaption {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            height: 5em;
+        }
+    }
+}
+
+
+// kits 
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    margin-top: 20vh;
+
+    .kit {
+        width: 20%;
+        height: 70vh;
+
+        .figure {
+            background-color: white;
+            height: 100vh;
+            height: 60vh;
+            border: black 3px solid;
+            text-align: center;
+
+            img {
+                width: 80%;
+                height: 30%;
+                margin-bottom: 5%;
+                padding: 5%;
+            }
+
+            figcaption {
+                font-size: 75%;
+                height: 25vh;
+                width: 90%;
+                margin-left: 5%;
+                margin-bottom: 5%;
+
+
+            }
+
+            p {
+                font-size: 15px;
+
+                height: 3em;
+
+            }
+
+            a {
+                font-size: 10px;
+                width: 80%;
+                height: 6%;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+// nosotros
+
+.texto {
+    margin-top: 10%;
+
+    img {
+        height: 50%;
+        border: white 2px solid;
+    }
+
+    .card-img-overlay {
+        margin-left: 12%;
+        margin-top: 11%;
+
+        .nosotrost {
+            font-size: 95%;
+            font-family: sans-serif;
+            width: 85%;
+            height: 70%;
+            padding: 20px;
+            background-color: rgb(148, 119, 87);
+            border-radius: 20px;
+            color: white;
+            border: black 2px solid;
+            text-align: center;
+
+        }
+    }
+}
+
+// contacto 
+.contact_form {
+    background-color: #a89382;
+    width: 40%;
+    height: 70%;
+    margin-left: 30%;
+    margin-top: 15vh;
+    border-radius: 20px;
+
+    .formulario {
+        padding: 15px;
+
+        h1 {
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 5px;
+
+        }
+
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+    }
+
+}
+
+
+
+/*
+@media (min-width: 1026px) and (max-width: 1250px) {
+
+
+    // nav
+    .navbar {
+
+
+        #navbarSupportedContent a:hover {
+            background-color: transparent;
+
+
+
+        }
+    }
+
+    // main 
+
+
+    .contenedor {
+        width: 98%;
+        height: 40vh;
+        margin-top: 15vh;
+        justify-content: center;
+        background-color: rgb(12, 12, 12);
+
+        .row {
+            .col-md-6 {
+                .img-fluid {
+                    margin-left: 1px;
+                    height: 40vh;
+                    width: 98vw;
+                    padding: 5px;
+
+                }
+
+
+
+                .card-text {
+
+                    color: rgb(250, 249, 249);
+                    font-size: 20px;
+                    width: 45vw;
+                    margin-top: 40px;
+                }
+
+                .card-text3 {
+                    font-size: 16px;
+
+                }
+
+
+            }
+
+        }
+    }
+
+    // footer
+
+
+
+    .footer {
+        margin-top: 10%;
+        width: 95%;
+        height: 30vh;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        justify-content: space-around;
+
+        .p {
+            margin-right: 5%;
+            width: 25%;
+            text-align: center;
+
+
+            img {
+                background-color: white;
+                width: 6em;
+                border: black 2px solid;
+                border-radius: 10px;
+                margin-top: 80px;
+            }
+
+
+            h1 {
+                color: rgb(8, 8, 8);
+                width: 60%;
+                font-size: 22px;
+                margin-top: 80px;
+                text-align: start;
+            }
+
+            h2 {
+                color: rgb(12, 12, 12);
+                width: 50%;
+                font-size: 22px;
+                margin-top: 80px;
+                text-align: start;
+            }
+
+        }
+
+        .mapa {
+            width: 75%;
+            height: 75%;
+            margin-right: px;
+            margin-top: 50px;
+
+
+        }
+
+    }
+
+    // camaras
+
+    .gridcamara {
+        column-gap: 20px;
+
+        figure {
+            width: 20vw;
+            height: 55vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 14vw;
+                height: 16vh;
+                padding: 5px;
+            }
+        }
+    }
+
+    //solar
+
+    .gridsolar {
+        figure {
+            width: 25vw;
+            height: 58vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 17vw;
+                height: 25vh;
+                padding: 15px;
+            }
+        }
+    }
+
+    // kits 
+
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        width: 99%;
+        margin-top: 20vh;
+
+        .kit {
+            width: 20%;
+            height: 70vh;
+
+            figure {
+                background-color: white;
+                height: 100vh;
+                height: 60vh;
+                border: black 3px solid;
+                text-align: center;
+
+                img {
+                    width: 80%;
+                    height: 30%;
+                    margin-bottom: 5%;
+                    padding: 5%;
+                }
+
+                figcaption {
+                    font-size: 75%;
+                    height: 25vh;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+
+
+                }
+
+                p {
+                    font-size: 15px;
+
+                    height: 3em;
+
+                }
+
+                a {
+                    font-size: 10px;
+                    width: 80%;
+                    height: 6%;
+                }
+            }
+        }
+
+
+
+    }
+}*/
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+    // header    
+    .anuncio {
+        height: 5vh;
+
+        h1 {
+            font-size: 16px;
+        }
+    }
+
+    // nav
+    .navbar {
+
+
+        .navbar-brand {
+            img {
+                background-color: white;
+                width: 16vw;
+                border-radius: 10px;
+                margin-left: 2vw;
+            }
+        }
+    }
+
+    // main
+
+    main {
+        .contenedor {
+            display: block;
+            width: 98%;
+            height: 75vh;
+            margin-top: 10vh;
+            margin-left: 6px;
+
+            .row {
+                .col-md-6 {
+                    img {
+
+                        height: 42vh;
+                        width: 98vw;
+                    }
+
+                    .card-text {
+
+                        color: white;
+                        font-size: 20px;
+                        width: 93vw;
+                        height: 23vh;
+
+
+                    }
+
+                    .card-text3 {
+                        font-size: 17px;
+                        width: 100%;
+                        margin-top: 15px;
+
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    // foter 
+
+    .footer {
+        margin-top: 10%;
+        width: 97%;
+        height: 30vh;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        justify-content: space-around;
+
+        .p {
+            margin-right: 5%;
+            width: 25%;
+            text-align: end;
+
+
+            img {
+                background-color: white;
+                width: 5em;
+                border: black 2px solid;
+                border-radius: 10px;
+                margin-top: 80px;
+                margin-right: 25px;
+            }
+
+
+            h1 {
+                color: rgb(253, 253, 253);
+                width: 70%;
+                font-size: 18px;
+                margin-top: 80px;
+                text-align: start;
+            }
+
+            h2 {
+                color: rgb(250, 250, 250);
+                width: 60%;
+                font-size: 18px;
+                margin-top: 80px;
+                text-align: start;
+            }
+
+        }
+
+        .mapa {
+            display: none;
+
+        }
+
+    }
+
+    // camaras 
+    .gridcamara {
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        column-gap: 5px;
+        justify-content: center;
+        margin-top: 25vh;
+        margin-left: 15%;
+
+        figure {
+            width: 35vw;
+            height: 55vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 15vw;
+                height: 15vh;
+                padding: px;
+            }
+        }
+    }
+
+    //solar
+
+    .gridsolar {
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 10vw;
+        row-gap: 5vh;
+        justify-content: center;
+        margin-top: 25vh;
+
+        figcaption {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+
+        figure {
+            width: 35vw;
+            height: 52vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 18vw;
+                height: 20vh;
+                padding: 15px;
+            }
+
+            p {
+
+
+                height: 8vh;
+            }
+        }
+    }
+
+    // kits 
+
+    .flex {
+        display: flex;
+        width: 98%;
+        margin-top: 20vh;
+        justify-content: center;
+
+        .kit {
+            width: 35%;
+            height: 50vh;
+            margin-bottom: 100px;
+            margin-right: 5%;
+
+
+            figure {
+                background-color: white;
+                height: 100vh;
+                height: 50vh;
+                border: black 3px solid;
+                text-align: center;
+
+
+                img {
+                    width: 80%;
+                    height: 37%;
+                    margin-bottom: 5%;
+                    padding: 5%;
+                }
+
+                figcaption {
+                    font-size: 75%;
+                    height: 15vh;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+                }
+
+                p {
+                    font-size: 15px;
+                    height: 3em;
+
+                }
+
+                a {
+                    font-size: 10px;
+                    width: 80%;
+                    height: 7%;
+                }
+            }
+        }
+
+
+
+    }
+
+    // nosotros
+
+    .texto {
+        margin-top: 10vh;
+
+        img {
+            height: 40%;
+        }
+
+        .card-img-overlay {
+            margin-left: 12vw;
+            margin-top: 10vh;
+
+            .nosotrost {
+                font-size: 75%;
+
+            }
+        }
+
+    }
+
+    // contacto 
+    .contact_form {
+        background-color: #a89382;
+        width: 55%;
+        height: 60vh;
+        margin-left: 20%;
+        margin-top: 10vh;
+        border-radius: 20px;
+
+        .formulario {
+            padding: 15px;
+
+            h1 {
+                font-size: 18px;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+
+            }
+
+            h3 {
+                font-size: 15px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .texto_mensaje {
+                width: 100%;
+                height: 5vh;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .anuncio {
+        height: 5vh;
+
+        h1 {
+            font-size: 80%;
+        }
+    }
+
+    // nav
+    .navbar {
+        .navbar-brand {
+            img {
+                background-color: white;
+                width: 16vw;
+                border-radius: 10px;
+                margin-left: 2vw;
+            }
+        }
+    }
+
+    // main 
+
+    main {
+        .contenedor {
+            display: block;
+            width: 95%;
+            height: 70vh;
+            margin-top: 10vh;
+            margin-left: 12px;
+
+            .row {
+                .col-md-6 {
+                    img {
+                        height: 40vh;
+                        width: 98vw;
+                    }
+
+                    .card-text {
+                        padding: 10px;
+                        color: white;
+                        font-size: 100%;
+                        width: 90vw;
+                        height: 25vh;
+                        margin-top: 1px;
+                    }
+
+                    .card-text3 {
+                        font-size: 83%;
+                        width: 100%;
+                        height: 22vh;
+                        margin-top: 5px;
+                        margin-top: 10px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    // footer
+    .footer {
+        margin-top: 20%;
+        padding: 15px;
+        width: 97%;
+        height: 20vh;
+        display: flex;
+        position: absolute;
+        text-align: center;
+        justify-content: space-around;
+
+        .p {
+            img {
+                background-color: white;
+                width: 16vw;
+                border: black 2px solid;
+                border-radius: 10px;
+            }
+
+            h1 {
+                color: white;
+                width: 80%;
+                font-size: 15px;
+            }
+
+            h2 {
+                color: white;
+                width: 80%;
+                font-size: 15px;
+            }
+        }
+
+        .mapa {
+            display: none;
+        }
+
+
+    }
+
+    // camaras 
+
+    .gridcamara {
+
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 25px;
+        justify-content: center;
+        margin-top: 10vh;
+
+        figure {
+            width: 35vw;
+            height: 50vh;
+            padding: 5px;
+
+            img {
+                width: 21vw;
+                height: 12vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-top: 20px;
+                margin-bottom: 1vh;
+                height: 8em;
+                font-size: 15px;
+
+            }
+
+
+        }
+    }
+
+    // sistema solar
+    .gridsolar {
+        display: grid;
+        grid-template-columns: repeat(2, 30vw);
+        column-gap: 10vw;
+        row-gap: 5vh;
+        justify-content: center;
+        margin-top: 25vh;
+
+        figure {
+            width: 35vw;
+            height: 55vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 25vw;
+                height: 20vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-top: 15px;
+                margin-bottom: 25px;
+                height: 6em;
+                padding: 10px;
+            }
+        }
+    }
+
+    // kits
+
+    .flex {
+        display: flex;
+        width: 99%;
+        justify-content: space-evenly;
+        margin-top: 20vh;
+        padding: 10px;
+
+
+
+        .kit {
+            width: 40%;
+            height: 70vh;
+
+            figure {
+                height: 50vh;
+
+                img {
+                    width: 85%;
+                    height: 22vh;
+                }
+
+                figcaption {
+                    font-size: 70%;
+                    height: 28%;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-bottom: 10%;
+                }
+
+                p {
+                    font-size: 70%;
+                }
+
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+
+    }
+
+    // nosotros
+
+    .texto {
+        margin-top: 10vh;
+        height: 40vh;
+
+        img {
+            height: 70%;
+        }
+
+
+        .card-img-overlay {
+            margin-left: 11vw;
+            margin-top: 6vh;
+
+            .nosotrost {
+                font-size: 60%;
+                font-family: sans-serif;
+                width: 70vw;
+                height: 20vh;
+                padding: 16px;
+                background-color: rgb(148, 119, 87);
+                border-radius: 20px;
+                color: white;
+                border: black 2px solid;
+                text-align: center;
+            }
+        }
+    }
+
+
+
+    // contacto
+
+    .contact_form {
+        background-color: #5d74df;
+        width: 55vw;
+        height: 55vh;
+        margin-left: 25vw;
+        margin-top: 10vh;
+        border-radius: 20px;
+
+        .formulario {
+
+            h1 {
+                font-size: 15px;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 10px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            button {
+                font-size: 10px;
+                width: 100%;
+                height: 4vh;
+            }
+
+            input {
+                width: 100%;
+                height: 4vh;
+            }
+
+            .texto_mensaje {
+                width: 100%;
+                height: 4vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 390px) and (max-width: 479px) {
+
+    //header
+    .anuncio {
+        width: 100%;
+        height: 5vh;
+
+        h1 {
+            font-size: 85%;
+        }
+    }
+
+    // nav
+    .navbar {
+        .navbar-brand {
+            img {
+                width: 18vw;
+                border-radius: 10px;
+                margin-top: 1vh;
+            }
+
+
+        }
+    }
+
+
+    // main
+
+    main {
+        .contenedor {
+            display: block;
+            width: 95vw;
+            height: 50%;
+            margin-top: 10vh;
+
+            .row {
+                .col-md-6 {
+                    img {
+                        height: 33vh;
+                        width: 95vw;
+                    }
+
+                    .card-text {
+                        margin-top: 5px;
+                        text-align: start;
+                        color: white;
+                        font-size: 80%;
+                        width: 85vw;
+                        height: 18vh;
+                        text-align: center;
+                    }
+
+                    .card-text3 {
+                        font-size: 83%;
+                        width: 100%;
+                        height: 22vh;
+                        margin-top: 5px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // footer 
+    .footer {
+        background-color: #4c6bf8;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        position: absolute;
+
+        .p {
+
+
+            img {
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 4em;
+                background-color: white;
+                border-radius: 10px;
+                border: black 1px solid;
+            }
+
+            h1 {
+                margin-top: 20px;
+                color: black;
+                width: 80%;
+                font-size: 60%;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-right: 40px;
+                color: black;
+                width: 55%;
+                font-size: 60%;
+            }
+        }
+
+        .mapa {
+            display: none;
+        }
+    }
+
+    // camaras 
+    .gridcamara {
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 25px;
+        justify-content: center;
+        margin-top: 25vh;
+
+        figure {
+            width: 40vw;
+            height: 95%;
+            padding: 5px;
+
+            img {
+                width: 75%;
+                height: 15vh;
+                padding: 5px;
+            }
+
+            figcaption {
+
+                margin-bottom: 1vh;
+                height: 3.5em;
+                font-size: 12px;
+
+            }
+
+            p {
+                font-size: 9px;
+                padding: 4px;
+                text-align: center;
+                height: 1em;
+                margin-top: 8vh;
+                margin-bottom: 4vh;
+            }
+
+            a {
+                font-size: 6px;
+                width: 30vw;
+                height: 3vh;
+            }
+        }
+    }
+
+    // sistema solar
+
+    .gridsolar {
+        display: grid;
+        grid-template-columns: repeat(2, 30vw);
+        column-gap: 15vw;
+        row-gap: 4vh;
+        justify-content: center;
+        margin-top: 20vh;
+        margin-right: 2em;
+
+        figure {
+            width: 40vw;
+            height: 39vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 24vw;
+                height: 15vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-top: 15px;
+                margin-bottom: 25px;
+                font-size: 10px;
+                height: 5em;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 8px;
+                padding: 10px;
+            }
+
+            a {
+                font-size: 8px;
+                width: 30vw;
+                height: 3.5vh;
+            }
+        }
+    }
+
+    // kit
+    .flex {
+        display: flex;
+        width: 99%;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+
+
+        .kit {
+            width: 40%;
+            height: 70vh;
+
+
+            figure {
+                width: 100%;
+                height: 75%;
+                border-radius: 10px;
+
+                img {
+                    width: 85%;
+                    height: 18vh;
+                    margin-bottom: 20px;
+                }
+
+                figcaption {
+                    font-size: 70%;
+                    height: 18vh;
+                    width: 90%;
+
+
+                }
+
+                p {
+                    font-size: 70%;
+                    height: 5%;
+                }
+
+                a {
+                    font-size: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+    // nosotros 
+
+    .texto {
+        height: 44vh;
+        margin-top: 10vh;
+
+        img {
+            height: 40vh;
+        }
+
+        .card-img-overlay {
+            margin-left: 15%;
+            margin-top: 10%;
+
+            .nosotrost {
+                font-size: 60%;
+                width: 60vw;
+                height: 25vh;
+            }
+        }
+    }
+
+    // contacto
+
+    .contact_form {
+        background-color: #5d74df;
+        width: 65vw;
+        height: 55vh;
+        margin-left: 18vw;
+        margin-top: 10vh;
+        border-radius: 20px;
+
+        .formulario {
+            h1 {
+                font-size: 12px;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 10px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            button {
+                font-size: 10px;
+                width: 100%;
+                height: 4vh;
+            }
+
+            input {
+
+                width: 100%;
+                height: 3vh;
+            }
+
+
+
+            .texto_mensaje {
+                width: 100%;
+                height: 5vh;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 389px) {
+
+    body {
+        background-image: url(../img/3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    // header
+    .anuncio {
+        width: 100vw;
+        height: 6vh;
+
+        h1 {
+            font-size: 80%;
+        }
+    }
+
+    // nav
+    .navbar {
+        .navbar-brand {
+            img {
+                width: 24vw;
+                border-radius: 10px;
+
+            }
+        }
+
+        #navbarSupportedContent {
+            li {
+                background-color: #4c6bf8;
+                margin-top: 10px;
+                width: 70%;
+                border-radius: 10px;
+
+                a {
+                    margin-left: 15px;
+                }
+
+
+            }
+        }
+    }
+
+    // main 
+    main {
+        .contenedor {
+            display: block;
+            width: 94vw;
+            height: 75%;
+            margin-top: 10vh;
+
+            .row {
+                .col-md-6 {
+                    img {
+                        height: 30vh;
+                        width: 95vw;
+                    }
+
+                    .card-text {
+                        margin-top: 5px;
+                        text-align: start;
+                        color: white;
+                        font-size: 80%;
+                        width: 85vw;
+                        height: 22vh;
+                        text-align: center;
+                    }
+
+                    .card-text3 {
+                        text-align: start;
+                        color: white;
+                        font-size: 70%;
+                        width: 85vw;
+                        height: 22vh;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    // footer
+
+    .footer {
+        background-color: #4c6bf8;
+        width: 100%;
+        height: 14vh;
+        display: flex;
+        position: absolute;
+
+        .p {
+
+            img {
+                margin-top: 20px;
+                width: 4em;
+                background-color: white;
+                border-radius: 10px;
+                border: black 1px solid;
+            }
+
+            h1 {
+                margin-top: 20px;
+                color: black;
+                width: 70%;
+                font-size: 55%;
+            }
+
+            h2 {
+                margin-top: 20px;
+                color: black;
+                width: 60%;
+                font-size: 55%;
+
+            }
+
+        }
+
+        .mapa {
+            display: none;
+
+        }
+
+    }
+
+    // camaras 
+    .gridcamara {
+        display: grid;
+        grid-template-columns: repeat(1, 60vw);
+        column-gap: 25px;
+        justify-content: center;
+        margin-top: 10vh;
+
+        figure {
+            width: 60vw;
+            height: 37vh;
+            padding: 5px;
+
+
+            img {
+                width: 35vw;
+                height: 15vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-top: 10px;
+                margin-bottom: 1vh;
+                height: 5em;
+                font-size: 11px;
+                text-align: center;
+
+            }
+
+            p {
+                font-size: 8px;
+                padding: 4px;
+                text-align: center;
+                height: 3em;
+            }
+
+            a {
+                font-size: 6px;
+                width: 30vw;
+                height: 3vh;
+            }
+        }
+    }
+
+    // sistema solar
+
+    .gridsolar {
+        display: grid;
+        grid-template-columns: repeat(1, 60vw);
+        column-gap: 15vw;
+        row-gap: 4vh;
+        justify-content: center;
+        margin-top: 20vh;
+
+        figure {
+            width: 55vw;
+            height: 40vh;
+            border: black 3px solid;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+
+            img {
+                width: 30vw;
+                height: 15vh;
+                padding: 5px;
+            }
+
+            figcaption {
+                margin-bottom: 5px;
+                font-size: 11px;
+                height: 5em;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 8px;
+            }
+
+            a {
+                font-size: 8px;
+                width: 30vw;
+                height: 4vh;
+            }
+        }
+    }
+
+    // kits
+
+    .flex {
+        display: flex;
+        width: 99%;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+        padding: 10px;
+
+        .kit {
+            width: 60%;
+            height: 50vh;
+            margin-bottom: 5vh;
+
+            figure {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+                img {
+                    width: 85%;
+                    height: 22vh;
+                    padding: 5px;
+                }
+
+                figcaption {
+                    font-size: 70%;
+                    height: 25%;
+                    width: 90%;
+                    margin-left: 5%;
+                }
+
+                p {
+                    font-size: 70%;
+                }
+
+                a {
+                    font-size: 10px;
+                }
+
+            }
+        }
+    }
+
+    // nosotros
+    .texto {
+        margin-top: 10vh;
+        height: 53vh;
+
+        img {
+            opacity: .8;
+            height: 40vh;
+        }
+
+        .card-img-overlay {
+            margin-left: 15%;
+            margin-top: 12%;
+
+            .nosotrost {
+                font-size: 50%;
+                font-family: sans-serif;
+                width: 60vw;
+                height: 25vh;
+                padding: 6%;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+
+    // contacto 
+    .contact_form {
+        background-color: #5d74df;
+        width: 70vw;
+        height: 52vh;
+        margin-left: 15vw;
+        margin-top: 5vh;
+        border-radius: 20px;
+        padding: 5px;
+
+        .formulario {
+            padding: 5px;
+
+            h1 {
+                font-size: 13px;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 10px;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            button {
+                font-size: 10px;
+                width: 90%;
+                height: 4vh;
+                margin-left: 10px;
+            }
+
+            input {
+                margin-left: 10px;
+                width: 90%;
+                height: 3vh;
+
+            }
+
+            .texto_mensaje {
+                width: 90%;
+                height: 4vh;
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
