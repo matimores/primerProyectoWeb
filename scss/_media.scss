@@ -2,25 +2,30 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+
+
+
     // header
 
 
 
     .anuncio {
-        background-color: #3d5ce4;
+        background-color: $primarycolor;
         width: 100%;
-        height: 5vh;
+        height: 6vh;
         text-align: center;
         font-family: sans-serif;
-        padding: 8px;
         margin-bottom: 10vh;
+        animation: none;
 
         h1 {
-            font-size: $textSm;
+            font-size: $textMd;
+            padding: 8px;
         }
-
-
     }
+
+
+
 
 
     // nav
@@ -29,7 +34,7 @@
 
         .navbar-brand {
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 13vw;
                 border-radius: 10px;
                 margin-left: 2vw;
@@ -54,7 +59,11 @@
                 color: white;
                 font-size: 1em;
                 font-family: sans-serif;
+
+
             }
+
+
 
         }
 
@@ -70,6 +79,8 @@
 
 
     .contenedor {
+        width: 98%;
+        height: 61%;
         margin-top: 10vh;
         justify-content: center;
         background-color: rgb(12, 12, 12);
@@ -126,7 +137,7 @@
 
 
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 6em;
                 border: black 2px solid;
                 border-radius: 10px;
@@ -164,197 +175,213 @@
     .gridcamara {
         grid-template-columns: repeat(3, 30%);
         column-gap: 20px;
+        margin-bottom: 20vh;
 
 
         .figure {
-            width: 25vw;
-            height: 55vh;
+            @include figure(25vw, 55vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
+            margin-left: 25px;
 
 
             img {
+                @include img(50%, 13vh, 5px);
 
-                width: 16vw;
-                height: 14vh;
-                padding: 5px;
             }
 
             figcaption {
-                margin-top: 20px;
-                margin-bottom: 12vh;
-                height: 3em;
+                @include figcaption(85%, 8vh, 12vh, 20px);
                 font-size: 15px;
-
             }
 
             p {
                 font-size: 13px;
                 text-align: center;
                 margin-top: 14vh;
-
-
-            }
-
-            a {
-                font-size: 14px;
-                width: 15vw;
                 height: 6vh;
 
+
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
+
             }
         }
     }
-}
 
-// sistemasolar
-.gridsolar {
-    
 
-    figure {
-        
+    // sistemasolar
+    .gridsolar {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        column-gap: 20px;
+        margin-bottom: 20vh;
+
 
         .figure {
-            @extend .figure;
-        }
-
-        img {
-            width: 17vw;
-            height: 22vh;
-            padding: 15px;
-        }
-
-        figcaption {
-            margin-top: 15px;
-            margin-bottom: 15px;
-            height: 5em;
-        }
-    }
-}
-
-
-// kits 
-
-.flex {
-    display: flex;
-    justify-content: space-evenly;
-    width: 99%;
-    margin-top: 20vh;
-
-    .kit {
-        width: 20%;
-        height: 70vh;
-
-        .figure {
-            background-color: white;
-            height: 100vh;
-            height: 60vh;
+            @include figure(25vw, 55vh, white);
             border: black 3px solid;
+            border-radius: 10px;
             text-align: center;
+            margin-left: 25px;
 
             img {
-                width: 80%;
-                height: 30%;
-                margin-bottom: 5%;
-                padding: 5%;
+                @include img(70%, 18vh, 15px);
+
             }
 
             figcaption {
-                font-size: 75%;
-                height: 25vh;
-                width: 90%;
-                margin-left: 5%;
-                margin-bottom: 5%;
-
+                @include figcaption(0, 12vh, 15vh, 15px);
+                text-align: center;
 
             }
 
             p {
+                text-align: center;
+                height: 8vh;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
+            }
+        }
+    }
+
+
+
+    // kits 
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20vh;
+        margin-top: 20vh;
+        margin-left: 20px;
+        column-gap: 5px;
+
+        .kit {
+            width: 25vw;
+            height: 70vh;
+
+
+
+            .figure {
+                @include figure(25vw, 55vh, white);
+                border: black 3px solid;
+                text-align: center;
+
+
+
+                img {
+                    @include img(17vw, 18vh, 5px);
+                    margin-bottom: 5%;
+
+                }
+
+                figcaption {
+                    @include figcaption(90%, 15vh, 5%, 0);
+                    font-size: 75%;
+                    margin-left: 5%;
+                }
+
+                p {
+                    font-size: 15px;
+
+                    height: 3em;
+
+                }
+
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    // nosotros
+
+    .texto {
+        margin-top: 10%;
+
+        img {
+            height: 50%;
+            border: white 2px solid;
+        }
+
+        .card-img-overlay {
+            margin-left: 12%;
+            margin-top: 11%;
+
+            .nosotrost {
+                font-size: 95%;
+                font-family: sans-serif;
+                width: 85%;
+                height: 70%;
+                padding: 20px;
+                background-color: rgb(148, 119, 87);
+                border-radius: 20px;
+                color: white;
+                border: black 2px solid;
+                text-align: center;
+
+            }
+        }
+    }
+
+    // contacto 
+    .contact_form {
+        background-color: $primarycolor;
+        width: 45%;
+        height: 60%;
+        margin-left: 30%;
+        margin-top: 15vh;
+        border-radius: 20px;
+
+        .formulario {
+            padding: 15px;
+
+            h1 {
+                font-size: 20px;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+
+            }
+
+            h3 {
                 font-size: 15px;
-
-                height: 3em;
-
+                text-align: center;
+                margin-bottom: 10px;
             }
 
-            a {
-                font-size: 10px;
-                width: 80%;
-                height: 6%;
-            }
         }
-    }
 
 
-
-}
-
-
-
-// nosotros
-
-.texto {
-    margin-top: 10%;
-
-    img {
-        height: 50%;
-        border: white 2px solid;
-    }
-
-    .card-img-overlay {
-        margin-left: 12%;
-        margin-top: 11%;
-
-        .nosotrost {
-            font-size: 95%;
-            font-family: sans-serif;
-            width: 85%;
-            height: 70%;
-            padding: 20px;
-            background-color: rgb(148, 119, 87);
-            border-radius: 20px;
-            color: white;
-            border: black 2px solid;
-            text-align: center;
-
-        }
     }
 }
 
-// contacto 
-.contact_form {
-    background-color: #a89382;
-    width: 40%;
-    height: 70%;
-    margin-left: 30%;
-    margin-top: 15vh;
-    border-radius: 20px;
 
-    .formulario {
-        padding: 15px;
-
-        h1 {
-            font-size: 20px;
-            font-family: sans-serif;
-            text-align: center;
-            margin-bottom: 5px;
-
-        }
-
-        h3 {
-            font-size: 15px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-    }
-
-}
-
-
-
-/*
 @media (min-width: 1026px) and (max-width: 1250px) {
+
+    // header 
+    .anuncio {
+        animation: none;
+    }
 
 
     // nav
@@ -430,7 +457,7 @@
 
 
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 6em;
                 border: black 2px solid;
                 border-radius: 10px;
@@ -470,20 +497,24 @@
     // camaras
 
     .gridcamara {
-        column-gap: 20px;
 
-        figure {
-            width: 20vw;
-            height: 55vh;
+        justify-content: space-evenly;
+
+        .figure {
+            @include figure(20vw, 60vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
             img {
-                width: 14vw;
-                height: 16vh;
-                padding: 5px;
+                @include img(60%, 16vh, 5px);
+
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -491,18 +522,28 @@
     //solar
 
     .gridsolar {
-        figure {
-            width: 25vw;
-            height: 58vh;
+        justify-content: space-evenly;
+
+        .figure {
+            @include figure(20vw, 60vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
+
+            figcaption {
+                height: 20vh;
+            }
+
             img {
-                width: 17vw;
-                height: 25vh;
-                padding: 15px;
+                @include img(60%, 20vh, 15px);
+
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -519,26 +560,22 @@
             width: 20%;
             height: 70vh;
 
-            figure {
-                background-color: white;
-                height: 100vh;
-                height: 60vh;
+            .figure {
+                @include figure(20vw, 60vh, white);
                 border: black 3px solid;
                 text-align: center;
 
                 img {
-                    width: 80%;
-                    height: 30%;
+                    @include img(60%, 30%, 5px);
                     margin-bottom: 5%;
-                    padding: 5%;
+
                 }
 
                 figcaption {
+                    @include figcaption(90%, 20vh, 5%, 0);
                     font-size: 75%;
-                    height: 25vh;
-                    width: 90%;
                     margin-left: 5%;
-                    margin-bottom: 5%;
+
 
 
                 }
@@ -550,24 +587,43 @@
 
                 }
 
-                a {
-                    font-size: 10px;
-                    width: 80%;
-                    height: 6%;
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
                 }
             }
         }
+    }
 
+    // nosotros
+    .texto {
+        margin-top: 10vh;
 
+        img {
+            height: 40%;
+        }
+
+        .card-img-overlay {
+            margin-left: 12vw;
+            margin-top: 15vh;
+
+            .nosotrost {
+                font-size: 1.5em;
+
+            }
+        }
 
     }
-}*/
+
+}
 
 @media (min-width: 600px) and (max-width: 767px) {
 
     // header    
     .anuncio {
         height: 5vh;
+        animation: none;
 
         h1 {
             font-size: 16px;
@@ -580,7 +636,7 @@
 
         .navbar-brand {
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 16vw;
                 border-radius: 10px;
                 margin-left: 2vw;
@@ -647,7 +703,7 @@
 
 
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 5em;
                 border: black 2px solid;
                 border-radius: 10px;
@@ -689,22 +745,30 @@
         justify-content: center;
         margin-top: 25vh;
         margin-left: 15%;
+        margin-bottom: 20vh;
 
-        figure {
-            width: 35vw;
-            height: 55vh;
+        .figure {
+            @include figure(35vw, 55vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
             img {
-                width: 15vw;
-                height: 15vh;
-                padding: px;
+                @include img(50%, 13vh, 10px);
+                width: 50%;
+                height: 13vh;
+                padding: 10px;
+                margin-bottom: 5px;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
+
 
     //solar
 
@@ -714,35 +778,43 @@
         column-gap: 10vw;
         row-gap: 5vh;
         justify-content: center;
-        margin-top: 25vh;
-
-        figcaption {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
+        margin-top: 20vh;
+        margin-bottom: 80vh;
 
 
-        figure {
-            width: 35vw;
-            height: 52vh;
+
+
+        .figure {
+            @include figure(35vw, 50vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
+            figcaption {
+                @include figcaption(0, 10vh, 5px, 5px);
+
+            }
+
+
             img {
-                width: 18vw;
-                height: 20vh;
-                padding: 15px;
+                @include img(50%, 17vh, 15px);
+
             }
 
             p {
 
 
-                height: 8vh;
+                height: 10vh;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
+
 
     // kits 
 
@@ -750,6 +822,7 @@
         display: flex;
         width: 98%;
         margin-top: 20vh;
+        margin-bottom: 20vh;
         justify-content: center;
 
         .kit {
@@ -759,27 +832,23 @@
             margin-right: 5%;
 
 
-            figure {
-                background-color: white;
-                height: 100vh;
-                height: 50vh;
+            .figure {
+                @include figure(35vw, 55vh, white);
                 border: black 3px solid;
                 text-align: center;
 
 
                 img {
-                    width: 80%;
-                    height: 37%;
+                    @include img(65%, 20vh, 15px);
                     margin-bottom: 5%;
-                    padding: 5%;
+
                 }
 
                 figcaption {
+                    @include figcaption(90%, 15vh, 5%, 0);
                     font-size: 75%;
-                    height: 15vh;
-                    width: 90%;
                     margin-left: 5%;
-                    margin-bottom: 5%;
+
                 }
 
                 p {
@@ -788,16 +857,16 @@
 
                 }
 
-                a {
-                    font-size: 10px;
-                    width: 80%;
-                    height: 7%;
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
                 }
             }
+
+
+
         }
-
-
-
     }
 
     // nosotros
@@ -814,7 +883,7 @@
             margin-top: 10vh;
 
             .nosotrost {
-                font-size: 75%;
+                font-size: .7em;
 
             }
         }
@@ -823,10 +892,10 @@
 
     // contacto 
     .contact_form {
-        background-color: #a89382;
-        width: 55%;
+        background-color: $primarycolor;
+        width: 50%;
         height: 60vh;
-        margin-left: 20%;
+        margin-left: 25%;
         margin-top: 10vh;
         border-radius: 20px;
 
@@ -865,9 +934,11 @@
 
 }
 
+
 @media (min-width: 480px) and (max-width: 599px) {
     .anuncio {
         height: 5vh;
+        animation: none;
 
         h1 {
             font-size: 80%;
@@ -878,7 +949,7 @@
     .navbar {
         .navbar-brand {
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 16vw;
                 border-radius: 10px;
                 margin-left: 2vw;
@@ -939,7 +1010,7 @@
 
         .p {
             img {
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 width: 16vw;
                 border: black 2px solid;
                 border-radius: 10px;
@@ -975,23 +1046,25 @@
         justify-content: center;
         margin-top: 10vh;
 
-        figure {
-            width: 35vw;
-            height: 50vh;
+        .figure {
+            @include figure(38vw, 50vh, white);
             padding: 5px;
 
             img {
-                width: 21vw;
-                height: 12vh;
-                padding: 5px;
+                @include img(50%, 12vh, 5px);
+
             }
 
             figcaption {
-                margin-top: 20px;
-                margin-bottom: 1vh;
-                height: 8em;
+                @include figcaption(90%, 15vh, 1vh, 20px);
                 font-size: 15px;
 
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
 
 
@@ -1006,26 +1079,28 @@
         row-gap: 5vh;
         justify-content: center;
         margin-top: 25vh;
+        margin-bottom: 80vh;
 
-        figure {
-            width: 35vw;
-            height: 55vh;
+        .figure {
+            @include figure(38vw, 50vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
             img {
-                width: 25vw;
-                height: 20vh;
-                padding: 5px;
+                @include img(50%, 15vh, 5px);
+
             }
 
             figcaption {
-                margin-top: 15px;
-                margin-bottom: 25px;
-                height: 6em;
+                @include figcaption(90%, 14vh, 20px, 15px);
                 padding: 10px;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -1045,28 +1120,30 @@
             width: 40%;
             height: 70vh;
 
-            figure {
-                height: 50vh;
+            .figure {
+                @include figure(38vw, 51vh, white);
+
 
                 img {
-                    width: 85%;
-                    height: 22vh;
+                    @include img(65%, 18vh, 0px);
+
                 }
 
                 figcaption {
+                    @include figcaption(90%, 15vh, 10%, 10px);
                     font-size: 70%;
-                    height: 28%;
-                    width: 90%;
                     margin-left: 5%;
-                    margin-bottom: 10%;
+
                 }
 
                 p {
                     font-size: 70%;
                 }
 
-                a {
-                    font-size: 10px;
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
                 }
             }
         }
@@ -1108,7 +1185,7 @@
     // contacto
 
     .contact_form {
-        background-color: #5d74df;
+        background-color: $primarycolor;
         width: 55vw;
         height: 55vh;
         margin-left: 25vw;
@@ -1155,6 +1232,7 @@
     .anuncio {
         width: 100%;
         height: 5vh;
+        animation: none;
 
         h1 {
             font-size: 85%;
@@ -1169,9 +1247,26 @@
                 border-radius: 10px;
                 margin-top: 1vh;
             }
-
-
         }
+
+        #navbarSupportedContent {
+
+            li {
+                background-color: #6e6e6c;
+                width: 60%;
+                border-radius: 10px;
+                margin-top: 10px;
+
+                a {
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+
+            }
+        }
+
+
+
     }
 
 
@@ -1180,7 +1275,7 @@
     main {
         .contenedor {
             display: block;
-            width: 95vw;
+            width: 94vw;
             height: 50%;
             margin-top: 10vh;
 
@@ -1188,7 +1283,7 @@
                 .col-md-6 {
                     img {
                         height: 33vh;
-                        width: 95vw;
+                        width: 96vw;
                     }
 
                     .card-text {
@@ -1216,8 +1311,8 @@
 
     // footer 
     .footer {
-        background-color: #4c6bf8;
-        width: 100vw;
+        background-color: $primarycolor;
+        width: 100%;
         height: 15vh;
         display: flex;
         position: absolute;
@@ -1229,7 +1324,7 @@
                 margin-top: 20px;
                 margin-left: 10px;
                 width: 4em;
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 border-radius: 10px;
                 border: black 1px solid;
             }
@@ -1243,7 +1338,7 @@
 
             h2 {
                 margin-top: 20px;
-                margin-right: 40px;
+                margin-right: 30px;
                 color: black;
                 width: 55%;
                 font-size: 60%;
@@ -1260,30 +1355,27 @@
         display: grid;
         grid-template-columns: repeat(2, 40vw);
         column-gap: 25px;
-        justify-content: center;
         margin-top: 25vh;
 
-        figure {
-            width: 40vw;
-            height: 95%;
+        .figure {
+            @include figure(40vw, 45vh, white);
             padding: 5px;
 
             img {
-                width: 75%;
-                height: 15vh;
-                padding: 5px;
+                @include img(70%, 10vh, 5px);
+
             }
 
             figcaption {
+                @include figcaption(90%, 10vh, 1vh, 20px);
+                margin-left: 10px;
+                font-size: 14px;
 
-                margin-bottom: 1vh;
-                height: 3.5em;
-                font-size: 12px;
 
             }
 
             p {
-                font-size: 9px;
+                font-size: 12px;
                 padding: 4px;
                 text-align: center;
                 height: 1em;
@@ -1291,10 +1383,10 @@
                 margin-bottom: 4vh;
             }
 
-            a {
-                font-size: 6px;
-                width: 30vw;
-                height: 3vh;
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -1308,39 +1400,35 @@
         row-gap: 4vh;
         justify-content: center;
         margin-top: 20vh;
+        margin-bottom: 80vh;
         margin-right: 2em;
 
-        figure {
-            width: 40vw;
-            height: 39vh;
+        .figure {
+            @include figure(40vw, 45vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
 
             img {
-                width: 24vw;
-                height: 15vh;
-                padding: 5px;
+                @include img(70%, 15vh, 5px);
+
             }
 
             figcaption {
-                margin-top: 15px;
-                margin-bottom: 25px;
-                font-size: 10px;
-                height: 5em;
+                @include figcaption(90%, 10vh, 25px, 15px);
+                font-size: 14px;
                 padding: 10px;
             }
 
             p {
-                font-size: 8px;
+                font-size: 12px;
                 padding: 10px;
             }
 
-            a {
-                font-size: 8px;
-                width: 30vw;
-                height: 3.5vh;
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -1349,32 +1437,28 @@
     .flex {
         display: flex;
         width: 99%;
-        justify-content: space-evenly;
-        margin-top: 10vh;
+        flex-direction: row;
+        flex-wrap: wrap;
 
 
         .kit {
-            width: 40%;
+            width: 40vw;
             height: 70vh;
 
 
-            figure {
-                width: 100%;
-                height: 75%;
+            .figure {
+                @include figure(40vw, 51vh, white);
                 border-radius: 10px;
 
                 img {
-                    width: 85%;
-                    height: 18vh;
+                    @include img(85%, 18vh, 0px);
                     margin-bottom: 20px;
                 }
 
                 figcaption {
-                    font-size: 70%;
-                    height: 18vh;
-                    width: 90%;
-
-
+                    @include figcaption(90%, 16vh, 0, 0);
+                    font-size: 10px;
+                    margin-left: 5px;
                 }
 
                 p {
@@ -1382,8 +1466,10 @@
                     height: 5%;
                 }
 
-                a {
-                    font-size: 10px;
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
                 }
 
             }
@@ -1417,7 +1503,7 @@
     // contacto
 
     .contact_form {
-        background-color: #5d74df;
+        background-color: $primarycolor;
         width: 65vw;
         height: 55vh;
         margin-left: 18vw;
@@ -1461,6 +1547,7 @@
 
 }
 
+
 @media (min-width: 320px) and (max-width: 389px) {
 
     body {
@@ -1474,6 +1561,7 @@
     .anuncio {
         width: 100vw;
         height: 6vh;
+        animation: none;
 
         h1 {
             font-size: 80%;
@@ -1492,13 +1580,15 @@
 
         #navbarSupportedContent {
             li {
-                background-color: #4c6bf8;
+                background-color: #6e6e6c;
                 margin-top: 10px;
-                width: 70%;
+                width: 60%;
                 border-radius: 10px;
 
                 a {
+                    font-size: 10px;
                     margin-left: 15px;
+                    color: white;
                 }
 
 
@@ -1513,12 +1603,15 @@
             width: 94vw;
             height: 75%;
             margin-top: 10vh;
+            justify-content: center;
 
             .row {
                 .col-md-6 {
                     img {
-                        height: 30vh;
-                        width: 95vw;
+                        @include img(92vw, 24vh, 5px);
+                        margin-left: 3px;
+                        
+
                     }
 
                     .card-text {
@@ -1547,7 +1640,7 @@
     // footer
 
     .footer {
-        background-color: #4c6bf8;
+        background-color: $primarycolor;
         width: 100%;
         height: 14vh;
         display: flex;
@@ -1558,7 +1651,7 @@
             img {
                 margin-top: 20px;
                 width: 4em;
-                background-color: white;
+                background-color: map-get($map: $colors, $key: uno);
                 border-radius: 10px;
                 border: black 1px solid;
             }
@@ -1593,40 +1686,37 @@
         grid-template-columns: repeat(1, 60vw);
         column-gap: 25px;
         justify-content: center;
-        margin-top: 10vh;
+        margin-top: 20vh;
+        margin-bottom: 80vh;
 
-        figure {
-            width: 60vw;
-            height: 37vh;
+        .figure {
+            @include figure(60vw, 40vh, white);
             padding: 5px;
 
 
             img {
-                width: 35vw;
-                height: 15vh;
-                padding: 5px;
+                @include img(35vw, 15vh, 5px);
+
             }
 
             figcaption {
-                margin-top: 10px;
-                margin-bottom: 1vh;
-                height: 5em;
-                font-size: 11px;
+                @include figcaption(90%,8vh,1vh,10px);
+                font-size: 12px;
                 text-align: center;
 
             }
 
             p {
-                font-size: 8px;
+                font-size: 10px;
                 padding: 4px;
                 text-align: center;
                 height: 3em;
             }
 
-            a {
-                font-size: 6px;
-                width: 30vw;
-                height: 3vh;
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -1639,37 +1729,37 @@
         column-gap: 15vw;
         row-gap: 4vh;
         justify-content: center;
-        margin-top: 20vh;
+        margin-top: 5vh;
+        margin-bottom: 100vh;
 
-        figure {
-            width: 55vw;
-            height: 40vh;
+        .figure {
+            @include figure(60vw, 35vh, white);
             border: black 3px solid;
             border-radius: 10px;
-            background-color: white;
             text-align: center;
+            margin-bottom: 5px;
 
             img {
-                width: 30vw;
-                height: 15vh;
-                padding: 5px;
+                @include img(30vw, 14vh, 5px);
+
             }
 
             figcaption {
-                margin-bottom: 5px;
-                font-size: 11px;
-                height: 5em;
-                padding: 10px;
+                @include figcaption(90%,5vh,1vh,5px);
+                font-size: 12px;
+                text-align: center;
+                margin-left: 5px;
             }
 
             p {
-                font-size: 8px;
+                font-size: 10px;
+
             }
 
-            a {
-                font-size: 8px;
-                width: 30vw;
-                height: 4vh;
+            .btn {
+                font-size: 12px;
+                width: 90%;
+                height: 5vh;
             }
         }
     }
@@ -1679,7 +1769,7 @@
     .flex {
         display: flex;
         width: 99%;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-top: 10vh;
         padding: 10px;
 
@@ -1687,22 +1777,22 @@
             width: 60%;
             height: 50vh;
             margin-bottom: 5vh;
+            margin-right: 50px;
 
-            figure {
-                width: 100%;
-                height: 100%;
+            .figure {
+                @include figure(70vw, 45vh, white);
                 border-radius: 10px;
 
+
+
                 img {
-                    width: 85%;
-                    height: 22vh;
-                    padding: 5px;
+                    @include img(62%, 16vh, 5px);
+
                 }
 
                 figcaption {
+                    @include figcaption(90%,13vh,0,0);
                     font-size: 70%;
-                    height: 25%;
-                    width: 90%;
                     margin-left: 5%;
                 }
 
@@ -1710,8 +1800,10 @@
                     font-size: 70%;
                 }
 
-                a {
-                    font-size: 10px;
+                .btn {
+                    font-size: 12px;
+                    width: 90%;
+                    height: 5vh;
                 }
 
             }
@@ -1724,7 +1816,7 @@
         height: 53vh;
 
         img {
-            opacity: .8;
+
             height: 40vh;
         }
 
@@ -1746,7 +1838,7 @@
 
     // contacto 
     .contact_form {
-        background-color: #5d74df;
+        background-color: $primarycolor;
         width: 70vw;
         height: 52vh;
         margin-left: 15vw;

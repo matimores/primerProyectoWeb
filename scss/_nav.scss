@@ -2,6 +2,7 @@
 .navbar{
    margin-top: 5%;
     .navbar-brand{
+        
 
      img{
         background-color: $backcolor;
@@ -24,7 +25,12 @@
             color: $secondarycolor;
             font-family: $mainfonts;
             font-size: $textSm;  
-            margin-right: 2vw;
+            margin-right: 3em;
+            transition: 0.5s;
+            object-fit: cover;
+        }
+        a:hover{
+            transform: scale(1.5);
         }
     }
     }

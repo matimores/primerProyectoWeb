@@ -27,9 +27,14 @@ figcaption{
     margin-left: 5px;
 }
 .btn{
-    width: 15vw;
+    width: 12vw;
     height: 5vh;
     font-size: 14px;
+}
+footer{
+    color: white;
+    width: 45%;
+    font-size: 20px; 
 }
 
 
@@ -47,3 +52,19 @@ figcaption{
     padding: $padding;
 
 }
+@mixin figcaption($width,$height,$margin-bottom,$margin-top){
+    width: $width;
+    height: $height;
+    margin-bottom: $margin-bottom;
+    margin-top: $margin-top;
+}
+
+//maps
+
+$colors:(
+    "uno": white,
+    "dos": black,
+    "tres": #3d5ce4 ,
+    "cuatro": grey,
+
+);

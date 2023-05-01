@@ -1,14 +1,17 @@
 // header 
 
 .anuncio{
-    background-color: #4c6bf8;
+    background-color: #f8b34c;
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     text-align: center;
     font-family: sans-serif;
-    padding: 8px;
+    animation: movimiento 2s linear infinite;
+    
     
         h1{
             font-size: $textMd; 
+            padding: 8px;
+           
         }
 }
