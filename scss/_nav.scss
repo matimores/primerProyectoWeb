@@ -1,6 +1,9 @@
 // nav 
 .navbar{
-   margin-top: 5%;
+    background-color: rgba(133, 130, 130, 0.74);
+    width: 100%;
+    height: 20vh;
+    margin-top: 1.5vh;
     .navbar-brand{
         
 
@@ -30,7 +33,7 @@
             object-fit: cover;
         }
         a:hover{
-            transform: scale(1.5);
+            transform: scale(1.3);
         }
     }
     }

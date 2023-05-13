@@ -1,37 +1,84 @@
 // footer 
 
 .footer {
-    margin-top: 20%;
-    width: 97%;
-    height: 10vh;
+    background-color: rgba(133, 130, 130, 0.74);
+    margin-top: 24%;
+    width: 100%;
+    height: 28vh;
     display: flex;
     position: absolute;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+
+
 
     .p {
-        width: 20vw;
+        margin-top: 30px;
+        width: 25vw;
+        height: 20vh;
         text-align: start;
+        margin-left: 5%;
+
 
         img {
             background-color: white;
-            width: 20vh;
+            width: 18vh;
             border: black 2px solid;
             border-radius: 10px;
+
         }
-        h1{
+
+        h1 {
             @extend footer;
-            
+            color: black;
+            font-size: $textSm;
+
         }
-        h2{
+
+        h2 {
+            width: 20vw;
             @extend footer;
-            
+            color: black;
+            font-size: $textSm;
+
+
         }
     }
-    .mapa{
-        height: 30vh;
-        margin-bottom: 20px;
-    }
+
 }
 
+footer {
+    .autor {
+        background-color: white;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        position: absolute;
+        margin-top: 40%;
+        margin-bottom: 5px;
 
+
+        p {
+            color: black;
+            margin-left: 33%;
+
+        }
+
+    }
+
+    .svg {
+        display: flex;
+        position: absolute;
+        margin-top: 36%;
+        background-color: #b1732d;
+        width: 100%;
+        height: 12vh;
+        justify-content: center;
+
+        svg {
+            margin-left: 4vw;
+            padding: 5px;
+        }
+
+    }
+}

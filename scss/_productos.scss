@@ -1,136 +1,154 @@
 // Productos
 // camaras
+.segunda {
+    background-image: url(../img/camaras.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
 
-.gridcamara {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    column-gap: 45px;
-    justify-content: center;
-    margin-top: 25vh;
-    height: 100vh;
-    justify-content: center;
-    transition: 0.5s;
+    .gridcamara {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        column-gap: 45px;
+        justify-content: center;
+        margin-top: 25vh;
+        height: 100%;
+        justify-content: center;
+        transition: 0.5s;
 
-    .figure {
-        @include figure(18vw, 68vh, white);
-       border: black 3px solid;
-        border-radius: 10px;
+        .figure {
+            @include figure(18vw, 68vh, white);
+            border: black 3px solid;
+            border-radius: 10px;
+            text-align: center;
 
-        text-align: center;
+            img {
+                @extend .producto;
 
-        img {
-            @extend .producto;
+            }
 
+            figcaption {
+                @extend figcaption;
+
+            }
+
+            p {
+                @extend .precio;
+
+            }
+
+            .btn {
+                @extend .btn;
+                transition: 0.5s;
+                object-fit: cover;
+                background-color: #3d5ce4;
+
+            }
+
+            .btn:hover {
+                transform: scale(1.2);
+                background-color: black;
+                color: white;
+                border: none;
+            }
         }
-        figcaption {
-            @extend figcaption;
 
-        }
 
-        p {
-            @extend .precio;
-
-        }
-
-        .btn {
-            @extend .btn;
-            transition: 0.5s;
-            object-fit: cover;
-
-        }
-
-        .btn:hover {
-            transform: scale(1.2);
-            background-color: black;
-            color: white;
-            border: none;
-        }
     }
 
-
 }
-
-
 
 // sistemasolar
-.gridsolar {
-    display: grid;
-    grid-template-columns: repeat(4, 20%);
-    justify-content: space-evenly;
-    margin-top: 25vh;
-    height: 100vh;
-    justify-content: center;
+.tercera {
+    background-image: url(../img/paneles.webp);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 70%;
 
 
-    .figure {
-        @include figure(18vw, 68vh, white);
-        border: black 3px solid;
-        border-radius: 10px;
+    .gridsolar {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        justify-content: space-evenly;
+        margin-top: 25vh;
+        height: 100vh;
+        justify-content: center;
+        margin-bottom: 30vh;
 
-        text-align: center;
 
-        img {
-            @extend .producto;
+        .figure {
+            @include figure(18vw, 68vh, white);
+            border: black 3px solid;
+            border-radius: 10px;
+
+            text-align: center;
+
+            img {
+                @extend .producto;
+
+            }
+
+            figcaption {
+                @extend figcaption;
+            }
+
+            p {
+                @extend .precio;
+
+            }
+
+            .btn {
+                @extend .btn;
+                transition: 0.5s;
+                object-fit: cover;
+
+            }
+
+            .btn:hover {
+                transform: scale(1.2);
+                background-color: black;
+                color: white;
+                border: none;
+            }
+
 
         }
-
-        figcaption {
-            @extend figcaption;
-        }
-
-        p {
-            @extend .precio;
-
-        }
-
-        .btn {
-            @extend .btn;
-            transition: 0.5s;
-            object-fit: cover;
-
-        }
-
-        .btn:hover {
-            transform: scale(1.2);
-            background-color: black;
-            color: white;
-            border: none;
-        }
-
-
     }
-}
 
+}
 
 // kits 
 .flex {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-left: 5px;
+    margin-left: 8.5%;
     margin-top: 25vh;
+    margin-bottom: 20vh;
 
     .kit {
+        width: 25vw;
+        
 
         .figure {
-            @include figure(18vw,68vh,white);
+            @include figure(18vw, 68vh, white);
             border: rgb(8, 8, 8) 3px solid;
             text-align: center;
 
 
             img {
                 @extend .producto;
-                
+
             }
 
             figcaption {
                 @extend figcaption;
-                
+
             }
 
             p {
                 @extend .precio;
-                
+
             }
 
             .btn {
