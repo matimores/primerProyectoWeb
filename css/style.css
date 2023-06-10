@@ -1432,8 +1432,8 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   body {
     background-image: url(../img/pruebaimg/plano-estacion-trabajo-espacio-copia-computadora-portatil.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70%;
+    background-size: contain 100% 100%;
+    background-position: 40%;
     background-attachment: none;
   }
   .anuncio {
@@ -1471,23 +1471,25 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   main .contenedor {
     display: block;
     width: 94vw;
-    height: 50%;
+    height: 48%;
     margin-top: 10vh;
   }
   main .contenedor .row {
-    height: 61vh;
+    height: 56vh;
+  }
+  main .contenedor .row .col-md-6 {
+    justify-content: center;
   }
   main .contenedor .row .col-md-6 img {
-    height: 31vh;
+    height: 30vh;
     width: 96vw;
     margin-top: 1px;
   }
   main .contenedor .row .col-md-6 .card-text {
     margin-top: 5px;
-    margin-bottom: 10px;
     text-align: start;
     color: white;
-    font-size: 75%;
+    font-size: 78%;
     width: 85vw;
     height: 21vh;
     text-align: center;
@@ -1497,6 +1499,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 100%;
     height: 20vh;
     margin-top: 5px;
+    margin-bottom: 1px;
     text-align: center;
   }
   .footer {
@@ -1519,7 +1522,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .footer .p img {
     background-color: white;
-    width: 10vh;
+    width: 8vh;
     border: black 1px solid;
     border-radius: 10px;
   }
@@ -1567,7 +1570,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 40vw;
-    height: 47vh;
+    height: 45vh;
     background-color: white;
     padding: 5px;
     border: black 2px solid;
@@ -1612,7 +1615,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure {
     width: 40vw;
-    height: 48vh;
+    height: 45vh;
     background-color: white;
     border: black 2px solid;
     border-radius: 10px;
@@ -1655,7 +1658,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 40vw;
-    height: 51vh;
+    height: 49vh;
     background-color: white;
     border-radius: 10px;
   }
@@ -1696,7 +1699,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border: black 2px solid;
   }
   .cuarta .texto .card .nosotrost {
-    font-size: 13px;
+    font-size: 14px;
     padding: 10px;
   }
   .contacto {
@@ -1708,7 +1711,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .contacto .contact_form {
     background-color: #788be2;
     width: 65vw;
-    height: 72vh;
+    height: 60vh;
     margin-right: 5px;
     margin-left: 5%;
     border-radius: 20px;

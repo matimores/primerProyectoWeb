@@ -1606,10 +1606,10 @@
     body {
         background-image: url(../img/pruebaimg/plano-estacion-trabajo-espacio-copia-computadora-portatil.webp);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 70%;
+        background-size: contain 100% 100%;
+        background-position: 40%;
         background-attachment: none;
-
+        
     }
 
     //header
@@ -1688,16 +1688,17 @@
         .contenedor {
             display: block;
             width: 94vw;
-            height: 50%;
+            height: 48%;
             margin-top: 10vh;
 
             .row {
-                height: 61vh;
+                height: 56vh;
 
                 .col-md-6 {
+                    justify-content: center;
 
                     img {
-                        height: 31vh;
+                        height: 30vh;
                         width: 96vw;
                         margin-top: 1px;
 
@@ -1705,10 +1706,10 @@
 
                     .card-text {
                         margin-top: 5px;
-                        margin-bottom: 10px;
+                        
                         text-align: start;
                         color: white;
-                        font-size: 75%;
+                        font-size: 78%;
                         width: 85vw;
                         height: 21vh;
                         text-align: center;
@@ -1719,6 +1720,7 @@
                         width: 100%;
                         height: 20vh;
                         margin-top: 5px;
+                        margin-bottom: 1px;
                         text-align: center;
                     }
                 }
@@ -1752,7 +1754,7 @@
 
             img {
                 background-color: white;
-                width: 10vh;
+                width: 8vh;
                 border: black 1px solid;
                 border-radius: 10px;
 
@@ -1828,7 +1830,7 @@
             margin-top: 10vh;
 
             .figure {
-                @include figure(40vw, 47vh, white);
+                @include figure(40vw, 45vh, white);
                 padding: 5px;
                 border: black 2px solid;
 
@@ -1880,7 +1882,7 @@
             height: 50%;
 
             .figure {
-                @include figure(40vw, 48vh, white);
+                @include figure(40vw, 45vh, white);
                 border: black 2px solid;
                 border-radius: 10px;
                 text-align: center;
@@ -1927,7 +1929,7 @@
 
 
             .figure {
-                @include figure(40vw, 51vh, white);
+                @include figure(40vw, 49vh, white);
                 border-radius: 10px;
 
                 img {
@@ -1975,7 +1977,7 @@
 
 
                 .nosotrost {
-                    font-size: 13px;
+                    font-size: 14px;
                     padding: 10px;
                 }
             }
@@ -1996,7 +1998,7 @@
         .contact_form {
             background-color: #788be2;
             width: 65vw;
-            height: 72vh;
+            height: 60vh;
             margin-right: 5px;
             margin-left: 5%;
             border-radius: 20px;
