@@ -2,6 +2,7 @@
 // camaras
 .segunda {
     background-image: url(../img/camaras.webp);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 70%;
@@ -61,9 +62,10 @@
 // sistemasolar
 .tercera {
     background-image: url(../img/paneles.webp);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
 
 
     .gridsolar {
@@ -128,7 +130,7 @@ background-position: 70%;
 
     .kit {
         width: 25vw;
-        
+
 
         .figure {
             @include figure(18vw, 68vh, white);

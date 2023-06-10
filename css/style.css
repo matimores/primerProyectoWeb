@@ -62,18 +62,12 @@ footer, .footer .p h2, .footer .p h1 {
   padding: 8px;
 }
 
-.navbar {
-  background-color: rgba(133, 130, 130, 0.74);
-  width: 100%;
-  height: 20vh;
-  margin-top: 1.5vh;
-}
-.navbar .navbar-brand img {
+.navbar .logo img {
   background-color: white;
   width: 10vw;
-  border-radius: 15px;
-  border: black 2px solid;
-  margin-left: 2vw;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 .navbar .navbar-toggler {
   background-color: rgba(153, 150, 147, 0.6980392157);
@@ -82,7 +76,7 @@ footer, .footer .p h2, .footer .p h1 {
 .navbar #navbarSupportedContent li a {
   color: white;
   font-family: "roboto", sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-right: 3em;
   transition: 0.5s;
   object-fit: cover;
@@ -124,6 +118,7 @@ footer, .footer .p h2, .footer .p h1 {
 
 .segunda {
   background-image: url(../img/camaras.webp);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 70%;
@@ -160,6 +155,7 @@ footer, .footer .p h2, .footer .p h1 {
 
 .tercera {
   background-image: url(../img/paneles.webp);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 70%;
@@ -352,38 +348,38 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .anuncio {
     background-color: #3d5ce4;
     width: 100%;
-    height: 6vh;
+    height: 7vh;
     text-align: center;
     font-family: sans-serif;
     animation: none;
   }
   .anuncio h1 {
-    font-size: 1.5em;
-    padding: 8px;
+    font-size: 20px;
+    padding: 6px;
   }
   .navbar {
     background-color: transparent;
-    height: 50vh;
-    margin-top: 5px;
+    margin-top: 1px;
   }
-  .navbar .container-fluid .navbar-brand img {
-    background-color: white;
-    width: 15vw;
-    border-radius: 10px;
-    margin-left: 2vw;
+  .navbar .logo img {
+    width: 12vw;
+    border: black 2px solid;
+  }
+  .navbar .container-fluid {
+    justify-content: end;
   }
   .navbar .container-fluid .navbar-toggler {
     margin-right: 2em;
     border: black 1px solid;
   }
   .navbar .container-fluid #navbarSupportedContent ul li {
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: rgba(3, 3, 3, 0.527);
     width: 40vw;
   }
   .navbar .container-fluid #navbarSupportedContent ul li a {
     color: rgb(255, 254, 254);
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: sans-serif;
     margin-left: 20px;
   }
@@ -395,29 +391,32 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .contenedor {
     width: 98%;
-    height: 61%;
+    height: 65%;
     margin-top: 6vh;
     justify-content: center;
     background-color: rgb(12, 12, 12);
   }
+  .contenedor .row .col-md-6 {
+    justify-content: center;
+  }
   .contenedor .row .col-md-6 .img-fluid {
     margin-left: 1px;
-    height: 40vh;
+    height: 42vh;
     width: 98vw;
     padding: 5px;
   }
   .contenedor .row .col-md-6 .card-text {
     color: rgb(250, 249, 249);
-    font-size: 16px;
+    font-size: 14px;
     width: 45vw;
     margin-top: 40px;
   }
   .contenedor .row .col-md-6 .card-text3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
-    margin-top: 18%;
+    margin-top: 19%;
     width: 100%;
     height: 19vh;
     display: flex;
@@ -428,9 +427,9 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .footer .p {
     margin-top: 25px;
     width: 25vw;
-    height: 20vh;
+    height: 8vh;
     text-align: start;
-    margin-left: 5%;
+    margin-left: 1%;
   }
   .footer .p img {
     background-color: white;
@@ -441,20 +440,20 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .footer .p h1 {
     width: 45%;
     color: black;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .footer .p h2 {
     width: 45%;
     color: black;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
     width: 100%;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     position: absolute;
-    margin-top: 42%;
+    margin-top: 38%;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
@@ -463,7 +462,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
     position: absolute;
-    margin-top: 35%;
+    margin-top: 32%;
     background-color: #b1732d;
     width: 100%;
     height: 9vh;
@@ -484,22 +483,22 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 25vw;
     height: 50vh;
     background-color: white;
-    border: black 3px solid;
+    border: black 2px solid;
     border-radius: 10px;
     text-align: center;
     margin-left: 25px;
   }
   .segunda .gridcamara .figure img {
-    width: 60%;
-    height: 14vh;
+    width: 50%;
+    height: 12vh;
     padding: 5px;
   }
   .segunda .gridcamara .figure figcaption {
     width: 85%;
     height: 9vh;
-    margin-bottom: 5vh;
+    margin-bottom: 7vh;
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 11px;
   }
   .segunda .gridcamara .figure p {
     font-size: 13px;
@@ -521,16 +520,16 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure {
     width: 25vw;
-    height: 55vh;
+    height: 53vh;
     background-color: rgb(253, 251, 251);
-    border: black 3px solid;
+    border: black 2px solid;
     border-radius: 10px;
     text-align: center;
     margin-left: 25px;
   }
   .tercera .gridsolar .figure img {
-    width: 70%;
-    height: 18vh;
+    width: 65%;
+    height: 17vh;
     padding: 15px;
   }
   .tercera .gridsolar .figure figcaption {
@@ -539,6 +538,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     margin-bottom: 5vh;
     margin-top: 15px;
     text-align: center;
+    font-size: 12px;
   }
   .tercera .gridsolar .figure p {
     text-align: center;
@@ -564,23 +564,23 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 25vw;
-    height: 55vh;
+    height: 56vh;
     background-color: white;
     border: black 3px solid;
     text-align: center;
   }
   .flex .kit .figure img {
-    width: 17vw;
-    height: 18vh;
+    width: 14vw;
+    height: 15vh;
     padding: 5px;
     margin-bottom: 5%;
   }
   .flex .kit .figure figcaption {
     width: 90%;
-    height: 15vh;
+    height: 18vh;
     margin-bottom: 5%;
     margin-top: 0;
-    font-size: 75%;
+    font-size: 70%;
     margin-left: 5%;
   }
   .flex .kit .figure p {
@@ -592,11 +592,11 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 90%;
     height: 5vh;
   }
-  .texto {
+  .cuarta .texto {
     margin-bottom: 5vh;
     margin-top: 1vh;
   }
-  .texto .card {
+  .cuarta .texto .card {
     width: 70vw;
     height: 60vh;
     margin-left: 15%;
@@ -606,8 +606,8 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     color: black;
     border: black 2px solid;
   }
-  .texto .card .nosotrost {
-    font-size: 25px;
+  .cuarta .texto .card .nosotrost {
+    font-size: 20px;
     padding: 10px;
   }
   .contacto {
@@ -650,7 +650,25 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .anuncio {
     animation: none;
   }
-  .navbar #navbarSupportedContent a:hover {
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li {
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgba(3, 3, 3, 0.527);
+    width: 40vw;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li a {
+    color: rgb(255, 254, 254);
+    font-size: 1.2em;
+    font-family: sans-serif;
+    margin-left: 30px;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li a:hover {
+    transform: scale(1);
+  }
+  .navbar .container-fluid #navbarSupportedContent a:hover {
     background-color: transparent;
   }
   .contenedor {
@@ -677,7 +695,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
-    margin-top: 25%;
+    margin-top: 20%;
     width: 100%;
     height: 19vh;
     display: flex;
@@ -714,7 +732,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 6vh;
     display: flex;
     position: absolute;
-    margin-top: 42%;
+    margin-top: 37%;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
@@ -724,7 +742,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
     position: absolute;
-    margin-top: 37%;
+    margin-top: 32%;
     background-color: #b1732d;
     width: 100%;
     height: 8vh;
@@ -844,53 +862,54 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar {
     background-color: transparent;
-    height: 45vh;
   }
-  .navbar .navbar-brand img {
-    background-color: white;
-    width: 17vw;
-    border-radius: 10px;
-    margin-left: 2vw;
+  .navbar .logo img {
+    width: 13vw;
   }
-  .navbar #navbarSupportedContent li {
-    margin-top: 10px;
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid #navbarSupportedContent li {
+    margin-top: 5px;
     background-color: rgba(3, 3, 3, 0.527);
     width: 50vw;
   }
-  .navbar #navbarSupportedContent li a {
+  .navbar .container-fluid #navbarSupportedContent li a {
     color: white;
     margin-left: 10px;
+    font-size: 13px;
   }
-  .navbar #navbarSupportedContent li a:hover {
+  .navbar .container-fluid #navbarSupportedContent li a:hover {
     transform: scale(1);
   }
   main .contenedor {
     display: block;
     width: 98%;
-    height: 75vh;
+    height: 70vh;
     margin-top: 10vh;
     margin-left: 6px;
   }
   main .contenedor .row .col-md-6 img {
-    height: 42vh;
+    height: 40vh;
     width: 98vw;
   }
   main .contenedor .row .col-md-6 .card-text {
+    margin-top: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     width: 93vw;
     height: 23vh;
     text-align: center;
   }
   main .contenedor .row .col-md-6 .card-text3 {
-    font-size: 17px;
+    font-size: 13px;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 2px;
     text-align: center;
   }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
-    margin-top: 15%;
+    margin-top: 16%;
     width: 100%;
     height: 19vh;
     display: flex;
@@ -901,7 +920,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .footer .p {
     margin-top: 25px;
     width: 25vw;
-    height: 20vh;
+    height: 9vh;
     text-align: start;
     margin-left: 5%;
   }
@@ -924,10 +943,10 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
     width: 100%;
-    height: 5vh;
+    height: 6vh;
     display: flex;
     position: absolute;
-    margin-top: 42%;
+    margin-top: 40%;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
@@ -945,7 +964,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     margin-left: 4vw;
-    padding: 5px;
+    width: 7vw;
   }
   .segunda .gridcamara {
     grid-template-columns: repeat(2, 40vw);
@@ -954,15 +973,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 35vw;
-    height: 50vh;
+    height: 51vh;
     background-color: white;
     border: black 3px solid;
     border-radius: 10px;
     text-align: center;
   }
   .segunda .gridcamara .figure img {
-    width: 60%;
-    height: 14vh;
+    width: 47%;
+    height: 12vh;
     padding: 5px;
   }
   .segunda .gridcamara .figure figcaption {
@@ -970,7 +989,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 16vh;
     margin-bottom: 5px;
     margin-top: 5px;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .segunda .gridcamara .figure .btn {
     font-size: 12px;
@@ -989,7 +1008,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure {
     width: 35vw;
-    height: 50vh;
+    height: 51vh;
     background-color: white;
     border: black 3px solid;
     border-radius: 10px;
@@ -1000,6 +1019,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 10vh;
     margin-bottom: 5px;
     margin-top: 5px;
+    font-size: 12px;
   }
   .tercera .gridsolar .figure img {
     width: 50%;
@@ -1029,7 +1049,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 35vw;
-    height: 50vh;
+    height: 52vh;
     background-color: white;
     border: black 3px solid;
     text-align: center;
@@ -1045,12 +1065,12 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 15vh;
     margin-bottom: 5%;
     margin-top: 0;
-    font-size: 65%;
+    font-size: 60%;
     margin-left: 5%;
   }
   .flex .kit .figure p {
     font-size: 15px;
-    height: 3em;
+    height: 2em;
   }
   .flex .kit .figure .btn {
     font-size: 12px;
@@ -1069,7 +1089,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border: black 2px solid;
   }
   .cuarta .texto .card .nosotrost {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
   }
   .contacto {
@@ -1082,12 +1102,12 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .contacto .contact_form {
     background-color: #788be2;
     width: 45vw;
-    height: 70vh;
+    height: 73vh;
     border-radius: 20px;
     margin-right: 5px;
   }
   .contacto .contact_form .formulario {
-    padding: 25px;
+    padding: 10px;
   }
   .contacto .contact_form .formulario h1 {
     font-size: 15px;
@@ -1100,15 +1120,20 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     text-align: center;
     margin-bottom: 25px;
   }
+  .contacto .contact_form .formulario label {
+    font-size: 12px;
+  }
   .contacto .contact_form .formulario input {
     width: 100%;
+    height: 4vh;
   }
   .contacto .contact_form .formulario button {
     width: 100%;
+    height: 5vh;
   }
   .contacto .contact_form .formulario .texto_mensaje {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
   }
   .contacto .mapa {
     width: 45vw;
@@ -1127,57 +1152,59 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar {
     background-color: transparent;
-    height: 45vh;
   }
-  .navbar .navbar-brand img {
-    background-color: white;
-    width: 18vw;
-    border-radius: 10px;
-    margin-left: 2vw;
+  .navbar .logo img {
+    width: 15vw;
+    border: black 2px solid;
   }
-  .navbar #navbarSupportedContent li {
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid #navbarSupportedContent li {
     background-color: rgba(3, 3, 3, 0.527);
     width: 50vw;
-    margin-top: 10px;
+    margin-top: 5px;
   }
-  .navbar #navbarSupportedContent li a {
+  .navbar .container-fluid #navbarSupportedContent li a {
     color: white;
     margin-left: 10px;
+    font-size: 0.8em;
   }
-  .navbar #navbarSupportedContent li a:hover {
+  .navbar .container-fluid #navbarSupportedContent li a:hover {
     transform: scale(1);
   }
   main .contenedor {
     display: block;
     width: 95%;
     height: 70vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left: 12px;
   }
   main .contenedor .row .col-md-6 img {
-    height: 40vh;
+    height: 38vh;
     width: 98vw;
   }
   main .contenedor .row .col-md-6 .card-text {
     padding: 10px;
     color: white;
-    font-size: 100%;
+    font-size: 90%;
     width: 90vw;
     height: 25vh;
-    margin-top: 1px;
+    margin-top: 4px;
+    text-align: center;
   }
   main .contenedor .row .col-md-6 .card-text3 {
-    font-size: 83%;
+    font-size: 78%;
     width: 100%;
     height: 22vh;
     margin-top: 5px;
-    margin-top: 10px;
+    text-align: center;
   }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
     margin-top: 10%;
     width: 100%;
-    height: 19vh;
+    height: 17vh;
     display: flex;
     position: absolute;
     text-align: center;
@@ -1186,25 +1213,25 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .footer .p {
     margin-top: 25px;
     width: 25vw;
-    height: 20vh;
+    height: 8vh;
     text-align: start;
     margin-left: 5%;
   }
   .footer .p img {
     background-color: white;
     width: 10vh;
-    border: black 2px solid;
+    border: black 1px solid;
     border-radius: 10px;
   }
   .footer .p h1 {
     width: 45%;
     color: black;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .footer .p h2 {
     width: 20vw;
     color: black;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
@@ -1212,7 +1239,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 5vh;
     display: flex;
     position: absolute;
-    margin-top: 42%;
+    margin-top: 38%;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
@@ -1222,7 +1249,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
     position: absolute;
-    margin-top: 32%;
+    margin-top: 29%;
     background-color: #b1732d;
     width: 100vw;
     height: 8vh;
@@ -1242,7 +1269,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 38vw;
-    height: 50vh;
+    height: 53vh;
     background-color: white;
     padding: 5px;
   }
@@ -1256,7 +1283,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 15vh;
     margin-bottom: 1vh;
     margin-top: 20px;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .segunda .gridcamara .figure .btn {
     font-size: 12px;
@@ -1270,12 +1297,12 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     row-gap: 15vh;
     justify-content: center;
     margin-top: 10vh;
-    margin-bottom: 80vh;
     margin-right: 40px;
+    height: 50%;
   }
   .tercera .gridsolar .figure {
     width: 38vw;
-    height: 50vh;
+    height: 51vh;
     background-color: white;
     border: black 3px solid;
     border-radius: 10px;
@@ -1292,6 +1319,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     margin-bottom: 20px;
     margin-top: 15px;
     padding: 10px;
+    font-size: 12px;
   }
   .tercera .gridsolar .figure p {
     height: 5vh;
@@ -1314,7 +1342,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 38vw;
-    height: 50vh;
+    height: 52vh;
     background-color: white;
   }
   .flex .kit .figure img {
@@ -1327,7 +1355,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 15vh;
     margin-bottom: 10%;
     margin-top: 10px;
-    font-size: 70%;
+    font-size: 65%;
     margin-left: 5%;
   }
   .flex .kit .figure p {
@@ -1351,7 +1379,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border: black 2px solid;
   }
   .cuarta .texto .card .nosotrost {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
   }
   .contacto {
@@ -1362,13 +1390,13 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .contacto .contact_form {
     background-color: #788be2;
-    width: 65vw;
-    height: 62vh;
-    margin-left: 5%;
+    width: 60vw;
+    height: 72vh;
+    margin-left: 25%;
     border-radius: 20px;
   }
   .contacto .contact_form .formulario {
-    padding: 15px;
+    padding: 10px;
   }
   .contacto .contact_form .formulario h1 {
     font-size: 15px;
@@ -1379,51 +1407,65 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     font-size: 10px;
     text-align: center;
   }
+  .contacto .contact_form .formulario label {
+    font-size: 12px;
+  }
   .contacto .contact_form .formulario input {
     width: 100%;
+    height: 3vh;
   }
   .contacto .contact_form .formulario button {
     width: 100%;
+    height: 5vh;
   }
   .contacto .contact_form .formulario .texto_mensaje {
     width: 100%;
-    height: 5vh;
+    height: 4vh;
   }
   .contacto .mapa {
-    width: 90vw;
+    width: 100vw;
     height: 20vh;
-    border-radius: 20px;
+    border-radius: 0;
   }
 }
 @media (min-width: 390px) and (max-width: 479px) {
+  body {
+    background-image: url(../img/pruebaimg/plano-estacion-trabajo-espacio-copia-computadora-portatil.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    background-attachment: none;
+  }
   .anuncio {
     width: 100%;
     height: 5vh;
     animation: none;
+    background-color: #4e65cf;
   }
   .anuncio h1 {
-    font-size: 85%;
+    font-size: 90%;
   }
   .navbar {
     background-color: transparent;
-    height: 45vh;
   }
-  .navbar .navbar-brand img {
-    width: 22vw;
-    border-radius: 10px;
-    margin-top: 1vh;
+  .navbar .logo img {
+    width: 20vw;
+    border: black 2px solid;
   }
-  .navbar #navbarSupportedContent li {
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li {
     background-color: rgba(3, 3, 3, 0.527);
     width: 60vw;
     margin-top: 10px;
   }
-  .navbar #navbarSupportedContent li a {
-    font-size: 15px;
+  .navbar .container-fluid #navbarSupportedContent ul li a {
+    font-size: 11px;
     margin-left: 10px;
     color: white;
   }
-  .navbar #navbarSupportedContent li a:hover {
+  .navbar .container-fluid #navbarSupportedContent ul li a:hover {
     transform: scale(1);
   }
   main .contenedor {
@@ -1432,25 +1474,30 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 50%;
     margin-top: 10vh;
   }
+  main .contenedor .row {
+    height: 61vh;
+  }
   main .contenedor .row .col-md-6 img {
-    height: 33vh;
+    height: 31vh;
     width: 96vw;
+    margin-top: 1px;
   }
   main .contenedor .row .col-md-6 .card-text {
     margin-top: 5px;
+    margin-bottom: 10px;
     text-align: start;
     color: white;
-    font-size: 80%;
+    font-size: 75%;
     width: 85vw;
-    height: 18vh;
+    height: 21vh;
     text-align: center;
   }
   main .contenedor .row .col-md-6 .card-text3 {
-    font-size: 83%;
+    font-size: 65%;
     width: 100%;
-    height: 22vh;
+    height: 20vh;
     margin-top: 5px;
-    margin-top: 10px;
+    text-align: center;
   }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
@@ -1464,14 +1511,16 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .footer .p {
     width: 30vw;
-    height: 20vh;
+    height: 6vh;
     text-align: start;
     margin-left: 5%;
+    margin-top: 15px;
+    justify-content: center;
   }
   .footer .p img {
     background-color: white;
-    width: 8vh;
-    border: black 2px solid;
+    width: 10vh;
+    border: black 1px solid;
     border-radius: 10px;
   }
   .footer .p h1 {
@@ -1486,10 +1535,11 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
     width: 100%;
-    height: 5vh;
+    height: 4vh;
     display: flex;
     position: absolute;
-    margin-top: 54%;
+    margin-top: 49%;
+    margin-bottom: 0.2px;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
@@ -1499,15 +1549,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
     position: absolute;
-    margin-top: 43%;
+    margin-top: 38%;
     background-color: #b1732d;
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     justify-content: center;
   }
   footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     margin-left: 4vw;
-    width: 8vw;
+    width: 9vw;
   }
   .segunda .gridcamara {
     display: grid;
@@ -1517,13 +1567,14 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 40vw;
-    height: 45vh;
+    height: 47vh;
     background-color: white;
     padding: 5px;
+    border: black 2px solid;
   }
   .segunda .gridcamara .figure img {
-    width: 65%;
-    height: 10vh;
+    width: 58%;
+    height: 11vh;
     padding: 5px;
   }
   .segunda .gridcamara .figure figcaption {
@@ -1532,7 +1583,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     margin-bottom: 1vh;
     margin-top: 20px;
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 11px;
   }
   .segunda .gridcamara .figure p {
     font-size: 12px;
@@ -1546,6 +1597,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     font-size: 12px;
     width: 90%;
     height: 5vh;
+    text-align: center;
   }
   .tercera .gridsolar {
     display: grid;
@@ -1554,19 +1606,20 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     row-gap: 4vh;
     justify-content: center;
     margin-top: 10vh;
-    margin-bottom: 80vh;
+    margin-bottom: 5vh;
     margin-right: 2em;
+    height: 50%;
   }
   .tercera .gridsolar .figure {
     width: 40vw;
-    height: 45vh;
+    height: 48vh;
     background-color: white;
-    border: black 3px solid;
+    border: black 2px solid;
     border-radius: 10px;
     text-align: center;
   }
   .tercera .gridsolar .figure img {
-    width: 65%;
+    width: 60%;
     height: 13vh;
     padding: 5px;
   }
@@ -1575,7 +1628,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 12vh;
     margin-bottom: 25px;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
   }
   .tercera .gridsolar .figure p {
@@ -1602,12 +1655,12 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 40vw;
-    height: 47vh;
+    height: 51vh;
     background-color: white;
     border-radius: 10px;
   }
   .flex .kit .figure img {
-    width: 70%;
+    width: 65%;
     height: 14vh;
     padding: 5px;
     margin-bottom: 20px;
@@ -1622,7 +1675,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure p {
     font-size: 70%;
-    height: 5%;
+    height: 10%;
   }
   .flex .kit .figure .btn {
     font-size: 12px;
@@ -1643,7 +1696,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border: black 2px solid;
   }
   .cuarta .texto .card .nosotrost {
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px;
   }
   .contacto {
@@ -1655,16 +1708,16 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .contacto .contact_form {
     background-color: #788be2;
     width: 65vw;
-    height: 60vh;
+    height: 72vh;
     margin-right: 5px;
     margin-left: 5%;
     border-radius: 20px;
   }
   .contacto .contact_form .formulario {
-    padding: 10px;
+    padding: 8px;
   }
   .contacto .contact_form .formulario h1 {
-    font-size: 10px;
+    font-size: 12px;
     font-family: sans-serif;
     text-align: center;
   }
@@ -1672,12 +1725,18 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     font-size: 10px;
     text-align: center;
   }
+  .contacto .contact_form .formulario label {
+    font-size: 10px;
+  }
   .contacto .contact_form .formulario input {
     width: 100%;
+    height: 4vh;
+    margin-bottom: 0;
   }
   .contacto .contact_form .formulario button {
     width: 100%;
     height: 4vh;
+    font-size: 10px;
   }
   .contacto .contact_form .formulario .texto_mensaje {
     width: 100%;
@@ -1690,6 +1749,11 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
 }
 @media (min-width: 320px) and (max-width: 389px) {
+  body {
+    background-image: url(../img/nosotros.webp);
+    width: 320px;
+    background-attachment: fixed;
+  }
   .anuncio {
     width: 100vw;
     height: 5vh;
@@ -1700,48 +1764,51 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar {
     background-color: transparent;
-    height: 45vh;
   }
-  .navbar .navbar-brand img {
-    width: 24vw;
-    border-radius: 10px;
+  .navbar .logo img {
+    width: 12vh;
+    border: black 1px solid;
   }
-  .navbar #navbarSupportedContent li {
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    margin-right: 20px;
+  }
+  .navbar .container-fluid #navbarSupportedContent li {
     background-color: rgba(3, 3, 3, 0.527);
     width: 60vw;
     margin-top: 10px;
   }
-  .navbar #navbarSupportedContent li a {
+  .navbar .container-fluid #navbarSupportedContent li a {
     font-size: 10px;
     margin-left: 10px;
     color: white;
   }
-  .navbar #navbarSupportedContent li a:hover {
+  .navbar .container-fluid #navbarSupportedContent li a:hover {
     transform: scale(1);
   }
   main .contenedor {
     display: block;
-    width: 94vw;
-    height: 75%;
+    width: 92vw;
+    height: 72%;
     margin-top: 1vh;
     justify-content: center;
+  }
+  main .contenedor .row {
+    justify-content: center;
+  }
+  main .contenedor .row .col-md-6 {
+    margin-right: 3px;
   }
   main .contenedor .row .col-md-6 img {
     width: 92vw;
     height: 24vh;
     padding: 5px;
-    margin-left: 3px;
+    height: 30vh;
   }
   main .contenedor .row .col-md-6 .card-text {
     margin-top: 5px;
-    text-align: start;
-    color: white;
-    font-size: 80%;
-    width: 85vw;
-    height: 22vh;
-    text-align: center;
-  }
-  main .contenedor .row .col-md-6 .card-text3 {
     text-align: start;
     color: white;
     font-size: 70%;
@@ -1749,11 +1816,20 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 22vh;
     text-align: center;
   }
+  main .contenedor .row .col-md-6 .card-text3 {
+    text-align: start;
+    color: white;
+    font-size: 66%;
+    width: 85vw;
+    height: 22vh;
+    text-align: center;
+    margin-top: 5px;
+  }
   .footer {
     background-color: rgba(133, 130, 130, 0.74);
-    margin-top: 26%;
+    margin-top: 19%;
     width: 100%;
-    height: 12vh;
+    height: 13vh;
     display: flex;
     position: absolute;
     text-align: center;
@@ -1761,7 +1837,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .footer .p {
     width: 30vw;
-    height: 20vh;
+    height: 5vh;
     text-align: start;
     margin-left: 5%;
     margin-top: 20px;
@@ -1769,18 +1845,20 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .footer .p img {
     background-color: white;
     width: 8vh;
-    border: black 2px solid;
+    border: black 1px solid;
     border-radius: 10px;
+    margin-right: 5px;
   }
   .footer .p h1 {
     color: black;
-    font-size: 0.5em;
-    width: 25vw;
+    font-size: 0.4em;
+    width: 20vw;
+    margin-left: 1px;
   }
   .footer .p h2 {
     width: 25vw;
     color: black;
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
@@ -1798,7 +1876,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
     position: absolute;
-    margin-top: 53%;
+    margin-top: 41%;
     background-color: #b1732d;
     width: 100%;
     height: 6vh;
@@ -1814,14 +1892,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     grid-template-columns: repeat(1, 60vw);
     column-gap: 25px;
     justify-content: center;
-    margin-top: 1vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
   }
   .segunda .gridcamara .figure {
     width: 60vw;
-    height: 40vh;
+    height: 43vh;
     background-color: white;
     padding: 5px;
+    border: black 2px solid;
   }
   .segunda .gridcamara .figure img {
     width: 35vw;
@@ -1830,14 +1909,14 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure figcaption {
     width: 90%;
-    height: 8vh;
+    height: 10vh;
     margin-bottom: 1vh;
     margin-top: 10px;
     font-size: 11px;
     text-align: center;
   }
   .segunda .gridcamara .figure p {
-    font-size: 10px;
+    font-size: 9px;
     padding: 4px;
     text-align: center;
     height: 3em;
@@ -1853,13 +1932,13 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     column-gap: 15vw;
     row-gap: 4vh;
     justify-content: center;
-    margin-top: 1vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
     height: 50%;
   }
   .tercera .gridsolar .figure {
     width: 60vw;
-    height: 35vh;
+    height: 40vh;
     background-color: white;
     border: black 3px solid;
     border-radius: 10px;
@@ -1873,7 +1952,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure figcaption {
     width: 90%;
-    height: 5vh;
+    height: 9vh;
     margin-bottom: 1vh;
     margin-top: 5px;
     font-size: 12px;
@@ -1893,24 +1972,24 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     display: flex;
     width: 99%;
     justify-content: center;
-    margin-top: 1vh;
+    margin-top: 10vh;
     padding: 10px;
   }
   .flex .kit {
-    width: 60%;
+    width: 55%;
     height: 50vh;
     margin-bottom: 5vh;
-    margin-right: 50px;
+    margin-right: 80px;
   }
   .flex .kit .figure {
-    width: 70vw;
-    height: 45vh;
+    width: 60vw;
+    height: 49vh;
     background-color: white;
     border-radius: 10px;
   }
   .flex .kit .figure img {
     width: 60%;
-    height: 15vh;
+    height: 18vh;
     padding: 5px;
   }
   .flex .kit .figure figcaption {
@@ -1918,7 +1997,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 13vh;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 70%;
+    font-size: 65%;
     margin-left: 5%;
   }
   .flex .kit .figure p {
@@ -1943,7 +2022,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border: black 2px solid;
   }
   .cuarta .texto .card .nosotrost {
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
   }
   .contacto {
@@ -1951,6 +2030,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
   }
   .contacto .contact_form {
     background-color: #788be2;
@@ -1961,7 +2041,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border-radius: 20px;
   }
   .contacto .contact_form .formulario {
-    padding: 10px;
+    padding: 5px;
   }
   .contacto .contact_form .formulario h1 {
     font-size: 10px;
@@ -1972,10 +2052,19 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     font-size: 10px;
     text-align: center;
   }
+  .contacto .contact_form .formulario p {
+    margin-bottom: 1px;
+  }
+  .contacto .contact_form .formulario p label {
+    font-size: 10px;
+  }
   .contacto .contact_form .formulario input {
+    font-size: 7px;
     width: 100%;
+    height: 3vh;
   }
   .contacto .contact_form .formulario button {
+    font-size: 7px;
     width: 100%;
     height: 4vh;
   }

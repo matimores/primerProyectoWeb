@@ -12,14 +12,15 @@
     .anuncio {
         background-color: $primarycolor;
         width: 100%;
-        height: 6vh;
+        height: 7vh;
         text-align: center;
         font-family: sans-serif;
         animation: none;
 
         h1 {
-            font-size: $textMd;
-            padding: 8px;
+            font-size: 20px;
+            padding: 6px;
+
         }
     }
 
@@ -30,20 +31,18 @@
     // nav
     .navbar {
         background-color: transparent;
-        height: 50vh;
-        margin-top: 5px;
+        margin-top: 1px;
+
+
+        .logo {
+            img {
+                width: 12vw;
+                border: black 2px solid;
+            }
+        }
 
         .container-fluid {
-
-            .navbar-brand {
-                img {
-                    background-color: map-get($map: $colors, $key: uno);
-                    width: 15vw;
-                    border-radius: 10px;
-                    margin-left: 2vw;
-                }
-
-            }
+            justify-content: end;
 
             .navbar-toggler {
                 margin-right: 2em;
@@ -56,14 +55,14 @@
                 ul {
 
                     li {
-                        margin-top: 10px;
+                        margin-top: 5px;
                         background-color: rgba(3, 3, 3, 0.527);
                         width: 40vw;
 
                         a {
 
                             color: rgb(255, 254, 254);
-                            font-size: 1em;
+                            font-size: .8em;
                             font-family: sans-serif;
                             margin-left: 20px;
 
@@ -93,16 +92,18 @@
 
     .contenedor {
         width: 98%;
-        height: 61%;
+        height: 65%;
         margin-top: 6vh;
         justify-content: center;
         background-color: rgb(12, 12, 12);
 
         .row {
             .col-md-6 {
+                justify-content: center;
+
                 .img-fluid {
                     margin-left: 1px;
-                    height: 40vh;
+                    height: 42vh;
                     width: 98vw;
                     padding: 5px;
 
@@ -110,16 +111,17 @@
 
 
 
+
                 .card-text {
 
                     color: rgb(250, 249, 249);
-                    font-size: 16px;
+                    font-size: 14px;
                     width: 45vw;
                     margin-top: 40px;
                 }
 
                 .card-text3 {
-                    font-size: 14px;
+                    font-size: 12px;
 
                 }
 
@@ -133,7 +135,7 @@
     // footer
     .footer {
         background-color: rgba(133, 130, 130, 0.74);
-        margin-top: 18%;
+        margin-top: 19%;
         width: 100%;
         height: 19vh;
         display: flex;
@@ -146,9 +148,9 @@
         .p {
             margin-top: 25px;
             width: 25vw;
-            height: 20vh;
+            height: 8vh;
             text-align: start;
-            margin-left: 5%;
+            margin-left: 1%;
 
 
             img {
@@ -163,9 +165,8 @@
             h1 {
 
                 width: 45%;
-
                 color: black;
-                font-size: .8em;
+                font-size: .7em;
 
             }
 
@@ -174,7 +175,7 @@
 
                 width: 45%;
                 color: black;
-                font-size: .8em;
+                font-size: .7em;
 
 
             }
@@ -186,10 +187,10 @@
         .autor {
             background-color: white;
             width: 100%;
-            height: 5vh;
+            height: 6vh;
             display: flex;
             position: absolute;
-            margin-top: 42%;
+            margin-top: 38%;
 
 
 
@@ -205,7 +206,7 @@
         .svg {
             display: flex;
             position: absolute;
-            margin-top: 35%;
+            margin-top: 32%;
             background-color: #b1732d;
             width: 100%;
 
@@ -237,21 +238,21 @@
 
             .figure {
                 @include figure(25vw, 50vh, white);
-                border: black 3px solid;
+                border: black 2px solid;
                 border-radius: 10px;
                 text-align: center;
                 margin-left: 25px;
 
 
                 img {
-                    @include img(60%, 14vh, 5px);
+                    @include img(50%, 12vh, 5px);
 
                 }
 
                 figcaption {
-                    @include figcaption(85%, 9vh, 5vh, 20px);
+                    @include figcaption(85%, 9vh, 7vh, 20px);
 
-                    font-size: 13px;
+                    font-size: 11px;
                 }
 
                 p {
@@ -287,20 +288,21 @@
 
 
             .figure {
-                @include figure(25vw, 55vh, rgb(253, 251, 251));
-                border: black 3px solid;
+                @include figure(25vw, 53vh, rgb(253, 251, 251));
+                border: black 2px solid;
                 border-radius: 10px;
                 text-align: center;
                 margin-left: 25px;
 
                 img {
-                    @include img(70%, 18vh, 15px);
+                    @include img(65%, 17vh, 15px);
 
                 }
 
                 figcaption {
                     @include figcaption(85%, 14vh, 5vh, 15px);
                     text-align: center;
+                    font-size: 12px;
 
 
                 }
@@ -338,21 +340,21 @@
 
 
             .figure {
-                @include figure(25vw, 55vh, white);
+                @include figure(25vw, 56vh, white);
                 border: black 3px solid;
                 text-align: center;
 
 
 
                 img {
-                    @include img(17vw, 18vh, 5px);
+                    @include img(14vw, 15vh, 5px);
                     margin-bottom: 5%;
 
                 }
 
                 figcaption {
-                    @include figcaption(90%, 15vh, 5%, 0);
-                    font-size: 75%;
+                    @include figcaption(90%, 18vh, 5%, 0);
+                    font-size: 70%;
                     margin-left: 5%;
                 }
 
@@ -379,28 +381,31 @@
 
 
     // nosotros
+    .cuarta {
 
-    .texto {
-        margin-bottom: 5vh;
-        margin-top: 1vh;
 
-        .card {
-            width: 70vw;
-            height: 60vh;
-            margin-left: 15%;
-            justify-content: center;
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.651);
-            color: black;
-            border: black 2px solid;
+        .texto {
+            margin-bottom: 5vh;
+            margin-top: 1vh;
 
-            .nosotrost {
-                font-size: 25px;
-                padding: 10px;
+            .card {
+                width: 70vw;
+                height: 60vh;
+                margin-left: 15%;
+                justify-content: center;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.651);
+                color: black;
+                border: black 2px solid;
 
+                .nosotrost {
+                    font-size: 20px;
+                    padding: 10px;
+
+                }
             }
-        }
 
+        }
     }
 
     // contacto 
@@ -462,13 +467,44 @@
 
     // nav
     .navbar {
+        .container-fluid {
+            justify-content: end;
 
 
-        #navbarSupportedContent a:hover {
-            background-color: transparent;
+            #navbarSupportedContent {
+                ul {
+
+                    li {
+                        margin-top: 10px;
+                        margin-left: 15px;
+                        background-color: rgba(3, 3, 3, 0.527);
+                        width: 40vw;
+
+
+                        a {
+
+                            color: rgb(255, 254, 254);
+                            font-size: 1.2em;
+                            font-family: sans-serif;
+                            margin-left: 30px;
+
+
+                        }
+
+                        a:hover {
+                            transform: scale(1.0);
+                        }
+                    }
+
+                }
+
+                a:hover {
+                    background-color: transparent;
 
 
 
+                }
+            }
         }
     }
 
@@ -516,7 +552,7 @@
     // footer
     .footer {
         background-color: rgba(133, 130, 130, 0.74);
-        margin-top: 25%;
+        margin-top: 20%;
         width: 100%;
         height: 19vh;
         display: flex;
@@ -571,7 +607,7 @@
             height: 6vh;
             display: flex;
             position: absolute;
-            margin-top: 42%;
+            margin-top: 37%;
 
 
 
@@ -588,7 +624,7 @@
         .svg {
             display: flex;
             position: absolute;
-            margin-top: 37%;
+            margin-top: 32%;
             background-color: #b1732d;
             width: 100%;
             height: 8vh;
@@ -752,34 +788,37 @@
     // nav
     .navbar {
         background-color: transparent;
-        height: 45vh;
 
 
-        .navbar-brand {
+        .logo {
             img {
-                background-color: map-get($map: $colors, $key: uno);
-                width: 17vw;
-                border-radius: 10px;
-                margin-left: 2vw;
+                width: 13vw;
             }
         }
 
-        #navbarSupportedContent {
-            li {
-                margin-top: 10px;
-                background-color: rgba(3, 3, 3, 0.527);
-                width: 50vw;
 
-                a {
-                    color: white;
-                    margin-left: 10px;
+
+        .container-fluid {
+            justify-content: end;
+
+            #navbarSupportedContent {
+                li {
+                    margin-top: 5px;
+                    background-color: rgba(3, 3, 3, 0.527);
+                    width: 50vw;
+
+                    a {
+                        color: white;
+                        margin-left: 10px;
+                        font-size: 13px;
+                    }
+
+
+                    a:hover {
+                        transform: scale(1.0);
+                    }
+
                 }
-
-
-                a:hover {
-                    transform: scale(1.0);
-                }
-
             }
         }
     }
@@ -790,22 +829,23 @@
         .contenedor {
             display: block;
             width: 98%;
-            height: 75vh;
+            height: 70vh;
             margin-top: 10vh;
             margin-left: 6px;
 
             .row {
+
                 .col-md-6 {
                     img {
 
-                        height: 42vh;
+                        height: 40vh;
                         width: 98vw;
                     }
 
                     .card-text {
-
+                        margin-top: 5px;
                         color: white;
-                        font-size: 20px;
+                        font-size: 15px;
                         width: 93vw;
                         height: 23vh;
                         text-align: center;
@@ -814,9 +854,9 @@
                     }
 
                     .card-text3 {
-                        font-size: 17px;
+                        font-size: 13px;
                         width: 100%;
-                        margin-top: 15px;
+                        margin-top: 2px;
                         text-align: center;
 
 
@@ -831,7 +871,7 @@
 
     .footer {
         background-color: rgba(133, 130, 130, 0.74);
-        margin-top: 15%;
+        margin-top: 16%;
         width: 100%;
         height: 19vh;
         display: flex;
@@ -844,7 +884,7 @@
         .p {
             margin-top: 25px;
             width: 25vw;
-            height: 20vh;
+            height: 9vh;
             text-align: start;
             margin-left: 5%;
 
@@ -882,10 +922,10 @@
         .autor {
             background-color: white;
             width: 100%;
-            height: 5vh;
+            height: 6vh;
             display: flex;
             position: absolute;
-            margin-top: 42%;
+            margin-top: 40%;
 
 
 
@@ -910,7 +950,8 @@
 
             svg {
                 margin-left: 4vw;
-                padding: 5px;
+
+                width: 7vw;
             }
 
         }
@@ -928,19 +969,19 @@
             margin-top: 10vh;
 
             .figure {
-                @include figure(35vw, 50vh, white);
+                @include figure(35vw, 51vh, white);
                 border: black 3px solid;
                 border-radius: 10px;
                 text-align: center;
 
                 img {
-                    @include img(60%, 14vh, 5px);
+                    @include img(47%, 12vh, 5px);
 
                 }
 
                 figcaption {
                     @include figcaption(85%, 16vh, 5px, 5px);
-                    font-size: .9em;
+                    font-size: .8em;
 
                 }
 
@@ -971,14 +1012,14 @@
 
 
             .figure {
-                @include figure(35vw, 50vh, white);
+                @include figure(35vw, 51vh, white);
                 border: black 3px solid;
                 border-radius: 10px;
                 text-align: center;
 
                 figcaption {
                     @include figcaption(90%, 10vh, 5px, 5px);
-
+                    font-size: 12px;
                 }
 
 
@@ -1022,7 +1063,7 @@
 
 
             .figure {
-                @include figure(35vw, 50vh, white);
+                @include figure(35vw, 52vh, white);
                 border: black 3px solid;
                 text-align: center;
 
@@ -1036,14 +1077,14 @@
 
                 figcaption {
                     @include figcaption(90%, 15vh, 5%, 0);
-                    font-size: 65%;
+                    font-size: 60%;
                     margin-left: 5%;
                 }
 
                 p {
                     font-size: 15px;
 
-                    height: 3em;
+                    height: 2em;
 
                 }
 
@@ -1079,7 +1120,7 @@
 
 
                 .nosotrost {
-                    font-size: 20px;
+                    font-size: 18px;
                     padding: 10px;
                 }
             }
@@ -1099,12 +1140,12 @@
         .contact_form {
             background-color: #788be2;
             width: 45vw;
-            height: 70vh;
+            height: 73vh;
             border-radius: 20px;
             margin-right: 5px;
 
             .formulario {
-                padding: 25px;
+                padding: 10px;
 
                 h1 {
                     font-size: 15px;
@@ -1119,17 +1160,23 @@
                     margin-bottom: 25px;
                 }
 
+                label {
+                    font-size: 12px;
+                }
+
                 input {
                     width: 100%;
+                    height: 4vh;
                 }
 
                 button {
                     width: 100%;
+                    height: 5vh;
                 }
 
                 .texto_mensaje {
                     width: 100%;
-                    height: 10vh;
+                    height: 5vh;
                 }
             }
         }
@@ -1160,30 +1207,34 @@
     // nav
     .navbar {
         background-color: transparent;
-        height: 45vh;
 
-        .navbar-brand {
+
+        .logo {
             img {
-                background-color: map-get($map: $colors, $key: uno);
-                width: 18vw;
-                border-radius: 10px;
-                margin-left: 2vw;
+                width: 15vw;
+                border: black 2px solid;
             }
         }
 
-        #navbarSupportedContent {
-            li {
-                background-color: rgba(3, 3, 3, 0.527);
-                width: 50vw;
-                margin-top: 10px;
+        .container-fluid {
+            justify-content: end;
 
-                a {
-                    color: white;
-                    margin-left: 10px;
-                }
 
-                a:hover {
-                    transform: scale(1.0);
+            #navbarSupportedContent {
+                li {
+                    background-color: rgba(3, 3, 3, 0.527);
+                    width: 50vw;
+                    margin-top: 5px;
+
+                    a {
+                        color: white;
+                        margin-left: 10px;
+                        font-size: .8em;
+                    }
+
+                    a:hover {
+                        transform: scale(1.0);
+                    }
                 }
             }
         }
@@ -1196,31 +1247,32 @@
             display: block;
             width: 95%;
             height: 70vh;
-            margin-top: 10vh;
+            margin-top: 5vh;
             margin-left: 12px;
 
             .row {
                 .col-md-6 {
                     img {
-                        height: 40vh;
+                        height: 38vh;
                         width: 98vw;
                     }
 
                     .card-text {
                         padding: 10px;
                         color: white;
-                        font-size: 100%;
+                        font-size: 90%;
                         width: 90vw;
                         height: 25vh;
-                        margin-top: 1px;
+                        margin-top: 4px;
+                        text-align: center;
                     }
 
                     .card-text3 {
-                        font-size: 83%;
+                        font-size: 78%;
                         width: 100%;
                         height: 22vh;
                         margin-top: 5px;
-                        margin-top: 10px;
+                        text-align: center;
 
                     }
                 }
@@ -1234,7 +1286,7 @@
         background-color: rgba(133, 130, 130, 0.74);
         margin-top: 10%;
         width: 100%;
-        height: 19vh;
+        height: 17vh;
         display: flex;
         position: absolute;
         text-align: center;
@@ -1245,7 +1297,7 @@
         .p {
             margin-top: 25px;
             width: 25vw;
-            height: 20vh;
+            height: 8vh;
             text-align: start;
             margin-left: 5%;
 
@@ -1253,7 +1305,7 @@
             img {
                 background-color: white;
                 width: 10vh;
-                border: black 2px solid;
+                border: black 1px solid;
                 border-radius: 10px;
 
 
@@ -1263,7 +1315,7 @@
 
                 width: 45%;
                 color: black;
-                font-size: .6em;
+                font-size: .5em;
 
             }
 
@@ -1271,7 +1323,7 @@
                 width: 20vw;
 
                 color: black;
-                font-size: .6em;
+                font-size: .5em;
 
 
             }
@@ -1286,7 +1338,7 @@
             height: 5vh;
             display: flex;
             position: absolute;
-            margin-top: 42%;
+            margin-top: 38%;
 
 
 
@@ -1303,7 +1355,7 @@
         .svg {
             display: flex;
             position: absolute;
-            margin-top: 32%;
+            margin-top: 29%;
             background-color: #b1732d;
             width: 100vw;
             height: 8vh;
@@ -1335,7 +1387,7 @@
             margin-top: 10vh;
 
             .figure {
-                @include figure(38vw, 50vh, white);
+                @include figure(38vw, 53vh, white);
                 padding: 5px;
 
                 img {
@@ -1345,7 +1397,7 @@
 
                 figcaption {
                     @include figcaption(90%, 15vh, 1vh, 20px);
-                    font-size: .8em;
+                    font-size: .7em;
 
                 }
 
@@ -1362,8 +1414,6 @@
 
     // sistema solar
     .tercera {
-
-
         .gridsolar {
             display: grid;
             grid-template-columns: repeat(2, 30vw);
@@ -1371,12 +1421,12 @@
             row-gap: 15vh;
             justify-content: center;
             margin-top: 10vh;
-            margin-bottom: 80vh;
             margin-right: 40px;
+            height: 50%;
 
 
             .figure {
-                @include figure(38vw, 50vh, white);
+                @include figure(38vw, 51vh, white);
                 border: black 3px solid;
                 border-radius: 10px;
                 text-align: center;
@@ -1389,6 +1439,7 @@
                 figcaption {
                     @include figcaption(85%, 14vh, 20px, 15px);
                     padding: 10px;
+                    font-size: 12px;
                 }
 
                 p {
@@ -1423,7 +1474,7 @@
 
 
             .figure {
-                @include figure(38vw, 50vh, white);
+                @include figure(38vw, 52vh, white);
 
 
                 img {
@@ -1433,7 +1484,7 @@
 
                 figcaption {
                     @include figcaption(90%, 15vh, 10%, 10px);
-                    font-size: 70%;
+                    font-size: 65%;
                     margin-left: 5%;
 
                 }
@@ -1473,7 +1524,7 @@
 
 
                 .nosotrost {
-                    font-size: 18px;
+                    font-size: 16px;
                     padding: 10px;
                 }
             }
@@ -1492,15 +1543,16 @@
 
 
 
+
         .contact_form {
             background-color: #788be2;
-            width: 65vw;
-            height: 62vh;
-            margin-left: 5%;
+            width: 60vw;
+            height: 72vh;
+            margin-left: 25%;
             border-radius: 20px;
 
             .formulario {
-                padding: 15px;
+                padding: 10px;
 
                 h1 {
                     font-size: 15px;
@@ -1515,26 +1567,33 @@
 
                 }
 
+                label {
+                    font-size: 12px;
+                }
+
                 input {
                     width: 100%;
+                    height: 3vh;
                 }
 
                 button {
                     width: 100%;
+                    height: 5vh;
                 }
 
                 .texto_mensaje {
                     width: 100%;
-                    height: 5vh;
+                    height: 4vh;
                 }
             }
         }
 
         .mapa {
-            width: 90vw;
+            width: 100vw;
             height: 20vh;
+            border-radius: 0;
 
-            border-radius: 20px;
+
         }
 
     }
@@ -1542,47 +1601,79 @@
 
 @media (min-width: 390px) and (max-width: 479px) {
 
+
+
+    body {
+        background-image: url(../img/pruebaimg/plano-estacion-trabajo-espacio-copia-computadora-portatil.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 70%;
+        background-attachment: none;
+
+    }
+
     //header
     .anuncio {
         width: 100%;
         height: 5vh;
         animation: none;
+        background-color: #4e65cf;
+
 
         h1 {
-            font-size: 85%;
+            font-size: 90%;
+
         }
     }
 
     // nav
     .navbar {
         background-color: transparent;
-        height: 45vh;
 
-        .navbar-brand {
+        .logo {
+
+
             img {
-                width: 22vw;
-                border-radius: 10px;
-                margin-top: 1vh;
+                width: 20vw;
+                border: black 2px solid;
+
+
             }
+
         }
 
-        #navbarSupportedContent {
 
-            li {
-                background-color: rgba(3, 3, 3, 0.527);
-                width: 60vw;
-                margin-top: 10px;
 
-                a {
-                    font-size: 15px;
-                    margin-left: 10px;
-                    color: white;
+
+        .container-fluid {
+            justify-content: end;
+
+
+
+
+            #navbarSupportedContent {
+                ul {
+
+
+
+                    li {
+                        background-color: rgba(3, 3, 3, 0.527);
+                        width: 60vw;
+                        margin-top: 10px;
+
+
+                        a {
+                            font-size: 11px;
+                            margin-left: 10px;
+                            color: white;
+                        }
+
+                        a:hover {
+                            transform: scale(1.0);
+                        }
+
+                    }
                 }
-
-                a:hover {
-                    transform: scale(1.0);
-                }
-
             }
         }
 
@@ -1601,28 +1692,34 @@
             margin-top: 10vh;
 
             .row {
+                height: 61vh;
+
                 .col-md-6 {
+
                     img {
-                        height: 33vh;
+                        height: 31vh;
                         width: 96vw;
+                        margin-top: 1px;
+
                     }
 
                     .card-text {
                         margin-top: 5px;
+                        margin-bottom: 10px;
                         text-align: start;
                         color: white;
-                        font-size: 80%;
+                        font-size: 75%;
                         width: 85vw;
-                        height: 18vh;
+                        height: 21vh;
                         text-align: center;
                     }
 
                     .card-text3 {
-                        font-size: 83%;
+                        font-size: 65%;
                         width: 100%;
-                        height: 22vh;
+                        height: 20vh;
                         margin-top: 5px;
-                        margin-top: 10px;
+                        text-align: center;
                     }
                 }
             }
@@ -1646,15 +1743,17 @@
         .p {
 
             width: 30vw;
-            height: 20vh;
+            height: 6vh;
             text-align: start;
             margin-left: 5%;
+            margin-top: 15px;
+            justify-content: center;
 
 
             img {
                 background-color: white;
-                width: 8vh;
-                border: black 2px solid;
+                width: 10vh;
+                border: black 1px solid;
                 border-radius: 10px;
 
             }
@@ -1681,10 +1780,12 @@
         .autor {
             background-color: white;
             width: 100%;
-            height: 5vh;
+            height: 4vh;
             display: flex;
             position: absolute;
-            margin-top: 54%;
+            margin-top: 49%;
+            margin-bottom: .2px;
+
 
 
 
@@ -1693,6 +1794,7 @@
                 font-size: .7em;
                 margin-left: 15px;
 
+
             }
 
         }
@@ -1700,15 +1802,15 @@
         .svg {
             display: flex;
             position: absolute;
-            margin-top: 43%;
+            margin-top: 38%;
             background-color: #b1732d;
             width: 100%;
-            height: 6vh;
+            height: 8vh;
             justify-content: center;
 
             svg {
                 margin-left: 4vw;
-                width: 8vw;
+                width: 9vw;
             }
 
         }
@@ -1718,6 +1820,7 @@
     .segunda {
 
 
+
         .gridcamara {
             display: grid;
             grid-template-columns: repeat(2, 40vw);
@@ -1725,18 +1828,19 @@
             margin-top: 10vh;
 
             .figure {
-                @include figure(40vw, 45vh, white);
+                @include figure(40vw, 47vh, white);
                 padding: 5px;
+                border: black 2px solid;
 
                 img {
-                    @include img(65%, 10vh, 5px);
+                    @include img(58%, 11vh, 5px);
 
                 }
 
                 figcaption {
                     @include figcaption(90%, 10vh, 1vh, 20px);
                     margin-left: 10px;
-                    font-size: 13px;
+                    font-size: 11px;
 
 
                 }
@@ -1754,6 +1858,7 @@
                     font-size: 12px;
                     width: 90%;
                     height: 5vh;
+                    text-align: center;
                 }
             }
         }
@@ -1770,23 +1875,24 @@
             row-gap: 4vh;
             justify-content: center;
             margin-top: 10vh;
-            margin-bottom: 80vh;
+            margin-bottom: 5vh;
             margin-right: 2em;
+            height: 50%;
 
             .figure {
-                @include figure(40vw, 45vh, white);
-                border: black 3px solid;
+                @include figure(40vw, 48vh, white);
+                border: black 2px solid;
                 border-radius: 10px;
                 text-align: center;
 
                 img {
-                    @include img(65%, 13vh, 5px);
+                    @include img(60%, 13vh, 5px);
 
                 }
 
                 figcaption {
                     @include figcaption(90%, 12vh, 25px, 15px);
-                    font-size: 14px;
+                    font-size: 12px;
                     padding: 10px;
                 }
 
@@ -1821,11 +1927,11 @@
 
 
             .figure {
-                @include figure(40vw, 47vh, white);
+                @include figure(40vw, 51vh, white);
                 border-radius: 10px;
 
                 img {
-                    @include img(70%, 14vh, 5px);
+                    @include img(65%, 14vh, 5px);
                     margin-bottom: 20px;
                 }
 
@@ -1837,7 +1943,7 @@
 
                 p {
                     font-size: 70%;
-                    height: 5%;
+                    height: 10%;
                 }
 
                 .btn {
@@ -1869,7 +1975,7 @@
 
 
                 .nosotrost {
-                    font-size: 15px;
+                    font-size: 13px;
                     padding: 10px;
                 }
             }
@@ -1890,16 +1996,16 @@
         .contact_form {
             background-color: #788be2;
             width: 65vw;
-            height: 60vh;
+            height: 72vh;
             margin-right: 5px;
             margin-left: 5%;
             border-radius: 20px;
 
             .formulario {
-                padding: 10px;
+                padding: 8px;
 
                 h1 {
-                    font-size: 10px;
+                    font-size: 12px;
                     font-family: sans-serif;
                     text-align: center;
 
@@ -1911,13 +2017,20 @@
 
                 }
 
+                label {
+                    font-size: 10px;
+                }
+
                 input {
                     width: 100%;
+                    height: 4vh;
+                    margin-bottom: 0;
                 }
 
                 button {
                     width: 100%;
                     height: 4vh;
+                    font-size: 10px;
                 }
 
                 .texto_mensaje {
@@ -1939,6 +2052,11 @@
 
 @media (min-width: 320px) and (max-width: 389px) {
 
+    body {
+        background-image: url(../img/nosotros.webp);
+        width: 320px;
+        background-attachment: fixed;
+    }
 
     // header
     .anuncio {
@@ -1954,34 +2072,45 @@
     // nav
     .navbar {
         background-color: transparent;
-        height: 45vh;
 
 
-        .navbar-brand {
+        .logo {
             img {
-                width: 24vw;
-                border-radius: 10px;
-
+                width: 12vh;
+                border: black 1px solid;
             }
         }
 
-        #navbarSupportedContent {
-            li {
-                background-color: rgba(3, 3, 3, 0.527);
-                width: 60vw;
-                margin-top: 10px;
 
-                a {
-                    font-size: 10px;
-                    margin-left: 10px;
-                    color: white;
+        .container-fluid {
+            justify-content: end;
+
+
+            .navbar-toggler {
+                margin-right: 20px;
+
+
+            }
+
+            #navbarSupportedContent {
+
+                li {
+                    background-color: rgba(3, 3, 3, 0.527);
+                    width: 60vw;
+                    margin-top: 10px;
+
+                    a {
+                        font-size: 10px;
+                        margin-left: 10px;
+                        color: white;
+                    }
+
+                    a:hover {
+                        transform: scale(1.0);
+                    }
+
+
                 }
-
-                a:hover {
-                    transform: scale(1.0);
-                }
-
-
             }
         }
     }
@@ -1990,19 +2119,21 @@
     main {
         .contenedor {
             display: block;
-            width: 94vw;
-            height: 75%;
+            width: 92vw;
+            height: 72%;
             margin-top: 1vh;
-
             justify-content: center;
 
             .row {
+                justify-content: center;
 
                 .col-md-6 {
+                    margin-right: 3px;
 
                     img {
                         @include img(92vw, 24vh, 5px);
-                        margin-left: 3px;
+
+                        height: 30vh;
 
 
                     }
@@ -2011,7 +2142,7 @@
                         margin-top: 5px;
                         text-align: start;
                         color: white;
-                        font-size: 80%;
+                        font-size: 70%;
                         width: 85vw;
                         height: 22vh;
                         text-align: center;
@@ -2020,10 +2151,12 @@
                     .card-text3 {
                         text-align: start;
                         color: white;
-                        font-size: 70%;
+                        font-size: 66%;
                         width: 85vw;
                         height: 22vh;
                         text-align: center;
+                        margin-top: 5px;
+
 
                     }
                 }
@@ -2035,9 +2168,9 @@
 
     .footer {
         background-color: rgba(133, 130, 130, 0.74);
-        margin-top: 26%;
+        margin-top: 19%;
         width: 100%;
-        height: 12vh;
+        height: 13vh;
         display: flex;
         position: absolute;
         text-align: center;
@@ -2045,10 +2178,11 @@
 
 
 
+
         .p {
 
             width: 30vw;
-            height: 20vh;
+            height: 5vh;
             text-align: start;
             margin-left: 5%;
             margin-top: 20px;
@@ -2057,23 +2191,27 @@
             img {
                 background-color: white;
                 width: 8vh;
-                border: black 2px solid;
+                border: black 1px solid;
                 border-radius: 10px;
+                margin-right: 5px;
 
             }
 
             h1 {
 
                 color: black;
-                font-size: .5em;
-                width: 25vw;
+                font-size: .4em;
+                width: 20vw;
+
+                margin-left: 1px;
 
             }
 
             h2 {
                 width: 25vw;
                 color: black;
-                font-size: .5em;
+                font-size: .4em;
+
 
 
             }
@@ -2108,7 +2246,7 @@
         .svg {
             display: flex;
             position: absolute;
-            margin-top: 53%;
+            margin-top: 41%;
             background-color: #b1732d;
             width: 100%;
             height: 6vh;
@@ -2133,12 +2271,13 @@
             grid-template-columns: repeat(1, 60vw);
             column-gap: 25px;
             justify-content: center;
-            margin-top: 1vh;
+            margin-top: 10vh;
             margin-bottom: 5vh;
 
             .figure {
-                @include figure(60vw, 40vh, white);
+                @include figure(60vw, 43vh, white);
                 padding: 5px;
+                border: black 2px solid;
 
 
                 img {
@@ -2147,17 +2286,18 @@
                 }
 
                 figcaption {
-                    @include figcaption(90%, 8vh, 1vh, 10px);
+                    @include figcaption(90%, 10vh, 1vh, 10px);
                     font-size: 11px;
                     text-align: center;
 
                 }
 
                 p {
-                    font-size: 10px;
+                    font-size: 9px;
                     padding: 4px;
                     text-align: center;
                     height: 3em;
+
                 }
 
                 .btn {
@@ -2180,12 +2320,12 @@
             column-gap: 15vw;
             row-gap: 4vh;
             justify-content: center;
-            margin-top: 1vh;
+            margin-top: 10vh;
             margin-bottom: 5vh;
             height: 50%;
 
             .figure {
-                @include figure(60vw, 35vh, white);
+                @include figure(60vw, 40vh, white);
                 border: black 3px solid;
                 border-radius: 10px;
                 text-align: center;
@@ -2197,7 +2337,7 @@
                 }
 
                 figcaption {
-                    @include figcaption(90%, 5vh, 1vh, 5px);
+                    @include figcaption(90%, 9vh, 1vh, 5px);
                     font-size: 12px;
                     text-align: center;
                     margin-left: 5px;
@@ -2224,29 +2364,29 @@
         display: flex;
         width: 99%;
         justify-content: center;
-        margin-top: 1vh;
+        margin-top: 10vh;
         padding: 10px;
 
         .kit {
-            width: 60%;
+            width: 55%;
             height: 50vh;
             margin-bottom: 5vh;
-            margin-right: 50px;
+            margin-right: 80px;
 
             .figure {
-                @include figure(70vw, 45vh, white);
+                @include figure(60vw, 49vh, white);
                 border-radius: 10px;
 
 
 
                 img {
-                    @include img(60%, 15vh, 5px);
+                    @include img(60%, 18vh, 5px);
 
                 }
 
                 figcaption {
                     @include figcaption(90%, 13vh, 0, 0);
-                    font-size: 70%;
+                    font-size: 65%;
                     margin-left: 5%;
                 }
 
@@ -2283,7 +2423,7 @@
 
 
                 .nosotrost {
-                    font-size: 14px;
+                    font-size: 12px;
                     padding: 10px;
                 }
             }
@@ -2297,6 +2437,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-top: 10vh;
 
 
 
@@ -2309,7 +2450,7 @@
             border-radius: 20px;
 
             .formulario {
-                padding: 10px;
+                padding: 5px;
 
                 h1 {
                     font-size: 10px;
@@ -2324,11 +2465,24 @@
 
                 }
 
+                p {
+
+                    margin-bottom: 1px;
+
+                    label {
+                        font-size: 10px;
+
+                    }
+                }
+
                 input {
+                    font-size: 7px;
                     width: 100%;
+                    height: 3vh;
                 }
 
                 button {
+                    font-size: 7px;
                     width: 100%;
                     height: 4vh;
                 }

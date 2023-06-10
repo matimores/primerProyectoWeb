@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "maurodesouza.vscode-simple-readme"
+        "maurodesouza.vscode-simple-readme",
+        "diemasmichiels.emulate"
     ]
 }

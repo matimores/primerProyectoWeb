@@ -1,20 +1,17 @@
 // nav 
-.navbar{
-    background-color: rgba(133, 130, 130, 0.74);
-    width: 100%;
-    height: 20vh;
-    margin-top: 1.5vh;
-    .navbar-brand{
-        
 
-     img{
-        background-color: $backcolor;
-        width: 10vw;
-        border-radius: 15px;
-        border: $bordersecondary 2px solid;
-        margin-left: 2vw;
-     }
+.navbar{
+    .logo{
+        img{
+            background-color: white;
+            width: 10vw;
+            border-radius: 10px;
+            margin-left: 15px;
+            margin-top: 10px;
+        }
     }
+
+    
     .navbar-toggler {
   
     background-color: #999693b2;
@@ -25,9 +22,9 @@
 
     li{
         a{
-            color: $secondarycolor;
+            color: white;
             font-family: $mainfonts;
-            font-size: $textSm;  
+            font-size: 1.2em;  
             margin-right: 3em;
             transition: 0.5s;
             object-fit: cover;
