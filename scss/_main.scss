@@ -7,7 +7,7 @@
     height: 61%;
     margin-top: 25vh;
     margin-left: 8px;
-    
+
 
 
     .row {
@@ -21,25 +21,28 @@
             padding: 5px;
         }
 
-        .card-text {
-            color: $secondarycolor;
-            font-size: 25px;
-            width: 45vw;
-            margin-top: 40px;
-            font-family: $mainfonts;
-
-        }
-
-        .card-text3 {
-            color: $secondarycolor;
-            font-size: 20px;
-            width: 45vw;
-            margin-top: 40px;
-            font-family: $mainfonts;
-            
-        }
+        
 
 
+            .card-text {
+                color: $secondarycolor;
+                font-size: 35px;
+                width: 40vw;
+                margin-top: 40px;
+                font-family: $mainfonts;
+
+            }
+
+            .card-text3 {
+                color: $secondarycolor;
+                font-size: 30px;
+                width: 45vw;
+                margin-top: 40px;
+                font-family: $mainfonts;
+
+            }
+
+        
 
 
 

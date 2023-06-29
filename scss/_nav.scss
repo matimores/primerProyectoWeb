@@ -1,37 +1,44 @@
 // nav 
 
-.navbar{
-    .logo{
-        img{
+.navbar {
+    .logo {
+        img {
             background-color: white;
             width: 10vw;
             border-radius: 10px;
-            margin-left: 15px;
+            margin-left: 25px;
             margin-top: 10px;
         }
     }
 
-    
-    .navbar-toggler {
-  
-    background-color: #999693b2;
-    border: $bordersecondary 1px solid;
-  
-    }
-    #navbarSupportedContent{
 
-    li{
-        a{
-            color: white;
-            font-family: $mainfonts;
-            font-size: 1.2em;  
-            margin-right: 3em;
-            transition: 0.5s;
-            object-fit: cover;
-        }
-        a:hover{
-            transform: scale(1.3);
-        }
+    .navbar-toggler {
+
+        background-color: #999693b2;
+        border: $bordersecondary 1px solid;
+
     }
+
+    #navbarSupportedContent {
+
+        li {
+            a {
+                color: white;
+                font-family: $mainfonts;
+                font-size: 1.6em;
+                margin-right: 3em;
+                transition: 0.5s;
+                object-fit: cover;
+            }
+
+            a:hover {
+                transform: scale(1.3);
+            }
+        }
+
+        svg {
+            width: 5vw;
+            height: 5vh;
+        }
     }
 }

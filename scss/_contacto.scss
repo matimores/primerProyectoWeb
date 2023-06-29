@@ -10,15 +10,15 @@
     .contact_form {
         background-color: #788be2 ;
         width: 30vw;
-        height: auto;
+        height: 75vh;
         margin-right: 150px;
         border-radius: 20px;
 
         .formulario {
-            padding: 25px;
+            padding: 20px;
 
             h1 {
-                font-size: 25px;
+                font-size: 30px;
                 font-family: sans-serif;
                 text-align: center;
                 margin-bottom: 25px;
@@ -29,9 +29,13 @@
                 text-align: center;
                 margin-bottom: 25px;
             }
+            label{
+                font-size: 25px;
+            }
 
             input {
                 width: 100%;
+                height: 5vh;
             }
 
             button {

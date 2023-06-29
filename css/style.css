@@ -58,7 +58,7 @@ footer, .footer .p h2, .footer .p h1 {
   animation: movimiento 2s linear infinite;
 }
 .anuncio h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 8px;
 }
 
@@ -66,7 +66,7 @@ footer, .footer .p h2, .footer .p h1 {
   background-color: white;
   width: 10vw;
   border-radius: 10px;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-top: 10px;
 }
 .navbar .navbar-toggler {
@@ -76,13 +76,17 @@ footer, .footer .p h2, .footer .p h1 {
 .navbar #navbarSupportedContent li a {
   color: white;
   font-family: "roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin-right: 3em;
   transition: 0.5s;
   object-fit: cover;
 }
 .navbar #navbarSupportedContent li a:hover {
   transform: scale(1.3);
+}
+.navbar #navbarSupportedContent svg {
+  width: 5vw;
+  height: 5vh;
 }
 
 .contenedor {
@@ -103,14 +107,14 @@ footer, .footer .p h2, .footer .p h1 {
 }
 .contenedor .row .card-text {
   color: white;
-  font-size: 25px;
-  width: 45vw;
+  font-size: 35px;
+  width: 40vw;
   margin-top: 40px;
   font-family: "roboto", sans-serif;
 }
 .contenedor .row .card-text3 {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   width: 45vw;
   margin-top: 40px;
   font-family: "roboto", sans-serif;
@@ -118,10 +122,6 @@ footer, .footer .p h2, .footer .p h1 {
 
 .segunda {
   background-image: url(../img/camaras.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 70%;
 }
 .segunda .gridcamara {
   display: grid;
@@ -135,7 +135,7 @@ footer, .footer .p h2, .footer .p h1 {
 }
 .segunda .gridcamara .figure {
   width: 18vw;
-  height: 68vh;
+  height: 55vh;
   background-color: white;
   border: black 3px solid;
   border-radius: 10px;
@@ -171,7 +171,7 @@ footer, .footer .p h2, .footer .p h1 {
 }
 .tercera .gridsolar .figure {
   width: 18vw;
-  height: 68vh;
+  height: 55vh;
   background-color: white;
   border: black 3px solid;
   border-radius: 10px;
@@ -201,7 +201,7 @@ footer, .footer .p h2, .footer .p h1 {
 }
 .flex .kit .figure {
   width: 18vw;
-  height: 68vh;
+  height: 55vh;
   background-color: white;
   border: rgb(8, 8, 8) 3px solid;
   text-align: center;
@@ -242,12 +242,12 @@ footer, .footer .p h2, .footer .p h1 {
 }
 .footer .p h1 {
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .footer .p h2 {
   width: 20vw;
   color: black;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
@@ -261,7 +261,8 @@ footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
 }
 footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
   color: black;
-  margin-left: 33%;
+  margin-left: 35%;
+  font-size: 1.2em;
 }
 footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
   display: flex;
@@ -275,6 +276,8 @@ footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
 footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   margin-left: 4vw;
   padding: 5px;
+  width: 5vw;
+  height: 7vh;
 }
 
 .cuarta {
@@ -295,8 +298,8 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   border: black 2px solid;
 }
 .cuarta .texto .card .nosotrost {
-  font-size: 25px;
-  padding: 10px;
+  font-size: 40px;
+  padding: 15px;
 }
 
 .contacto {
@@ -309,15 +312,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
 .contacto .contact_form {
   background-color: #788be2;
   width: 30vw;
-  height: auto;
+  height: 75vh;
   margin-right: 150px;
   border-radius: 20px;
 }
 .contacto .contact_form .formulario {
-  padding: 25px;
+  padding: 20px;
 }
 .contacto .contact_form .formulario h1 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: sans-serif;
   text-align: center;
   margin-bottom: 25px;
@@ -327,8 +330,12 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   text-align: center;
   margin-bottom: 25px;
 }
+.contacto .contact_form .formulario label {
+  font-size: 25px;
+}
 .contacto .contact_form .formulario input {
   width: 100%;
+  height: 5vh;
 }
 .contacto .contact_form .formulario button {
   width: 100%;
@@ -344,6 +351,259 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   border-radius: 20px;
 }
 
+@media (min-width: 1026px) and (max-width: 1250px) {
+  .anuncio {
+    animation: none;
+    height: 8vh;
+  }
+  .anuncio h1 {
+    font-size: 1.5em;
+  }
+  .navbar .logo img {
+    width: 7em;
+  }
+  .navbar .container-fluid {
+    justify-content: end;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    width: 6vw;
+    height: 8vh;
+    margin-right: 15px;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li {
+    margin-top: 5px;
+    background-color: rgba(3, 3, 3, 0.527);
+    width: 40vw;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li a {
+    color: rgb(255, 254, 254);
+    font-size: 1.2em;
+    font-family: sans-serif;
+    margin-left: 20px;
+  }
+  .navbar .container-fluid #navbarSupportedContent ul li a:hover {
+    transform: scale(1);
+  }
+  .contenedor {
+    width: 98%;
+    height: 50vh;
+    margin-top: 15vh;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+  }
+  .contenedor .row .col-md-6 .img-fluid {
+    margin-left: 1px;
+    height: 50vh;
+    width: 98vw;
+    padding: 5px;
+  }
+  .contenedor .row .col-md-6 .card-text {
+    color: rgb(250, 249, 249);
+    font-size: 18px;
+    width: 45vw;
+    margin-top: 40px;
+  }
+  .contenedor .row .col-md-6 .card-text3 {
+    font-size: 16px;
+  }
+  .footer {
+    background-color: rgba(133, 130, 130, 0.74);
+    margin-top: 20%;
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer .p {
+    margin-top: 25px;
+    width: 25vw;
+    height: 20vh;
+    text-align: start;
+    margin-left: 5%;
+  }
+  .footer .p img {
+    background-color: white;
+    width: 15vh;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+  .footer .p h1 {
+    width: 45%;
+    color: black;
+    font-size: 0.8em;
+  }
+  .footer .p h2 {
+    width: 20vw;
+    color: black;
+    font-size: 0.8em;
+  }
+  footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
+    background-color: white;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    position: absolute;
+    margin-top: 36%;
+  }
+  footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
+    color: black;
+    font-size: 1em;
+    margin-left: 25%;
+  }
+  footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
+    display: flex;
+    position: absolute;
+    margin-top: 32%;
+    background-color: #b1732d;
+    width: 100%;
+    height: 8vh;
+    justify-content: center;
+  }
+  footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
+    margin-left: 4vw;
+    padding: 5px;
+  }
+  .segunda .gridcamara {
+    justify-content: space-evenly;
+  }
+  .segunda .gridcamara .figure {
+    width: 20vw;
+    height: 70vh;
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .segunda .gridcamara .figure img {
+    width: 60%;
+    height: 15vh;
+    padding: 5px;
+  }
+  .segunda .gridcamara .figure .btn {
+    font-size: 12px;
+    width: 90%;
+    height: 5vh;
+  }
+  .tercera .gridsolar {
+    justify-content: space-evenly;
+  }
+  .tercera .gridsolar .figure {
+    width: 20vw;
+    height: 66vh;
+    background-color: white;
+    border: black 3px solid;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .tercera .gridsolar .figure figcaption {
+    height: 20vh;
+  }
+  .tercera .gridsolar .figure img {
+    width: 60%;
+    height: 19vh;
+    padding: 15px;
+  }
+  .tercera .gridsolar .figure .btn {
+    font-size: 12px;
+    width: 90%;
+    height: 5vh;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    margin-top: 20vh;
+    margin-left: 20px;
+  }
+  .flex .kit {
+    width: 25vw;
+    height: 70vh;
+  }
+  .flex .kit .figure {
+    width: 20vw;
+    height: 63vh;
+    background-color: white;
+    border: black 3px solid;
+    text-align: center;
+  }
+  .flex .kit .figure img {
+    width: 60%;
+    height: 30%;
+    padding: 5px;
+    margin-bottom: 5%;
+  }
+  .flex .kit .figure figcaption {
+    width: 90%;
+    height: 20vh;
+    margin-bottom: 5%;
+    margin-top: 0;
+    font-size: 75%;
+    margin-left: 5%;
+  }
+  .flex .kit .figure p {
+    font-size: 15px;
+    height: 3em;
+  }
+  .flex .kit .figure .btn {
+    font-size: 12px;
+    width: 90%;
+    height: 5vh;
+  }
+  .cuarta .texto {
+    margin-top: 10vh;
+  }
+  .cuarta .texto img {
+    height: 40%;
+  }
+  .cuarta .texto .card-img-overlay {
+    margin-left: 12vw;
+    margin-top: 15vh;
+  }
+  .cuarta .texto .card .nosotrost {
+    font-size: 1.5em;
+  }
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    background-color: #788be2;
+  }
+  .contacto .contact_form {
+    background-color: #3d5ce4;
+    width: 35%;
+    height: 50%;
+    margin-bottom: 5vh;
+    margin-right: 40px;
+    border-radius: 20px;
+  }
+  .contacto .contact_form .formulario {
+    padding: 15px;
+  }
+  .contacto .contact_form .formulario label {
+    font-size: 1em;
+  }
+  .contacto .contact_form .formulario h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .contacto .contact_form .formulario h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contacto .mapa {
+    width: 40vw;
+    height: 40vh;
+    margin-top: 5vh;
+    border-radius: 20px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .anuncio {
     background-color: #3d5ce4;
@@ -352,6 +612,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     text-align: center;
     font-family: sans-serif;
     animation: none;
+    background-color: #f8b34c;
   }
   .anuncio h1 {
     font-size: 20px;
@@ -363,7 +624,6 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar .logo img {
     width: 12vw;
-    border: black 2px solid;
   }
   .navbar .container-fluid {
     justify-content: end;
@@ -450,14 +710,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
     width: 100%;
-    height: 6vh;
+    height: 5vh;
     display: flex;
     position: absolute;
     margin-top: 38%;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
-    margin-left: 20%;
+    margin-left: 25%;
+    font-size: 0.7em;
   }
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
@@ -481,7 +742,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 25vw;
-    height: 50vh;
+    height: 52vh;
     background-color: white;
     border: black 2px solid;
     border-radius: 10px;
@@ -490,7 +751,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure img {
     width: 50%;
-    height: 12vh;
+    height: 14vh;
     padding: 5px;
   }
   .segunda .gridcamara .figure figcaption {
@@ -520,7 +781,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure {
     width: 25vw;
-    height: 53vh;
+    height: 55vh;
     background-color: rgb(253, 251, 251);
     border: black 2px solid;
     border-radius: 10px;
@@ -529,7 +790,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure img {
     width: 65%;
-    height: 17vh;
+    height: 19vh;
     padding: 15px;
   }
   .tercera .gridsolar .figure figcaption {
@@ -566,7 +827,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 25vw;
     height: 56vh;
     background-color: white;
-    border: black 3px solid;
+    border: black 2px solid;
     text-align: center;
   }
   .flex .kit .figure img {
@@ -615,18 +876,21 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 6vh;
+    margin-top: 10vh;
   }
   .contacto .contact_form {
-    background-color: #3d5ce4;
-    width: 45%;
-    height: 50%;
+    background-color: #788be2;
+    width: 35%;
+    height: 45%;
     margin-bottom: 5vh;
     margin-right: 40px;
     border-radius: 20px;
   }
   .contacto .contact_form .formulario {
     padding: 15px;
+  }
+  .contacto .contact_form .formulario label {
+    font-size: 1em;
   }
   .contacto .contact_form .formulario h1 {
     font-size: 20px;
@@ -646,233 +910,27 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     border-radius: 20px;
   }
 }
-@media (min-width: 1026px) and (max-width: 1250px) {
-  .anuncio {
-    animation: none;
-  }
-  .navbar .container-fluid {
-    justify-content: end;
-  }
-  .navbar .container-fluid #navbarSupportedContent ul li {
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgba(3, 3, 3, 0.527);
-    width: 40vw;
-  }
-  .navbar .container-fluid #navbarSupportedContent ul li a {
-    color: rgb(255, 254, 254);
-    font-size: 1.2em;
-    font-family: sans-serif;
-    margin-left: 30px;
-  }
-  .navbar .container-fluid #navbarSupportedContent ul li a:hover {
-    transform: scale(1);
-  }
-  .navbar .container-fluid #navbarSupportedContent a:hover {
-    background-color: transparent;
-  }
-  .contenedor {
-    width: 98%;
-    height: 40vh;
-    margin-top: 15vh;
-    justify-content: center;
-    background-color: rgb(12, 12, 12);
-  }
-  .contenedor .row .col-md-6 .img-fluid {
-    margin-left: 1px;
-    height: 40vh;
-    width: 98vw;
-    padding: 5px;
-  }
-  .contenedor .row .col-md-6 .card-text {
-    color: rgb(250, 249, 249);
-    font-size: 20px;
-    width: 45vw;
-    margin-top: 40px;
-  }
-  .contenedor .row .col-md-6 .card-text3 {
-    font-size: 16px;
-  }
-  .footer {
-    background-color: rgba(133, 130, 130, 0.74);
-    margin-top: 20%;
-    width: 100%;
-    height: 19vh;
-    display: flex;
-    position: absolute;
-    text-align: center;
-    justify-content: center;
-  }
-  .footer .p {
-    margin-top: 25px;
-    width: 25vw;
-    height: 20vh;
-    text-align: start;
-    margin-left: 5%;
-  }
-  .footer .p img {
-    background-color: white;
-    width: 14vh;
-    border: black 2px solid;
-    border-radius: 10px;
-  }
-  .footer .p h1 {
-    width: 45%;
-    color: black;
-    font-size: 0.8em;
-  }
-  .footer .p h2 {
-    width: 20vw;
-    color: black;
-    font-size: 0.8em;
-  }
-  footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
-    background-color: white;
-    width: 100%;
-    height: 6vh;
-    display: flex;
-    position: absolute;
-    margin-top: 37%;
-  }
-  footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
-    color: black;
-    font-size: 1em;
-    margin-left: 25%;
-  }
-  footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
-    display: flex;
-    position: absolute;
-    margin-top: 32%;
-    background-color: #b1732d;
-    width: 100%;
-    height: 8vh;
-    justify-content: center;
-  }
-  footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
-    margin-left: 4vw;
-    padding: 5px;
-  }
-  .segunda .gridcamara {
-    justify-content: space-evenly;
-  }
-  .segunda .gridcamara .figure {
-    width: 20vw;
-    height: 55vh;
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .segunda .gridcamara .figure img {
-    width: 60%;
-    height: 14vh;
-    padding: 5px;
-  }
-  .segunda .gridcamara .figure .btn {
-    font-size: 12px;
-    width: 90%;
-    height: 5vh;
-  }
-  .tercera .gridsolar {
-    justify-content: space-evenly;
-  }
-  .tercera .gridsolar .figure {
-    width: 20vw;
-    height: 58vh;
-    background-color: white;
-    border: black 3px solid;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .tercera .gridsolar .figure figcaption {
-    height: 20vh;
-  }
-  .tercera .gridsolar .figure img {
-    width: 60%;
-    height: 18vh;
-    padding: 15px;
-  }
-  .tercera .gridsolar .figure .btn {
-    font-size: 12px;
-    width: 90%;
-    height: 5vh;
-  }
-  .flex {
-    display: flex;
-    justify-content: space-evenly;
-    width: 99%;
-    margin-top: 20vh;
-    margin-left: 20px;
-  }
-  .flex .kit {
-    width: 25vw;
-    height: 70vh;
-  }
-  .flex .kit .figure {
-    width: 20vw;
-    height: 57vh;
-    background-color: white;
-    border: black 3px solid;
-    text-align: center;
-  }
-  .flex .kit .figure img {
-    width: 60%;
-    height: 30%;
-    padding: 5px;
-    margin-bottom: 5%;
-  }
-  .flex .kit .figure figcaption {
-    width: 90%;
-    height: 20vh;
-    margin-bottom: 5%;
-    margin-top: 0;
-    font-size: 75%;
-    margin-left: 5%;
-  }
-  .flex .kit .figure p {
-    font-size: 15px;
-    height: 3em;
-  }
-  .flex .kit .figure .btn {
-    font-size: 12px;
-    width: 90%;
-    height: 5vh;
-  }
-  .texto {
-    margin-top: 10vh;
-  }
-  .texto img {
-    height: 40%;
-  }
-  .texto .card-img-overlay {
-    margin-left: 12vw;
-    margin-top: 15vh;
-  }
-  .texto .card-img-overlay .nosotrost {
-    font-size: 1.5em;
-  }
-}
 @media (min-width: 600px) and (max-width: 767px) {
   .anuncio {
-    height: 5vh;
+    height: 6vh;
     animation: none;
   }
   .anuncio h1 {
-    font-size: 16px;
+    font-size: 17px;
   }
   .navbar {
     background-color: transparent;
   }
   .navbar .logo img {
-    width: 13vw;
+    width: 15vw;
   }
   .navbar .container-fluid {
     justify-content: end;
   }
   .navbar .container-fluid #navbarSupportedContent li {
     margin-top: 5px;
-    background-color: rgba(3, 3, 3, 0.527);
-    width: 50vw;
+    background-color: rgba(8, 8, 8, 0.527);
+    width: 55vw;
   }
   .navbar .container-fluid #navbarSupportedContent li a {
     color: white;
@@ -881,6 +939,9 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar .container-fluid #navbarSupportedContent li a:hover {
     transform: scale(1);
+  }
+  .navbar .container-fluid #navbarSupportedContent li .item {
+    padding: 5px;
   }
   main .contenedor {
     display: block;
@@ -1155,7 +1216,6 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar .logo img {
     width: 15vw;
-    border: black 2px solid;
   }
   .navbar .container-fluid {
     justify-content: end;
@@ -1177,7 +1237,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     display: block;
     width: 95%;
     height: 70vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-left: 12px;
   }
   main .contenedor .row .col-md-6 img {
@@ -1272,6 +1332,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 53vh;
     background-color: white;
     padding: 5px;
+    border: black 2px solid;
   }
   .segunda .gridcamara .figure img {
     width: 50%;
@@ -1304,7 +1365,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 38vw;
     height: 51vh;
     background-color: white;
-    border: black 3px solid;
+    border: black 2px solid;
     border-radius: 10px;
     text-align: center;
   }
@@ -1344,6 +1405,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 38vw;
     height: 52vh;
     background-color: white;
+    border: black 2px solid;
   }
   .flex .kit .figure img {
     width: 65%;
@@ -1392,7 +1454,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     background-color: #788be2;
     width: 60vw;
     height: 72vh;
-    margin-left: 25%;
+    margin-left: 30%;
     border-radius: 20px;
   }
   .contacto .contact_form .formulario {
@@ -1430,11 +1492,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
 }
 @media (min-width: 390px) and (max-width: 479px) {
   body {
-    background-image: url(../img/pruebaimg/plano-estacion-trabajo-espacio-copia-computadora-portatil.webp);
-    background-repeat: no-repeat;
-    background-size: contain 100% 100%;
-    background-position: 40%;
-    background-attachment: none;
+    background-color: gray;
   }
   .anuncio {
     width: 100%;
@@ -1450,7 +1508,6 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar .logo img {
     width: 20vw;
-    border: black 2px solid;
   }
   .navbar .container-fluid {
     justify-content: end;
@@ -1471,11 +1528,11 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   main .contenedor {
     display: block;
     width: 94vw;
-    height: 48%;
+    height: 52%;
     margin-top: 10vh;
   }
   main .contenedor .row {
-    height: 56vh;
+    height: 58vh;
   }
   main .contenedor .row .col-md-6 {
     justify-content: center;
@@ -1570,7 +1627,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .segunda .gridcamara .figure {
     width: 40vw;
-    height: 45vh;
+    height: 48vh;
     background-color: white;
     padding: 5px;
     border: black 2px solid;
@@ -1615,7 +1672,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .tercera .gridsolar .figure {
     width: 40vw;
-    height: 45vh;
+    height: 48vh;
     background-color: white;
     border: black 2px solid;
     border-radius: 10px;
@@ -1658,7 +1715,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .flex .kit .figure {
     width: 40vw;
-    height: 49vh;
+    height: 51vh;
     background-color: white;
     border-radius: 10px;
   }
@@ -1711,7 +1768,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .contacto .contact_form {
     background-color: #788be2;
     width: 65vw;
-    height: 60vh;
+    height: 72vh;
     margin-right: 5px;
     margin-left: 5%;
     border-radius: 20px;
@@ -1720,7 +1777,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     padding: 8px;
   }
   .contacto .contact_form .formulario h1 {
-    font-size: 12px;
+    font-size: 14px;
     font-family: sans-serif;
     text-align: center;
   }
@@ -1775,6 +1832,13 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   .navbar .container-fluid {
     justify-content: end;
   }
+  .navbar .container-fluid button {
+    width: 13vw;
+    height: 7vh;
+  }
+  .navbar .container-fluid button span {
+    width: 0.8em;
+  }
   .navbar .container-fluid .navbar-toggler {
     margin-right: 20px;
   }
@@ -1790,6 +1854,9 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .navbar .container-fluid #navbarSupportedContent li a:hover {
     transform: scale(1);
+  }
+  main {
+    margin-left: 5px;
   }
   main .contenedor {
     display: block;
@@ -1866,15 +1933,15 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   footer .autor, .footer .p h1 .autor, .footer .p h2 .autor {
     background-color: white;
     width: 100%;
-    height: 5vh;
+    height: 4vh;
     display: flex;
     position: absolute;
     margin-top: 29vh;
   }
   footer .autor p, .footer .p h1 .autor p, .footer .p h2 .autor p {
     color: black;
-    font-size: 0.6em;
-    margin-left: 5px;
+    font-size: 0.5em;
+    margin-left: 25px;
   }
   footer .svg, .footer .p h1 .svg, .footer .p h2 .svg {
     display: flex;
@@ -1943,7 +2010,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     width: 60vw;
     height: 40vh;
     background-color: white;
-    border: black 3px solid;
+    border: black 2px solid;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 5vh;
@@ -1989,6 +2056,7 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
     height: 49vh;
     background-color: white;
     border-radius: 10px;
+    border: black 2px solid;
   }
   .flex .kit .figure img {
     width: 60%;

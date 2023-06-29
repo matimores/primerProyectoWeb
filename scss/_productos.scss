@@ -2,10 +2,11 @@
 // camaras
 .segunda {
     background-image: url(../img/camaras.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 70%;
+    
+
+    
+    
+    
 
     .gridcamara {
         display: grid;
@@ -18,7 +19,7 @@
         transition: 0.5s;
 
         .figure {
-            @include figure(18vw, 68vh, white);
+            @include figure(18vw, 55vh, white);
             border: black 3px solid;
             border-radius: 10px;
             text-align: center;
@@ -79,7 +80,7 @@
 
 
         .figure {
-            @include figure(18vw, 68vh, white);
+            @include figure(18vw, 55vh, white);
             border: black 3px solid;
             border-radius: 10px;
 
@@ -133,7 +134,7 @@
 
 
         .figure {
-            @include figure(18vw, 68vh, white);
+            @include figure(18vw, 55vh, white);
             border: rgb(8, 8, 8) 3px solid;
             text-align: center;
 

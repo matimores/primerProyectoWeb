@@ -31,7 +31,7 @@
         h1 {
             @extend footer;
             color: black;
-            font-size: $textSm;
+            font-size: 1.5em;
 
         }
 
@@ -39,7 +39,7 @@
             width: 20vw;
             @extend footer;
             color: black;
-            font-size: $textSm;
+            font-size: 1.5em;
 
 
         }
@@ -56,11 +56,13 @@ footer {
         position: absolute;
         margin-top: 40%;
         margin-bottom: 5px;
+        
 
 
         p {
             color: black;
-            margin-left: 33%;
+            margin-left: 35%;
+            font-size: 1.2em;
 
         }
 
@@ -78,6 +80,8 @@ footer {
         svg {
             margin-left: 4vw;
             padding: 5px;
+            width: 5vw;
+            height: 7vh;
         }
 
     }
