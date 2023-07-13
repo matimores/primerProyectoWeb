@@ -20,7 +20,7 @@
 </head>
 
 <body class="segunda">
-  
+
   <header>
     <div class="anuncio">
       <h1>ENVIOS GRATIS en compras mayores a $8000</h1>
@@ -32,10 +32,10 @@
       <a href="../index.html"><img src="../img/logo/1629335950066 - Editado.png" alt="lOGO"></a>
     </div>
     <div class="container-fluid">
-     
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span  class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -54,93 +54,153 @@
           <li class="nav-item">
             <a class="nav-link" href="contacto.html">CONTACTO</a>
           </li>
-          <li>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                class="bi bi-bag-check-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
-              </svg></a>
-          </li>
-
-
-        </ul>
+          </ul>
 
       </div>
     </div>
+
+
+
+    <div>
+      <div id="icono-carrito" style="position: relative; cursor: pointer; margin-right: 30px;">
+        <a href="error404.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg
+            style="width: 50px; margin-right: 20px; fill: white;" id="Carrito" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+          </svg></a>
+        <p class="total-productos"
+          style="position: absolute; top: 0; right: 0; background-color: rgb(241, 190, 50); padding: .2rem .5rem; border-radius: 70%; color: black; font-weight: 600; font-size: 1.5rem; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          0</p>
+      </div>
+
+
+
+      
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div style="width: 40vw;" class="modal-content">
+            <div id="productos-en-carrito">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">CARRITO DE COMPRAS</h1>
+                <button type="button" class="btn-close" id="cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="contenedor-carrito">
+                <div class="modal-body">
+
+
+                </div>
+              </div>
+
+              <h2  class="total">TOTAL: $<strong
+                  class="precio-total">0</strong></h2>
+            </div>
+            <div>
+            </div>
+            <div class="modal-footer">
+              <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </nav>
 
   <article class="gridcamara">
-    <div class="camara">
-      <figure class="figure">
-        <img class="producto" src="../img/img producto/camaras/camara1.webp" alt="camara">
-        <figcaption>Camara Seguridad Domo Hikvision 2mpx Audio Incorporado</figcaption>
-        <p class="precio">$11.580.30</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+    <div class="contenedor-productos">
+      <figure class="producto figure">
+        <div>
+          <img  class="img" src="../img/img producto/camaras/camara1.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">
+          Camara Seguridad Domo Hikvision 2mpx Audio Incorporado</figcaption>
+        <p>$<span class="precio-producto">7240</span></p>
+        <a href="#" class="boton-añadir-carrito" data-id="1">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara2.webp" alt="camara">
-        <figcaption>Cámara de seguridad Hikvision DS-2CE16D0T-IPF con resolución de 2MP visión nocturna</figcaption>
-        <p class="precio">$9.119,70 </p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+      <figure class="productos figure">
+        <div>
+          <img class="img" class="Img-Producto" src="../img/img producto/camaras/camara2.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Cámara de seguridad Hikvision DS-2CE16D0T-IPF con resolución de 2MP visión
+          nocturna</figcaption>
+        <p>$<span class="precio-producto">9119</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="2">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara3.webp" alt="camara">
-        <figcaption>Camara Seguridad Hikvision Full Hd 1080p 16d0t-exipf Ext</figcaption>
-        <p class="precio">$8.208</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+
+      <figure class="producto figure">
+        <div>
+          <img class="img" class="Img-Producto" src="../img/img producto/camaras/camara3.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Camara Seguridad Hikvision Full Hd 1080p 16d0t-exipf Ext</figcaption>
+        <p>$<span class="precio-producto">8208</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="3">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara4.webp" alt="camara">
-        <figcaption>Camara Domo Dahua Hd 720p Exterior Metalica Cctv Seguridad</figcaption>
-        <p class="precio">$8.910</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+
+      <figure class="producto figure">
+        <div>
+          <img class="img" id="Img-Producto" src="../img/img producto/camaras/camara4.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Camara Domo Dahua Hd 720p Exterior Metalica Cctv Seguridad</figcaption>
+        <p>$<span class="precio-producto">8910</span></p>
+       
+        <a href="#" class="boton-añadir-carrito" data-id="4">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara5.webp" alt="camara">
-        <figcaption>Camara Hdcvi Bullet 2MPX con 20MTS de Infrarojo, Lente de 2.8MM</figcaption>
-        <p class="precio">$10.900</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+
+      <figure class=" producto figure">
+        <div>
+          <img class="img" id="Img-Producto" src="../img/img producto/camaras/camara5.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Camara Hdcvi Bullet 2MPX con 20MTS de Infrarojo, Lente de 2.8MM</figcaption>
+        <p>$<span class="precio-producto">10900</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="5">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara6.webp" alt="camara">
-        <figcaption>Cámara de seguridad Hikvision DS-2CE56D0T-IRMF Turbo HD con resolución de 2MP visión nocturna
+
+      <figure class="producto figure">
+        <div>
+          <img class="img" id="Img-Producto" src="../img/img producto/camaras/camara6.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Cámara de seguridad Hikvision DS-2CE56D0T-IRMF Turbo HD con resolución de
+          2MP
+          visión nocturna
           incluida</figcaption>
-        <p class="precio">$11.507</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+          <p>$<span class="precio-producto">11507</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="6">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara7.webp" alt="camara">
-        <figcaption>Cámara de seguridad Hikvision DS-2CD1123G0E-I(2.8mm) con resolución de 2MP visión nocturna incluida
+
+      <figure class="producto  figure">
+        <div>
+          <img class="img" id="Img-Producto" src="../img/img producto/camaras/camara7.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Cámara de seguridad Hikvision DS-2CD1123G0E-I(2.8mm) con resolución de 2MP
+          visión
+          nocturna incluida
           blanca</figcaption>
-        <p class="precio">$27.607</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+          <p>$<span class="precio-producto">27607</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="7">Agregar a carrito</a>
       </figure>
 
-    </div>
-    <div class="camara">
-      <figure class="figure">
-        <img src="../img/img producto/camaras/camara8.webp" alt="camara">
-        <figcaption>Cámara Hikvision - Pir - Sirena - 1080p</figcaption>
-        <p class="precio">$22.100</p>
-        <a href="../error404.html" class="btn btn-primary">Agregar a carrito</a>
+
+      <figure class="producto  figure">
+        <div>
+          <img class="img" id="Img-Producto" src="../img/img producto/camaras/camara8.webp" alt="camara">
+        </div>
+        <figcaption class="titulo-producto">Cámara Hikvision - Pir - Sirena - 1080p</figcaption>
+        <p>$<span class="precio-producto">22100</span></p>
+        
+        <a href="#" class="boton-añadir-carrito" data-id="8">Agregar a carrito</a>
       </figure>
 
     </div>
@@ -190,10 +250,11 @@
   </footer>
 
 
-
+  <script src="../codigo.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

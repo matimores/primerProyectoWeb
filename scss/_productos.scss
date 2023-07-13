@@ -2,60 +2,71 @@
 // camaras
 .segunda {
     background-image: url(../img/camaras.webp);
-    
 
-    
-    
-    
+
+
+
+
 
     .gridcamara {
-        display: grid;
-        grid-template-columns: repeat(4, 20%);
-        column-gap: 45px;
-        justify-content: center;
-        margin-top: 25vh;
-        height: 100%;
-        justify-content: center;
-        transition: 0.5s;
 
-        .figure {
-            @include figure(18vw, 55vh, white);
-            border: black 3px solid;
-            border-radius: 10px;
-            text-align: center;
 
-            img {
-                @extend .producto;
+        .contenedor-productos {
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            column-gap: 45px;
+            justify-content: center;
+            margin-top: 25vh;
+            height: 100%;
+            justify-content: center;
+            transition: 0.5s;
 
+            .figure {
+                @include figure(18vw, 57vh, white);
+                border: black 3px solid;
+                border-radius: 10px;
+                text-align: center;
+
+                div {
+                    .img {
+                        width: 12vw;
+                        height: 20vh;
+                        margin-bottom: 3vh;
+
+                    }
+                }
+
+                .titulo-producto{
+                    
+                    font-size: 20px;
+                    height: 15vh;
+
+                }
+
+                 .precio-producto{
+                    font-size: 25px;
+                    height: 6vh;
+
+                }
+
+                .boton-añadir-carrito {
+                    padding: 8px;
+                    color: black;
+                    background-color: #3d5ce4;
+                    font-size: 25px;
+                    text-decoration: none;
+                    border-radius: 5px;
+
+                }
+
+                .boton-añadir-carrito:hover {
+                    background-color: black;
+                    color: white;
+                    border: none;
+                }
             }
 
-            figcaption {
-                @extend figcaption;
-
-            }
-
-            p {
-                @extend .precio;
-
-            }
-
-            .btn {
-                @extend .btn;
-                transition: 0.5s;
-                object-fit: cover;
-                background-color: #3d5ce4;
-
-            }
-
-            .btn:hover {
-                transform: scale(1.2);
-                background-color: black;
-                color: white;
-                border: none;
-            }
         }
-
-
     }
 
 }
@@ -83,7 +94,6 @@
             @include figure(18vw, 55vh, white);
             border: black 3px solid;
             border-radius: 10px;
-
             text-align: center;
 
             img {
