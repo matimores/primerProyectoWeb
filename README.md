@@ -17,7 +17,7 @@
 
 - HTML 
 - CSS
-- (proximamente) JAVASCRIPT
+- EN PROCESO.... JAVASCRIPT
 - (proximamente) REACT
 
 ## Autores
