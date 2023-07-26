@@ -14,6 +14,10 @@
 
     // nav
     .navbar {
+        background-color: rgba(0, 0, 0, 0.637);
+        height: auto;
+        
+
         .logo {
             img {
                 width: 7em;
@@ -22,11 +26,12 @@
 
         .container-fluid {
             justify-content: end;
-
+           
             .navbar-toggler {
                 width: 6vw;
                 height: 8vh;
                 margin-right: 15px;
+                
             }
 
             #navbarSupportedContent {
@@ -61,7 +66,7 @@
 
 
         }
-
+        
     }
 
     // main 

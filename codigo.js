@@ -2,19 +2,74 @@ const contenedorProductos = document.querySelector(".contenedor-productos");
 const contenedorCarrito = document.querySelector(".contenedor-carrito");
 const precioTotal = document.querySelector(".precio-total");
 const totalProductos = document.querySelector(".total-productos");
+const btnComprar = document.getElementById("comprar");
+const btnAnadirCarrito = document.querySelector(".boton-añadir-carrito");
+
+
+btnAnadirCarrito.onclick = muestratoastify
+
+
+
+function muestratoastify() {
+    btnAnadirCarrito.forEach(function () {
+        Toastify({
+            text: "Agregado al carrito",
+            className: "info",
+            duration: 1000,
+            style: {
+                background: "linear-gradient(to right, #3d5ce4 ,white )",
+            }
+        }).showToast();
+    })
+};
+
+
+
+
+
+
+
+
+btnComprar.onclick = muestraAlert;
+
+function muestraAlert() {
+
+
+    swal.fire({
+        title: 'MUCHAS GRACIAS POR SU COMPRA',
+        text: 'Visitenos en redes para seguir todas nuestras promociones! 🙌',
+        imageUrl: 'https://unsplash.it/400/200',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+    })
+}
 
 let compras = [];
 let contadorProductos = 0;
 let totalCarrito = 0;
+
+
+
 
 //funciones 
 
 contenedorProductos.addEventListener("click", function agregarProducto(e) {
     e.preventDefault();
     if (e.target.classList.contains("boton-añadir-carrito")) {
+        Toastify({
+            text: "Agregado al carrito",
+            className: "info",
+            duration: 1000,
+            style: {
+                background: "linear-gradient(to right,#3d5ce4,white )",
+            }
+        }).showToast();
         const productoSeleccionado = e.target.parentElement;
         recuperarContenido(productoSeleccionado);
+
     }
+
 })
 
 contenedorCarrito.addEventListener("click", function eliminarProducto(e) {
@@ -39,7 +94,6 @@ contenedorCarrito.addEventListener("click", function eliminarProducto(e) {
 
     comprasHtml();
 })
-
 
 
 
@@ -88,23 +142,28 @@ function comprasHtml() {
                 <h5 class="precio-carrito">${precio}</h5>
                 <h6>Cantidad: ${cantidad}</h6>
                 <span data-id="${id}"  class="eliminar-producto"><i class="fa-solid fa-trash eliminar-producto" data-id="${id}">X</i></span>
+                
              </div>
         `;
         let info = document.querySelector(".contenido-producto")
-        localStorage.setItem("info" ,  JSON.stringify({ info : titulo , precio : precio }));
+        localStorage.setItem("info", JSON.stringify({ info: titulo, precio: precio }));
         contenedorCarrito.appendChild(productoCarrito)
         precioTotal.innerHTML = totalCarrito;
         totalProductos.innerHTML = contadorProductos;
 
+
+
+
     });
-
-
 }
 
 
 function limpiarCarrito() {
     contenedorCarrito.innerHTML = "";
 }
+
+
+
 
 
 

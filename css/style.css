@@ -7,6 +7,18 @@ body {
   background-position: 50%;
 }
 
+.info {
+  margin-top: 20vh;
+  width: 15vw;
+  height: 6vh;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 23px;
+  color: black;
+  font-family: sans-serif;
+  background-color: red;
+}
+
 .figure {
   width: 18vw;
   height: 68vh;
@@ -63,12 +75,19 @@ footer, .footer .p h2, .footer .p h1 {
   padding: 8px;
 }
 
+.navbar { /*
+position: fixed;
+
+width: 100%;
+height: auto;
+margin-top: 1vh;
+
+*/ }
 .navbar .logo img {
   background-color: white;
   width: 10vw;
   border-radius: 10px;
   margin-left: 25px;
-  margin-top: 10px;
 }
 .navbar .navbar-toggler {
   background-color: rgba(153, 150, 147, 0.6980392157);
@@ -90,10 +109,26 @@ footer, .footer .p h2, .footer .p h1 {
   height: 5vh;
 }
 
-.total {
-  background-color: #f8b34c;
+.total-productos {
   position: absolute;
-  width: 15vw;
+  width: 55%;
+  height: 80%;
+  top: 0;
+  right: 0;
+  background-color: rgb(245, 194, 56);
+  padding: 0.2rem 0.5rem;
+  border-radius: 70%;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.total {
+  background-color: #fcbf4d;
+  position: absolute;
+  width: 18vw;
   color: black;
   border: black 2px solid;
   margin-left: 15px;
@@ -102,7 +137,7 @@ footer, .footer .p h2, .footer .p h1 {
 }
 
 .producto-carrito div {
-  border: black 2px solid;
+  border: rgb(3, 3, 3) 2px solid;
   height: 33vh;
   width: 40vw;
   text-align: center;
@@ -168,6 +203,9 @@ footer, .footer .p h2, .footer .p h1 {
 
 .segunda {
   background-image: url(../img/camaras.webp);
+}
+.segunda .gridcamara {
+  margin-top: 40vh;
 }
 .segunda .gridcamara .contenedor-productos {
   display: grid;
@@ -419,6 +457,10 @@ footer .svg svg, .footer .p h1 .svg svg, .footer .p h2 .svg svg {
   }
   .anuncio h1 {
     font-size: 1.5em;
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.637);
+    height: auto;
   }
   .navbar .logo img {
     width: 7em;
