@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style type="text/css">
+        body {
+
+            background-image: url(../img/escritorio-computadora-portatil-taza-cafe-calendario.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 50%;
+
+            .toastify {
+                margin-top: 50vh;
+                width: 20vw;
+                text-align: center;
+            }
+        }
+
+
+
+
+
+        #contenedor-productos {
+
+            margin-top: 20vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 1.2em;
+
+            height: 15vh;
+        }
+
+        .producto {
+            text-align: center;
+            border: black 3px solid;
+            background-color: white;
+            width: 20vw;
+            height: 57vh;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+
+        }
+
+        img {
+            width: 11vw;
+            height: 20vh;
+            margin-bottom: 6vh;
+
+        }
+
+        .precioProducto {
+            font-weight: 700;
+        }
+
+        .boton-agregar {
+            padding: 8px;
+            color: black;
+            background-color: #3d5ce4;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: black 1px solid;
+        }
+
+        .boton-agregar:hover {
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+
+
+        .modal-contenedor {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+
+
+        .boton-eliminar {
+            background-color: rgb(228, 12, 12);
+            color: rgb(250, 252, 251);
+            border: none;
+            font-size: 17px;
+            width: 8vw;
+            height: 5vh;
+            border-radius: 5px;
+        }
+
+        .boton-eliminar:hover {
+            cursor: pointer;
+        }
+
+        .boton-eliminar:focus {
+            outline: none;
+        }
+
+        .productoEnCarrito {
+            border: black 2px solid;
+            height: 22vh;
+           
+        }
+
+        .contenedor-carrito-nombre {
+            font-size: 20px;
+            text-align: center;
+            height: 10vh;
+            padding: 10px;
+
+        }
+       .contenedor-carrito-cantidad{
+        
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        margin-left: 40%;
+        width: 8vw;
+        height: 5vh;
+        text-align: center;
+        border-radius: 3px;
+       }
+       .contenedor-carrito-precio{
+        font-size: 22px;
+        font-weight: bold;
+        margin-left: 35%;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="anuncio">
+            <h1>ENVIOS GRATIS en compras mayores a $8000</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-xxl bg-body-dark">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo/1629335950066 - Editado.png" alt="lOGO"></a>
+        </div>
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">CAMARAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sistemassolares.html">SISTEMAS SOLARES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kits.html">KITS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">OFERTAS</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div>
+            <div id="icono-carrito" style="position: relative; cursor: pointer; margin-right: 30px;">
+                <a href="error404.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><svg
+                        style="width: 50px; margin-right: 20px; fill: rgb(253, 252, 252);" id="Carrito"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bag-check-fill"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                    </svg></a>
+                <p class="total-productos">
+                    0</p>
+            </div>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div style="width: 40vw; right: 30%; top:20vh;" class="modal-content">
+                        <div id="productos-en-carrito">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">CARRITO DE COMPRAS</h1>
+                                <button type="button" class="btn-close" id="cerrar" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="contenedor-carrito">
+                                <div class="modal-body">
+
+
+                                </div>
+                            </div>
+
+                            <h2 class="total">TOTAL: $<strong class="precio-total">0</strong></h2>
+                        </div>
+                        <div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="comprar" class="btn btn-secondary"
+                                data-bs-dismiss="modal">COMPRAR</button>
+                            <button id="vaciarCarrito" class="boton-eliminar">Vaciar carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <main id="contenedor-productos">
+
+    </main>
+
+  
+    <script src="../api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

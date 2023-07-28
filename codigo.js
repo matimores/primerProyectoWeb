@@ -23,13 +23,6 @@ function muestratoastify() {
     })
 };
 
-
-
-
-
-
-
-
 btnComprar.onclick = muestraAlert;
 
 function muestraAlert() {
@@ -165,5 +158,22 @@ function limpiarCarrito() {
 
 
 
+const removerDelCarrito = (id) => {
+    const item = carrito.find((producto) => producto.id === id)
+
+    item.cantidad -= 1
+    // item.cantidad--
+
+    if (item.cantidad === 0) {
+        const indice = carrito.indexOf(item)
+        carrito.splice(indice, 1)
+    }
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+
+    renderCarrito()
+    renderCantidad()
+    renderTotal()
+}
 
 

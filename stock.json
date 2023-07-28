@@ -1,0 +1,8 @@
+[
+    {"id": 1,  "nombre": "Kit Seguridad Hikvision Dvr 4ch + 4 Camara 2mp Exter + Disco", "precio": 57960,  "img": "../img/kit1.png"},
+    {"id": 2, "nombre": "Kit Seguridad Hikvision Dvr 4ch Fullhd + 3 Camara 2mp +disco",  "precio": 68715,  "img": "../img/kit2.png"},
+    {"id": 3,  "nombre": "2- Panel solar PS-50 - 50W ,1- Regulador de Carga para Paneles Solares C-10-12/24 ,1- Bateria de Ciclo Profundo AGM RITAR DC12-26 ,1- Inversor de Ptencia IE-350-12 (1 unidad)",  "precio": 165148,  "img": "../img/kit3.png"},
+    {"id": 4, "nombre": "3- Panel Solar 310W ,1- Inversor de Potencia 24V-220V 1500W ,4- Baterias AGM 12V 150ah ,1- Regulador de Carga Solar - con USB -30A 12/24V",  "precio": 1650000,  "img": "../img/kit4.png"},
+    {"id": 5, "nombre": "Kit Seguridad Hikvision Full Hd Dvr 4ch + 4 Camara 2mp + 1tb",  "precio": 94900,  "img": "../img/kit6.webp"}
+
+]
